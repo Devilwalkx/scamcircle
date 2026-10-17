@@ -1,0 +1,37 @@
+--------- beginning of main
+10-17 20:33:41.402 D/Maestro ( 9248): Requesting view hierarchy
+10-17 20:33:41.405 W/QueryController( 9248): Could not detect idle state.
+10-17 20:33:41.405 W/QueryController( 9248): Could not detect idle state.
+10-17 20:33:41.441 I/Maestro ( 9248): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@87e56; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:33:41.459 D/Maestro ( 9248): View hierarchy received in 57 ms
+10-17 20:33:41.547 D/Maestro ( 9248): Requesting view hierarchy
+10-17 20:33:41.547 W/QueryController( 9248): Could not detect idle state.
+10-17 20:33:41.547 W/QueryController( 9248): Could not detect idle state.
+10-17 20:33:41.555 I/Maestro ( 9248): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@87e56; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:33:41.575 D/Maestro ( 9248): View hierarchy received in 28 ms
+--------- beginning of system
+10-17 20:33:41.633 D/WindowManager(  578): captureDisplay
+--------- beginning of kernel
+10-17 20:33:41.788 I/servicemanager(    0): Caller(pid=9248,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:33:41.791 I/servicemanager(    0): Caller(pid=9248,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:33:41.794 I/servicemanager(    0): Caller(pid=9248,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 20:33:41.672 I/DisplayManager( 9248): Choreographer implicitly registered for the refresh rate.
+10-17 20:33:41.693 I/EGL_emulation( 9248): Opening libGLESv1_CM_emulation.so
+10-17 20:33:41.694 I/EGL_emulation( 9248): Opening libGLESv2_emulation.so
+10-17 20:33:41.700 W/HWUI    ( 9248): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 20:33:42.266 D/WifiClientModeImpl[492522:wlan0](  578): updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=6 freq=2437 RxLinkSpeed=2
+10-17 20:33:42.267 D/WifiDataStall(  578): tx tput in kbps: 37000
+10-17 20:33:42.267 D/WifiDataStall(  578): rx tput in kbps: 37000
+10-17 20:33:42.267 V/WifiConfigManager(  578): Updating scan detail cache freq=2437 BSSID=02:15:b2:00:00:01 RSSI=-50 for "AndroidWifi"NONE
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 20:33:42.267 D/WifiThroughputPredictor(  578):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 20:33:42.268 D/WifiScoreCard(  578): BSSID update SIGNAL_POLL ID: 1781938323 SSID: "AndroidWifi", BSSID: 02:15:b2:00:00:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 6Mbps, Tx Link speed: 6Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+10-17 20:33:42.268 D/WifiScoreCard(  578): txRate: 1 txSpeed: 6
+10-17 20:33:42.268 D/WifiScoreCard(  578): network update SIGNAL_POLL "AndroidWifi" ID: 1297071123 RSSI -50 txSpeed -1
+10-17 20:33:42.268 D/WifiClientModeImpl[492522:wlan0](  578):  ClientModeImpl$L2ConnectedState screen=on 1 0 "AndroidWifi" 02:15:b2:00:00:01 rssi=-50 f=2437 sc=60 link=6 tx=0.0, 0.0, 0.0 rx=0.0 bcn=0 [on:0 tx:0 rx:0 period:3004] from screen [on:0 period:54965] score=60

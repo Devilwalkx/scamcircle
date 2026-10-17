@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="115.436" timestamp="2026-10-17T18:34:05">
+    <testcase id="MAIN TASK - paste a message, read what was found and not checked, record an independent check" name="MAIN TASK - paste a message, read what was found and not checked, record an independent check" classname="MAIN TASK - paste a message, read what was found and not checked, record an independent check" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/02-main-task-check-message.yaml" time="115.406" timestamp="2026-10-17T18:34:05" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

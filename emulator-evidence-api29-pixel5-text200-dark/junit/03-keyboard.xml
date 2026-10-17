@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="27.309" timestamp="2026-10-17T18:36:30">
+    <testcase id="With the keyboard open the field and the Check button stay reachable" name="With the keyboard open the field and the Check button stay reachable" classname="With the keyboard open the field and the Check button stay reachable" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/03-keyboard.yaml" time="27.294" timestamp="2026-10-17T18:36:30" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

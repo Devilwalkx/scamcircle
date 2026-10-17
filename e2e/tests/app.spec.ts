@@ -531,5 +531,5 @@ test("Extra large in-app text plus system scale 2 (worst case) still fits on eve
   await settings(page);
   await page.getByRole("radio", { name: "Extra large" }).click();
   await tab(page, "Check").click();
-  await walk(page, async (where) => { await page.waitForTimeout(300); await auditLayout(page, `${where} (worst case)`); });
+  await walk(page, async (where) => { await page.waitForTimeout(300); await auditLayout(page, `${where} (worst case)`); await closeDialogs(page); });
 });

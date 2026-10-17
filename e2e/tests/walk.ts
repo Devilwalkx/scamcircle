@@ -27,7 +27,6 @@ export async function walk(page: Page, visit: Visit) {
   await visit("result-open");
   await btn(page, "Delete this message").click();
   await visit("delete-confirm");
-  await btn(page, "No, keep it").click();
   await btn(page, "I checked it another way").click();
   await visit("record");
   await btn(page, "Back").click();
@@ -51,7 +50,6 @@ export async function walk(page: Page, visit: Visit) {
   }
   await btn(page, "Erase everything").click();
   await visit("erase-confirm");
-  await btn(page, "No, keep my data").click();
   await page.getByRole("button", { name: "Demonstration tools (not for real use)" }).click();
   await btn(page, "Open demonstration tools").click();
   await visit("demo-tools");
@@ -82,7 +80,6 @@ export async function walk(page: Page, visit: Visit) {
   await tab(page, "People").click();
   await btn(page, /^Remove Demo helper/).click();
   await visit("remove-confirm");
-  await btn(page, "No, keep them").click();
   await tab(page, "Requests").click();
   await visit("requests-empty");
   // the pretend helper's side

@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { View } from "react-native";
-import { connectDemo, createDevice, loadSyntheticExample, DEMO_REVIEWER_NAME, DATASET, HOLDOUT2, evaluate, type Row } from "@scamcircle/core";
+import { encryptionSelfCheck, type SelfCheckResult, connectDemo, createDevice, loadSyntheticExample, DEMO_REVIEWER_NAME, DATASET, HOLDOUT2, evaluate, type Row } from "@scamcircle/core";
 import { Btn, Bullets, Card, Choice, Collapsible, ConfirmCard, DemoStrip, Field, LinkRow, Notice, Txt, TEXT_SIZES } from "../ui";
 import { Page } from "../page";
 import { CodeBox } from "../parts";
@@ -9,6 +9,7 @@ import { useView } from "../nav";
 import { useTheme } from "../design/theme";
 import { space } from "../design/tokens";
 import { buildInfo } from "../buildInfo";
+import { expoKeyStore } from "../keystore";
 import type { Prefs } from "../../App";
 
 type V = { k: "main" } | { k: "offline" } | { k: "eval" } | { k: "limits" } | { k: "erase" } | { k: "restore" } | { k: "backup" } | { k: "demo" };
@@ -25,6 +26,7 @@ export function Settings({ prefs }: { prefs: Prefs }) {
   const [hasRec, setHasRec] = useState<boolean | null>(null);
   const [confirmDemo, setConfirmDemo] = useState(false);
   React.useEffect(() => { svc.hasRecovery().then(setHasRec).catch(() => setHasRec(false)); }, [svc, secret]);
+  const [check, setCheck] = useState<SelfCheckResult | "running" | null>(null);
   const info = buildInfo();
 
   if (view.k === "offline") return <Offline />;
@@ -59,7 +61,7 @@ export function Settings({ prefs }: { prefs: Prefs }) {
   }
   if (view.k === "backup") {
     return (
-      <Page title="Backup" intro="A backup is scrambled with your device key, which is itself locked with your recovery secret. Keep both safe and apart. Anyone holding both can read it.">
+      <Page title="Backup" intro="A backup is encrypted (XChaCha20-Poly1305) with this phone's key. That key is locked inside the backup with your recovery secret. The backup text on its own cannot be read; the backup text together with your recovery secret can. Keep them apart.">
         {backup ? <CodeBox label="Backup text" code={backup} copyLabel="Copy backup" shareLabel="Share backup…" /> : <Btn label="Make a backup" disabled={hasRec === false} onPress={async () => { try { setBackup(await svc.exportBackup(root)); setMsg(""); } catch (e) { setMsg(e instanceof Error ? e.message : "Could not make a backup."); } }} />}
         {hasRec === false ? <Notice tone="wait" text="Make a recovery secret first (Settings, Your data)." /> : null}
         {msg ? <Notice tone="bad" text={msg} /> : null}
@@ -118,7 +120,7 @@ export function Settings({ prefs }: { prefs: Prefs }) {
       <LinkRow icon="help" title="What this app cannot do" onPress={() => setView({ k: "limits" })} />
 
       <Txt v="heading" header style={{ marginTop: space.s }}>Your data</Txt>
-      <Txt>Everything is locked with a key kept in the phone's secure storage. If you lose this phone and have no recovery secret, everything here is gone for good. Nobody can reset it for you.</Txt>
+      <Txt>Everything is encrypted on this phone (XChaCha20-Poly1305). The key is kept in Android's protected storage for this app only and is not included in Android backups. If you lose this phone and have no recovery secret, everything here is gone for good. Nobody can reset it for you.</Txt>
       <Btn kind="secondary" label={hasRec ? "Make a new recovery secret" : "Make a recovery secret"} onPress={async () => setSecret(await svc.createRecovery(root.me.accountId))} />
       {secret ? <Card tone="wait"><Txt>Write this down now. It is shown once and not saved.</Txt><Txt selectable label="Recovery secret, shown once" style={{ fontWeight: "700" }}>{secret}</Txt></Card> : null}
       <Btn kind="secondary" label="Make a backup" onPress={() => { setMsg(""); setBackup(""); setView({ k: "backup" }); }} />
@@ -132,6 +134,14 @@ export function Settings({ prefs }: { prefs: Prefs }) {
         <Txt v="small">{`Commit ${info.commit}${info.builtAt ? ` · built ${info.builtAt}` : ""}`}</Txt>
         <Txt v="small" color={th.textMuted}>Test build, signed with the public Android test key. Not reviewed by anyone independent. Not tested on a physical phone by its builders.</Txt>
       </Card>
+      <Btn kind="secondary" label="Check encryption on this phone" onPress={async () => { setCheck("running"); setCheck(await encryptionSelfCheck(expoKeyStore)); }} />
+      {check === "running" ? <Notice tone="wait" text="Checking…" /> : check ? (
+        <Card accessibilityLabel="Encryption check result">
+          <Txt v="heading" header>{check.ok ? "Encryption check: passed" : "Encryption check: FAILED"}</Txt>
+          {check.steps.map((st) => <Txt key={st.label}>{`${st.ok ? "Passed" : "Failed"}: ${st.label}`}</Txt>)}
+          <Txt v="small" color={th.textMuted}>This runs the app's real encryption on made-up text. It shows none of your data and does not prove the encryption is unbreakable.</Txt>
+        </Card>
+      ) : null}
       <Collapsible title="Demonstration tools (not for real use)"><Txt>Pretend second person, example story and pretend clock, for trying the app on one phone.</Txt><Btn kind="secondary" label="Open demonstration tools" onPress={() => { setMsg(""); setView({ k: "demo" }); }} /></Collapsible>
     </Page>
   );

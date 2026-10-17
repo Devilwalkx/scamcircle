@@ -193,6 +193,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: scamcircle-android-test-apk
@@ -209,8 +210,11 @@ jobs:
           set -e
           mv out/*.apk ScamCircle-test.apk
           (cd web && zip -qr ../ScamCircle-web.zip .)
+          BUILD_COMMIT="${{ github.sha }}" bash scripts/apk-identity.sh ScamCircle-test.apk > build-identity.txt
+          cat build-identity.txt
+          { printf '%s\n\n' "Install ScamCircle-test.apk on an Android phone. App id app.devilwalkx.scamcircle (a phone with the older test build, id invalid.placeholder.scamcircle, must uninstall it first: this is a different app to Android). Test build, signed with the public Android debug key (not a release key, not for the Play Store). Commit ${{ github.sha }}, run ${{ github.run_number }}. Browser tests: ${{ needs.test-and-web.result }}. Android emulator tests (API 36 and API 29, Maestro flows, emulator only): ${{ needs.android-emulator.result }}. This asset has NOT been run on a physical phone by anyone, TalkBack was not run, and no independent person has tested or reviewed it. It points out warning signs and cannot tell you a message is safe. See docs/ANDROID_PASS_REPORT.md for what is and is not verified."; echo 'Build identity (what identifies this exact file):'; echo; sed 's/^/    /' build-identity.txt; } > notes.md
           gh release delete latest-test-build --cleanup-tag --yes || true
-          gh release create latest-test-build ScamCircle-test.apk ScamCircle-web.zip \
+          gh release create latest-test-build ScamCircle-test.apk build-identity.txt ScamCircle-web.zip \
             --target "${{ github.sha }}" --prerelease \
             --title "ScamCircle test build" \
-            --notes "Install ScamCircle-test.apk on an Android phone. App id app.devilwalkx.scamcircle (a phone with the older test build, id invalid.placeholder.scamcircle, must uninstall it first: this is a different app to Android). Test build, signed with the public Android debug key (not a release key, not for the Play Store). Commit ${{ github.sha }}, run ${{ github.run_number }}. Browser tests: ${{ needs.test-and-web.result }}. Android emulator tests (API 36 and API 29, Maestro flows, emulator only): ${{ needs.android-emulator.result }}. This asset has NOT been run on a physical phone by anyone, TalkBack was not run, and no independent person has tested or reviewed it. It points out warning signs and cannot tell you a message is safe. See docs/ANDROID_PASS_REPORT.md for what is and is not verified."
+            --notes-file notes.md

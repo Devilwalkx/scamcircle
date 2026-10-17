@@ -69,7 +69,7 @@ run_flow 02-main-task-check-message.yaml
 adb shell pkill -2 screenrecord; wait $REC 2>/dev/null; sleep 2
 adb pull /sdcard/main-task.mp4 "$OUT/main-task.mp4" >/dev/null 2>&1 || log "no recording"
 
-for f in 01-first-run.yaml 03-keyboard.yaml 04-back-navigation.yaml 07-settings-and-offline.yaml 08-share-by-text.yaml 14-theme-dark.yaml; do run_flow $f; done
+for f in 01-first-run.yaml 03-keyboard.yaml 04-back-navigation.yaml 07-settings-and-offline.yaml 08-share-by-text.yaml 14-theme-dark.yaml 15-encryption-check.yaml; do run_flow $f; done
 
 # ---- offline: Wi-Fi and mobile data off, then the main task again
 log "offline run"

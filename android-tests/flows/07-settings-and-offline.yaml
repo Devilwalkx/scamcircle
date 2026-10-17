@@ -13,6 +13,7 @@ name: Settings shows the build identity, and the offline explanation is plain
     speed: 70
 - assertVisible: "Version 0.2.0.*"
 - assertVisible: "App ID app.devilwalkx.scamcircle"
+- assertVisible: "Commit [0-9a-f]{7}.*"
 - takeScreenshot: 07b-about-build
 - scrollUntilVisible:
     element: "Works without internet"

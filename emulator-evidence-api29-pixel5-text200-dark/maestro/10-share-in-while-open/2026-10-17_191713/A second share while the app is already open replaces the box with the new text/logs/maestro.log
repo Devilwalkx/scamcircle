@@ -1,0 +1,12 @@
+19:17:21.105 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+19:17:21.109 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+19:17:21.109 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+19:17:21.111 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+19:17:21.111 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Received from another app" is visible RUNNING
+19:17:21.404 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Received from another app" is visible COMPLETED
+19:17:21.405 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that ".*Second-share-test.*" is visible RUNNING
+19:17:21.541 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that ".*Second-share-test.*" is visible COMPLETED
+19:17:21.542 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 10-second-share RUNNING
+19:17:21.544 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+19:17:21.546 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+19:17:21.900 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 10-second-share COMPLETED

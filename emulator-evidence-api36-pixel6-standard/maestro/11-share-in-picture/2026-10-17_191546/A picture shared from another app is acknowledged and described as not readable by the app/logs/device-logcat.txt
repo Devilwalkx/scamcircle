@@ -1,0 +1,21 @@
+--------- beginning of main
+10-17 19:15:52.656 D/Maestro ( 9046): Requesting view hierarchy
+10-17 19:15:52.658 W/QueryController( 9046): Could not detect idle state.
+10-17 19:15:52.659 W/QueryController( 9046): Could not detect idle state.
+10-17 19:15:52.711 I/Maestro ( 9046): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b62e; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:15:52.713 D/Maestro ( 9046): View hierarchy received in 57 ms
+10-17 19:15:52.820 D/Maestro ( 9046): Requesting view hierarchy
+10-17 19:15:52.820 W/QueryController( 9046): Could not detect idle state.
+10-17 19:15:52.820 W/QueryController( 9046): Could not detect idle state.
+10-17 19:15:52.856 I/Maestro ( 9046): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b62e; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:15:52.857 D/Maestro ( 9046): View hierarchy received in 37 ms
+--------- beginning of system
+10-17 19:15:52.953 D/WindowManager(  658): captureDisplay
+--------- beginning of kernel
+10-17 19:15:53.134 I/servicemanager(    0): Caller(pid=9046,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:15:53.139 I/servicemanager(    0): Caller(pid=9046,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:15:53.144 I/servicemanager(    0): Caller(pid=9046,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 19:15:52.993 I/DisplayManager( 9046): Choreographer implicitly registered for the refresh rate.
+10-17 19:15:53.013 I/EGL_emulation( 9046): Opening libGLESv1_CM_emulation.so
+10-17 19:15:53.013 I/EGL_emulation( 9046): Opening libGLESv2_emulation.so
+10-17 19:15:53.018 W/HWUI    ( 9046): Failed to initialize 101010-2 format, error = EGL_SUCCESS

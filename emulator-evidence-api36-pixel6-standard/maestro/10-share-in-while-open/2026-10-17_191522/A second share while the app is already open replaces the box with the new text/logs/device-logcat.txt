@@ -1,0 +1,57 @@
+--------- beginning of main
+10-17 19:15:28.532 D/Maestro ( 8804): Requesting view hierarchy
+10-17 19:15:28.534 W/QueryController( 8804): Could not detect idle state.
+10-17 19:15:28.534 W/QueryController( 8804): Could not detect idle state.
+10-17 19:15:28.572 I/Maestro ( 8804): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b61e; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:15:28.585 D/Maestro ( 8804): View hierarchy received in 53 ms
+10-17 19:15:28.698 D/Maestro ( 8804): Requesting view hierarchy
+10-17 19:15:28.698 W/QueryController( 8804): Could not detect idle state.
+10-17 19:15:28.699 W/QueryController( 8804): Could not detect idle state.
+10-17 19:15:28.709 I/Maestro ( 8804): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b61e; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:15:28.728 D/Maestro ( 8804): View hierarchy received in 30 ms
+--------- beginning of system
+10-17 19:15:28.829 D/WindowManager(  658): captureDisplay
+--------- beginning of kernel
+10-17 19:15:29.003 I/servicemanager(    0): Caller(pid=8804,uid=10236,sid=u:r:untrusted_app:s0:c236,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:15:29.009 I/servicemanager(    0): Caller(pid=8804,uid=10236,sid=u:r:untrusted_app:s0:c236,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:15:29.012 I/servicemanager(    0): Caller(pid=8804,uid=10236,sid=u:r:untrusted_app:s0:c236,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 19:15:28.863 I/DisplayManager( 8804): Choreographer implicitly registered for the refresh rate.
+10-17 19:15:28.883 I/EGL_emulation( 8804): Opening libGLESv1_CM_emulation.so
+10-17 19:15:28.883 I/EGL_emulation( 8804): Opening libGLESv2_emulation.so
+10-17 19:15:28.887 W/HWUI    ( 8804): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 19:15:28.936 I/WifiService(  658): getWifiEnabledState uid=10147 state=3
+10-17 19:15:28.938 D/ConnectivityService(  658): requestNetwork for uid/pid:10147/5534 activeRequest: null callbackRequest: 214 [NetworkRequest [ REQUEST id=214, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10147 RequestorUid: 10147 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOSING|LOST|NC|LP
+10-17 19:15:28.941 I/netd    (  455): networkSetPermissionForNetwork(102, 0) <1.26ms>
+10-17 19:15:28.942 W/IPCThreadState(  658): Sending oneway calls to frozen process.
+10-17 19:15:28.949 D/ConnectivityService(  658): NetReassign [214 : null → 102] [c 0] [a 6] [i 3]
+10-17 19:15:28.950 D/ConnectivityService(  658): reportNetworkConnectivity(103, false) by 10147
+10-17 19:15:28.950 D/NetworkMonitor/103( 1116): Forcing reevaluation for UID 10147. Dns signal count: 0
+10-17 19:15:28.952 D/BoundBrokerSvc( 2383): onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-17 19:15:28.956 I/resolv  (  455): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 19:15:28.956 I/resolv  (  455): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 19:15:28.958 I/resolv  (  455): res_nsend: used send_dg 256 terrno: 0
+10-17 19:15:28.958 I/resolv  (  455): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 19:15:28.959 I/resolv  (  455): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 19:15:28.959 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fab80f4bb0
+10-17 19:15:28.961 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fb580eda90
+10-17 19:15:28.964 I/resolv  (  455): res_nsend: used send_dg 75 terrno: 0
+10-17 19:15:28.975 D/NetworkMonitor/103( 1116): PROBE_DNS www.google.com 23ms OK 142.251.154.119,142.251.157.119,142.251.155.119,142.251.153.119,142.251.156.119,142.251.150.119,142.251.151.119,142.251.152.119,2001:4860:4826:7700::,2001:4860:482b:7700::,2001:4860:4828:7700::,2001:4860:482c:7700::,2001:4860:482a:7700::,2001:4860:482d:7700::,2001:4860:4829:7700::,2001:4860:4827:7700::
+10-17 19:15:28.977 D/NetworkMonitor/103( 1116): PROBE_DNS connectivitycheck.gstatic.com 24ms OK 142.251.150.120,2001:4860:4826:7800::
+10-17 19:15:28.978 I/resolv  (  455): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 19:15:28.978 I/resolv  (  455): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 19:15:28.979 I/resolv  (  455): res_nmkquery: (QUERY, IN, AAAA)
+10-17 19:15:28.979 I/resolv  (  455): res_nmkquery: (QUERY, IN, AAAA)
+10-17 19:15:28.979 I/resolv  (  455): res_nmkquery: (QUERY, IN, A)
+10-17 19:15:28.979 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fbc80f25d0
+10-17 19:15:28.979 I/resolv  (  455): doQuery: rcode=0, ancount=8, return value=256
+10-17 19:15:28.979 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fb580eda90
+10-17 19:15:28.979 I/resolv  (  455): doQuery: rcode=0, ancount=1, return value=63
+10-17 19:15:28.979 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fb580ee5f0
+10-17 19:15:28.979 I/resolv  (  455): doQuery: rcode=0, ancount=1, return value=75
+10-17 19:15:28.980 I/resolv  (  455): res_nmkquery: (QUERY, IN, A)
+10-17 19:15:28.980 I/resolv  (  455): resolv_cache_lookup: FOUND IN CACHE entry=0x79fab80f4bb0
+10-17 19:15:28.980 I/resolv  (  455): doQuery: rcode=0, ancount=8, return value=160
+10-17 19:15:29.159 D/NetworkMonitor/103( 1116): PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=181ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 19:15:29 GMT], X-Android-Received-Millis=[1792264529159], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792264528985]}
+10-17 19:15:29.167 D/NetworkMonitor/103( 1116): PROBE_HTTPS https://www.google.com/generate_204 time=190ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 19:15:29 GMT], X-Android-Received-Millis=[1792264529166], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792264529161]}
+10-17 19:15:29.168 D/NetworkMonitor/103( 1116): isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=217ms
+10-17 19:15:29.170 D/ConnectivityService(  658): [103 WIFI] validation passed

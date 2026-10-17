@@ -31,7 +31,7 @@ export const service = new VaultService(expoKeyStore, storage);
 
 export type LoadState = { kind: "loading" } | { kind: "error"; message: string; keyMissing: boolean } | { kind: "ready"; root: Root };
 
-export function useLoadVault(): { state: LoadState; reload: () => void; set: (r: Root) => void } {
+export function useLoadVault(): { state: LoadState; gen: number; reload: () => void; set: (r: Root) => void } {
   const [state, setState] = useState<LoadState>({ kind: "loading" });
   const [n, setN] = useState(0);
   useEffect(() => {
@@ -46,7 +46,7 @@ export function useLoadVault(): { state: LoadState; reload: () => void; set: (r:
     })();
     return () => { live = false; };
   }, [n]);
-  return { state, reload: () => setN((x) => x + 1), set: (r) => setState({ kind: "ready", root: r }) };
+  return { state, gen: n, reload: () => { setState({ kind: "loading" }); setN((x) => x + 1); }, set: (r) => setState({ kind: "ready", root: r }) };
 }
 
 export function StoreProvider({ initial, children, onReplace }: { initial: Root; children: React.ReactNode; onReplace: (r: Root | null) => void }) {

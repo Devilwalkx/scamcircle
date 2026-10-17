@@ -39,7 +39,8 @@ export function Btn({ label, onPress, kind = "secondary", hint, selected, disabl
       accessibilityRole={role ?? "button"}
       accessibilityLabel={label}
       accessibilityHint={hint}
-      accessibilityState={{ disabled: !!disabled, selected: selected, checked: role ? !!selected : undefined }}
+      accessibilityState={{ disabled: !!disabled, selected: selected }}
+      {...(role === "radio" || role === "checkbox" ? { "aria-checked": !!selected } : {})}
       disabled={disabled}
       onPress={onPress}
       onFocus={() => setFocus(true)}
@@ -60,7 +61,8 @@ export function Row({ label, detail, selected, onPress, role = "radio" }: { labe
     <Pressable
       accessibilityRole={role}
       accessibilityLabel={detail ? `${label}. ${detail}` : label}
-      accessibilityState={{ checked: selected, selected }}
+      accessibilityState={{ selected }}
+      aria-checked={selected}
       onPress={onPress}
       style={{ minHeight: 52, flexDirection: "row", gap: 12, alignItems: "center", padding: 12, borderRadius: radius, borderWidth: 2, borderColor: selected ? colors.accent : colors.line, backgroundColor: selected ? colors.accentSoft : colors.card, marginBottom: 10 }}
     >

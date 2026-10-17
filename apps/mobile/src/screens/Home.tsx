@@ -44,12 +44,8 @@ export function Home({ go, openCase, textSize, setTextSize }: { go: (s: Section)
         )}
 
         <T v="h2" role="header" style={{ marginTop: space.md, marginBottom: space.sm }}>Text size</T>
-        <View accessibilityRole="radiogroup" style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-          {TEXT_SIZES.map((t) => (
-            <View key={t.id} style={{ flexGrow: 1, flexBasis: 100 }}>
-              <Btn role="radio" label={t.label} selected={textSize === t.id} onPress={() => setTextSize(t.id)} />
-            </View>
-          ))}
+        <View accessibilityRole="radiogroup">
+          {TEXT_SIZES.map((t) => <Btn key={t.id} role="radio" label={t.label} selected={textSize === t.id} onPress={() => setTextSize(t.id)} />)}
         </View>
       </ScrollView>
     </SafeAreaView>

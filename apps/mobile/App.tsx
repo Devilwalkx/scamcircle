@@ -67,13 +67,13 @@ function Fallback({ title, text, action }: { title: string; text: string; action
 }
 
 function Shell({ textSize, setTextSize }: { textSize: TextSizeId; setTextSize: (t: TextSizeId) => void }) {
-  const { state, reload } = useLoadVault();
+  const { state, reload, gen } = useLoadVault();
   if (startError) return <Fallback title="Cannot start safely" text={`Private storage is disabled on this device: ${startError}`} />;
   if (state.kind === "loading") return <Fallback title="Opening…" text="Unlocking your private data on this phone." />;
   if (state.kind === "error") {
     return <Fallback title="Your saved data could not be opened" text={`${state.message} Nothing was shown or changed. If this phone lost its key, restore from a backup with your recovery secret.`} action={<Btn label="Try again" onPress={reload} />} />;
   }
-  return <Ready initial={state.root} reload={reload} textSize={textSize} setTextSize={setTextSize} />;
+  return <Ready key={gen} initial={state.root} reload={reload} textSize={textSize} setTextSize={setTextSize} />;
 }
 
 function Ready({ initial, reload, textSize, setTextSize }: { initial: Root; reload: () => void; textSize: TextSizeId; setTextSize: (t: TextSizeId) => void }) {

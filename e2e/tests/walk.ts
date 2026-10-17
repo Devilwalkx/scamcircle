@@ -52,6 +52,7 @@ export async function walk(page: Page, visit: Visit) {
   await visit("share-confirm");
   await btn(page, "Create the code").click();
   await visit("share-done");
+  await btn(page, "Hand it to the demo helper now").click();
   await home(page);
   // people
   await btn(page, "My trusted people").click();
@@ -69,6 +70,29 @@ export async function walk(page: Page, visit: Visit) {
   // waiting
   await btn(page, "Messages waiting for me").click();
   await visit("waiting-empty");
+  await home(page);
+  // the helper's side
+  await btn(page, "Settings and privacy").click();
+  await btn(page, "Demo options").click();
+  await btn(page, "Look at the app as the demo helper").click();
+  await home(page);
+  await btn(page, "Messages waiting for me").click();
+  await visit("waiting-list");
+  await btn(page, "Open", ).first().click();
+  await visit("waiting-open");
+  await btn(page, "Reply").click();
+  await visit("reply-form");
+  await page.getByRole("radio", { name: /Asked another person/ }).click();
+  await page.getByRole("radio", { name: /Unclear/ }).click();
+  await page.getByLabel("What did you find?").fill("Nobody I asked has heard from them.");
+  await btn(page, "Review my reply").click();
+  await visit("reply-confirm");
+  await btn(page, "Create the reply code").click();
+  await visit("reply-code");
+  await home(page);
+  await btn(page, "Settings and privacy").click();
+  await btn(page, "Demo options").click();
+  await btn(page, "Go back to my own view").click();
   await home(page);
   expect(MARK).toBeTruthy();
 }

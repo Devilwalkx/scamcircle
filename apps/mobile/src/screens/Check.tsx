@@ -164,6 +164,7 @@ function Result({ id, onHome, toRecord, toShare }: { id: string; onHome: () => v
                   <T style={{ fontWeight: "700" }}>{g.contactName}</T>
                   <T>{deliveryLabel(g, now())}</T>
                   <T v="muted">{`Open until ${when(g.expiresAt)}.`}</T>
+                  <T v="muted" selectable>{`They were shown: “${g.sharedText}”`}</T>
                   {g.replies.map((r) => (
                     <View key={r.version} style={{ marginTop: 4 }}>
                       <T>{`Reply ${r.version}: ${r.cls === "verification_step_completed" ? "✓ reports a check made another way" : r.cls === "opinion_only" ? "● opinion only, not a check" : "○ not a completed check"}`}</T>

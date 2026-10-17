@@ -83,7 +83,7 @@ test.describe("privacy: encryption at rest, no network, no logs", () => {
     await checkMessage(page, SCAM);
     const stored = await page.evaluate(() => JSON.stringify({ ...localStorage }) + JSON.stringify({ ...sessionStorage }));
     expect(stored).toContain("sc.vault");
-    for (const s of [MARK, "Don't tell Dad", "07700", "new number", '"text"', "xchacha"]) expect(stored, s).not.toContain(s);
+    for (const s of [MARK, "Don't tell Dad", "07700", "new number", '"text"', "findings"]) expect(stored, s).not.toContain(s);
     await page.reload();
     await expect(btn(page, "Open")).toBeVisible();
     await btn(page, "Open").click();
@@ -175,7 +175,7 @@ test.describe("privacy: encryption at rest, no network, no logs", () => {
     await expect(page.getByText("does not open this backup", { exact: false })).toBeVisible();
     await page.getByLabel("Recovery secret", { exact: true }).fill(secret);
     await btn(page, "Restore").click();
-    await expect(btn(page, "Settings and privacy")).toBeVisible();
+    await home(page);
     await expect(btn(page, "Open")).toBeVisible();
   });
 });
@@ -223,6 +223,7 @@ test.describe("two phones: serverless sharing between two separate browser profi
     await expect(A.page.getByText("Not shown: Bob", { exact: false })).toBeVisible();
     await home(A.page);
     // verify on both
+    await home(B.page);
     for (const p of [A.page, B.page]) {
       await btn(p, "My trusted people").click();
       await btn(p, "Check their words").click();

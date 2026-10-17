@@ -1,0 +1,1 @@
+NOT APPLICABLE: the previous release has package id 'invalid.placeholder.scamcircle', not app.devilwalkx.scamcircle, so Android treats it as a different app (clean install only)

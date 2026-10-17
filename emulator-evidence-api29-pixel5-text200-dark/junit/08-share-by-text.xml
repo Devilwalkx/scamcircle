@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="1" time="76.664" timestamp="2026-10-17T17:55:59">
+    <testcase id="Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet" name="Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet" classname="Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/08-share-by-text.yaml" time="76.642" timestamp="2026-10-17T17:55:59" status="ERROR">
+      <failure>Element not found: Text matching regex: Next</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

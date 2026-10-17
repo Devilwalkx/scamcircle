@@ -1,0 +1,62 @@
+--------- beginning of main
+10-17 21:47:30.890 D/Maestro ( 9291): Requesting view hierarchy
+10-17 21:47:30.891 W/QueryController( 9291): Could not detect idle state.
+10-17 21:47:30.892 W/QueryController( 9291): Could not detect idle state.
+10-17 21:47:30.924 I/Maestro ( 9291): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b693; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:47:30.944 D/Maestro ( 9291): View hierarchy received in 54 ms
+10-17 21:47:31.052 D/Maestro ( 9291): Requesting view hierarchy
+10-17 21:47:31.052 W/QueryController( 9291): Could not detect idle state.
+10-17 21:47:31.053 W/QueryController( 9291): Could not detect idle state.
+10-17 21:47:31.064 I/Maestro ( 9291): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b693; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:47:31.085 D/Maestro ( 9291): View hierarchy received in 33 ms
+10-17 21:47:31.117 I/WifiService(  626): getWifiEnabledState uid=10146 state=3
+10-17 21:47:31.119 D/ConnectivityService(  626): requestNetwork for uid/pid:10146/5532 activeRequest: null callbackRequest: 218 [NetworkRequest [ REQUEST id=218, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10146 RequestorUid: 10146 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOSING|LOST|NC|LP
+10-17 21:47:31.121 I/netd    (  441): networkSetPermissionForNetwork(102, 0) <1.60ms>
+10-17 21:47:31.121 W/IPCThreadState(  626): Sending oneway calls to frozen process.
+10-17 21:47:31.123 D/ConnectivityService(  626): NetReassign [218 : null → 102] [c 0] [a 3] [i 1]
+10-17 21:47:31.123 D/ConnectivityService(  626): reportNetworkConnectivity(103, false) by 10146
+10-17 21:47:31.124 D/NetworkMonitor/103( 1119): Forcing reevaluation for UID 10146. Dns signal count: 0
+10-17 21:47:31.126 I/resolv  (  441): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:47:31.126 I/resolv  (  441): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:47:31.128 I/resolv  (  441): res_nsend: used send_dg 256 terrno: 0
+10-17 21:47:31.128 I/resolv  (  441): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:47:31.128 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75d0476db850
+10-17 21:47:31.129 I/resolv  (  441): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:47:31.129 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75cf576d9030
+10-17 21:47:31.130 I/resolv  (  441): res_nsend: used send_dg 75 terrno: 0
+10-17 21:47:31.139 D/NetworkMonitor/103( 1119): PROBE_DNS www.google.com 14ms OK 142.251.154.119,142.251.152.119,142.251.157.119,142.251.151.119,142.251.153.119,142.251.155.119,142.251.156.119,142.251.150.119,2001:4860:4826:7700::,2001:4860:482b:7700::,2001:4860:4827:7700::,2001:4860:4828:7700::,2001:4860:4829:7700::,2001:4860:482c:7700::,2001:4860:482a:7700::,2001:4860:482d:7700::
+10-17 21:47:31.140 I/resolv  (  441): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 21:47:31.140 I/resolv  (  441): res_nmkquery: (QUERY, IN, AAAA)
+10-17 21:47:31.140 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75cfe76d6550
+10-17 21:47:31.140 I/resolv  (  441): doQuery: rcode=0, ancount=8, return value=256
+10-17 21:47:31.140 I/resolv  (  441): res_nmkquery: (QUERY, IN, A)
+10-17 21:47:31.140 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75cf576d9030
+10-17 21:47:31.140 I/resolv  (  441): doQuery: rcode=0, ancount=8, return value=160
+10-17 21:47:31.142 D/NetworkMonitor/103( 1119): PROBE_DNS connectivitycheck.gstatic.com 17ms OK 142.251.150.120,2001:4860:4826:7800::
+10-17 21:47:31.143 I/resolv  (  441): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 21:47:31.143 I/resolv  (  441): res_nmkquery: (QUERY, IN, AAAA)
+10-17 21:47:31.143 I/resolv  (  441): res_nmkquery: (QUERY, IN, A)
+10-17 21:47:31.143 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75d0476da190
+10-17 21:47:31.143 I/resolv  (  441): doQuery: rcode=0, ancount=1, return value=75
+10-17 21:47:31.143 I/resolv  (  441): resolv_cache_lookup: FOUND IN CACHE entry=0x75d0476db850
+10-17 21:47:31.143 I/resolv  (  441): doQuery: rcode=0, ancount=1, return value=63
+10-17 21:47:31.166 D/NetworkMonitor/103( 1119): PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=24ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 21:47:31 GMT], X-Android-Received-Millis=[1792273651166], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792273651151]}
+10-17 21:47:31.173 D/NetworkMonitor/103( 1119): PROBE_HTTPS https://www.google.com/generate_204 time=33ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 21:47:31 GMT], X-Android-Received-Millis=[1792273651173], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792273651164]}
+10-17 21:47:31.175 D/NetworkMonitor/103( 1119): isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=51ms
+10-17 21:47:31.176 D/ConnectivityService(  626): [103 WIFI] validation passed
+--------- beginning of system
+10-17 21:47:31.203 D/WindowManager(  626): captureDisplay
+--------- beginning of kernel
+10-17 21:47:31.380 I/servicemanager(    0): Caller(pid=9291,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:47:31.384 I/servicemanager(    0): Caller(pid=9291,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:47:31.387 I/servicemanager(    0): Caller(pid=9291,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 21:47:31.238 I/DisplayManager( 9291): Choreographer implicitly registered for the refresh rate.
+10-17 21:47:31.260 I/EGL_emulation( 9291): Opening libGLESv1_CM_emulation.so
+10-17 21:47:31.260 I/EGL_emulation( 9291): Opening libGLESv2_emulation.so
+10-17 21:47:31.264 W/HWUI    ( 9291): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 21:47:31.318 D/ActivityManager(  626): freezing 5877 com.google.android.settings.intelligence
+10-17 21:47:31.321 D/InetDiagMessage(  626): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-17 21:47:31.321 D/InetDiagMessage(  626): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-17 21:47:31.322 D/InetDiagMessage(  626): Destroyed live tcp sockets for uids={10136} in 1ms
+10-17 21:47:31.581 D/SatelliteController( 1187): iisInCarrierRoamingNbIotNtn: satellite is disabled
+10-17 21:47:31.691 D/WifiConfigStore(  626): Writing to stores completed in 8 ms.

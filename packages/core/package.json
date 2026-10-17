@@ -8,7 +8,7 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "eval": "tsx scripts/eval.ts"
+    "eval": "tsx scripts/eval.ts && tsx scripts/eval-holdout2.ts"
   },
   "dependencies": {
     "@noble/ciphers": "^2.4.0",

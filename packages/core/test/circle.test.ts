@@ -124,7 +124,7 @@ describe("sharing: owner to reviewer and back", () => {
     const item = got.state.inbox[0]!;
     expect(item.text).toBe(s.sharedText);
     expect(item.note).toBe("please check");
-    expect(JSON.stringify(got.state.inbox)).not.toContain("07700");
+    expect(JSON.stringify(got.state.inbox)).not.toContain("07700 900123");
   });
   it("the share string itself contains no case content and no secret key", () => {
     const s = shared();

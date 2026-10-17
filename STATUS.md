@@ -18,6 +18,7 @@ Synthetic demonstration build. Last updated by the build agent. Sections: implem
   4. key change no longer demotes the contact -> 1 test failed
   5. (UI) fixed button height + one-line text -> the large-text overlap test failed on Home
   6. (UI) remove safe-area edges -> simulated-insets test failed (`Received 16`, needs >= 44)
+- **CI flake found and fixed (again):** CI run 3 on `main` failed one e2e test because it asserted that the short digit string `07700` is absent from random ciphertext hex, which can occur by chance. Same class of mistake as in the sibling app. Short digit-only needles were replaced with long or non-hex ones in e2e and unit tests.
 - Bugs found by tests and fixed: erase-everything left the old state on screen (no remount); radio buttons lacked `aria-checked`; text-size buttons overflowed at 2x text; "ScamCircle" broke mid-word at 2x on 320 px (found by the new word-fit check; heading growth now capped); one long word ("organisation's") in a choice label overflowed at 2x on 320 px; a wrong e2e expectation. Chromium in the sandbox was killing runs by contacting blocked hosts; the e2e config now launches it with `--no-proxy-server` and background networking off.
 
 ## Synthetic evaluation (NOT an accuracy figure)

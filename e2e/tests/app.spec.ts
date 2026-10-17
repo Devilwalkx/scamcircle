@@ -83,7 +83,8 @@ test.describe("privacy: encryption at rest, no network, no logs", () => {
     await checkMessage(page, SCAM);
     const stored = await page.evaluate(() => JSON.stringify({ ...localStorage }) + JSON.stringify({ ...sessionStorage }));
     expect(stored).toContain("sc.vault");
-    for (const s of [MARK, "Don't tell Dad", "07700", "new number", '"text"', "findings"]) expect(stored, s).not.toContain(s);
+    // Only long or non-hex strings are searched for: short digit strings can occur in random hex by chance (this flaked CI once).
+    for (const s of [MARK, "Don't tell Dad", "07700 900123", "new number", '"text"', "findings"]) expect(stored, s).not.toContain(s);
     await page.reload();
     await expect(btn(page, "Open")).toBeVisible();
     await btn(page, "Open").click();
@@ -115,8 +116,8 @@ test.describe("privacy: encryption at rest, no network, no logs", () => {
     await btn(page, "Load the example story").click();
     expect(external).toEqual([]);
     expect(seen.join("\n")).not.toContain(MARK);
-    expect(seen.join("\n")).not.toMatch(/paypa1|07700|new%20number|Don't%20tell|Don%27t/i);
-    expect(logs.join("\n")).not.toMatch(new RegExp(`${MARK}|07700|paypa1|Dad`));
+    expect(seen.join("\n")).not.toMatch(/paypa1|07700(?:%20| )900123|new%20number|Don't%20tell|Don%27t/i);
+    expect(logs.join("\n")).not.toMatch(new RegExp(`${MARK}|07700 900123|paypa1|Dad`));
   });
 
   test("links in a message are never opened", async ({ page, baseURL }) => {

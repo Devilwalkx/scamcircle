@@ -47,6 +47,15 @@ adb shell settings put global window_animation_scale 0
 adb shell settings put global transition_animation_scale 0
 adb shell settings put global animator_duration_scale 0
 
+# ---- accessibility-tree audit (NOT a TalkBack run) and TalkBack availability probe
+a11y_audit() {
+  local label="$1"
+  adb shell uiautomator dump /sdcard/a11y.xml >/dev/null 2>&1 && adb pull /sdcard/a11y.xml "$OUT/hierarchy/$label.xml" >/dev/null 2>&1 || { echo "{\"screen\":\"$label\",\"error\":\"dump failed\"}" >> "$OUT/a11y-tree.jsonl"; return; }
+  local dpi; dpi=$(adb shell wm density | tr -d '\r' | grep -oE '[0-9]+' | tail -1)
+  python3 android-tests/a11y-tree-audit.py "$OUT/hierarchy/$label.xml" "${dpi:-420}" "$label" >> "$OUT/a11y-tree.jsonl" 2>>"$OUT/log.txt" || true
+}
+{ echo "packages matching talkback/accessibility on this emulator image:"; adb shell pm list packages 2>/dev/null | tr -d '\r' | grep -iE "talkback|marvin|accessibility" || echo "(none)"; } > "$OUT/talkback-probe.txt"
+
 run_flow() {
   local f=$1
   log "flow $f"
@@ -55,6 +64,7 @@ run_flow() {
   ( cd "$OUT/shots" && maestro test $extra --format junit --output "../junit/$(basename "$f" .yaml).xml" "$GITHUB_WORKSPACE/android-tests/flows/$f" ) 2>&1 | tail -40 | tee -a "$OUT/log.txt"
   local rc=${PIPESTATUS[0]}
   adb exec-out screencap -p > "$OUT/shots/end-of-$(basename "$f" .yaml).png" 2>/dev/null
+  a11y_audit "$(basename "$f" .yaml)"
   if [ "$rc" != "0" ]; then FAIL=1; log "FLOW FAILED: $f"; adb exec-out screencap -p > "$OUT/shots/FAILED-$(basename "$f" .yaml).png"; fi
   return $rc
 }

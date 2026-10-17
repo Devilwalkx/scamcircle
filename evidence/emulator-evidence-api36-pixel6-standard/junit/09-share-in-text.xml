@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="4.85" timestamp="2026-10-17T17:37:12">
+    <testcase id="Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box" name="Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box" classname="Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/09-share-in-text.yaml" time="4.836" timestamp="2026-10-17T17:37:12" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

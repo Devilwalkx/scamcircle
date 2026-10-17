@@ -1,16 +1,29 @@
 {
-  "name": "ScamCircle (synthetic demo)",
+  "name": "ScamCircle",
   "short_name": "ScamCircle",
-  "description": "Private scam-check and trusted-circle verification vault. Synthetic demonstration data only.",
+  "description": "Check a suspicious message, then check it another way. Works without internet.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0b3d91",
+  "background_color": "#f2f6f6",
+  "theme_color": "#0b5a60",
   "lang": "en-GB",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

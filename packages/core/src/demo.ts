@@ -51,3 +51,14 @@ export function loadSyntheticExample(root: Root, now: number): DemoResult {
   void findContact; void caseOutcome;
   return { root: { me, demo }, caseId: added.caseId, steps };
 }
+
+export const EXAMPLE_TITLE = "Example (made-up message)";
+/**
+ * The first-run example: ONE made-up message added as an ordinary case marked `source: "demo"`. It adds no helper, no
+ * trusted route and nothing else, so example data and a person's own data are never mixed. It can be deleted like any case.
+ */
+export function addExampleCase(state: DeviceState, now: number): { state: DeviceState; caseId: string } {
+  const r = addCase(state, { title: EXAMPLE_TITLE, text: DEMO_MESSAGE, source: "demo" }, now);
+  if (!r.ok) throw new Error(r.message);
+  return { state: r.state, caseId: r.caseId };
+}

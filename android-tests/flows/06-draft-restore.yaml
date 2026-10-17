@@ -1,0 +1,9 @@
+appId: app.devilwalkx.scamcircle
+name: After the process was ended the unfinished message is still there
+---
+- launchApp
+- tapOn: "Check a message"
+- assertVisible: "Unfinished draft zebra quokka"
+- takeScreenshot: 06-draft-restored
+- tapOn: "Clear everything here"
+- assertNotVisible: "Unfinished draft zebra quokka"

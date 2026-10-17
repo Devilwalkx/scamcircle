@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { DEMO_MESSAGE, VaultService, caseOutcome, deliveryLabel, loadSyntheticExample, assess, findCase } from "../src/index.js";
+import { addExampleCase, createDevice, DEMO_MESSAGE, VaultService, caseOutcome, deliveryLabel, loadSyntheticExample, assess, findCase } from "../src/index.js";
 import { MemKV, MemKeys, NOW } from "./helpers.js";
 
 describe("synthetic example", () => {
@@ -39,5 +39,17 @@ describe("synthetic example", () => {
     const twice = loadSyntheticExample(once.root, NOW + 1000);
     expect(twice.root.me.contacts.filter((c) => c.kind === "demo")).toHaveLength(1);
     expect(twice.root.me.cases).toHaveLength(2);
+  });
+});
+
+describe("first-run example", () => {
+  it("adds one marked example case and nothing else (no helper, no trusted route)", () => {
+    const d = createDevice("Me", NOW);
+    const r = addExampleCase(d, NOW);
+    expect(r.state.cases).toHaveLength(1);
+    expect(r.state.cases[0]!.source).toBe("demo");
+    expect(r.state.contacts).toHaveLength(0);
+    expect(r.state.routes).toHaveLength(0);
+    expect(r.state.cases[0]!.assessment.outcome).toBe("indicators_found");
   });
 });

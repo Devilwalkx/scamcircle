@@ -1,0 +1,4 @@
+appId: app.devilwalkx.scamcircle
+name: The main task again with Wi-Fi and mobile data switched off by the test script
+---
+- runFlow: 02-main-task-check-message.yaml

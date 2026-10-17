@@ -49,3 +49,19 @@ describe("result view: four separate things", () => {
     void assess;
   });
 });
+
+import { composeAskText, applyRedactions } from "../src/index.js";
+describe("composeAskText", () => {
+  it("contains only the chosen pieces, tells the reader not to use the message's contact details, and never reassures", () => {
+    const shared = applyRedactions("Call 07700 900123 now, account 12345678", [{ start: 5, end: 18 }]);
+    const t = composeAskText({ shared, note: "Is this really Sam?", signs: ["Pushes you to act quickly"] });
+    expect(t).toContain("[hidden]");
+    expect(t).not.toContain("07700 900123");
+    expect(t).toMatch(/do not use any number or link in it/);
+    expect(t).toContain("Is this really Sam?");
+    expect(t).not.toMatch(/\b(safe|genuine|legitimate)\b/i);
+    const bare = composeAskText({ shared: "hello" });
+    expect(bare).not.toContain("My note");
+    expect(bare).not.toContain("Warning signs");
+  });
+});

@@ -1,0 +1,12 @@
+appId: app.devilwalkx.scamcircle
+name: Start a message, then leave the app (the script ends the process)
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Unfinished draft zebra quokka"
+- hideKeyboard
+- assertVisible: "Unfinished draft zebra quokka"
+- pressKey: home

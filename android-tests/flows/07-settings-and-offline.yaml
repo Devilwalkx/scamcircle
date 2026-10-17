@@ -1,0 +1,25 @@
+appId: app.devilwalkx.scamcircle
+name: Settings shows the build identity, and the offline explanation is plain
+---
+- launchApp:
+    clearState: true
+- tapOn: "Settings"
+- assertVisible: "Settings"
+- takeScreenshot: 07a-settings
+- scrollUntilVisible:
+    element: "App ID app.devilwalkx.scamcircle"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- assertVisible: "Version 0.2.0.*"
+- assertVisible: "App ID app.devilwalkx.scamcircle"
+- takeScreenshot: 07b-about-build
+- scrollUntilVisible:
+    element: "Works without internet"
+    direction: UP
+    timeout: 90000
+    speed: 85
+- tapOn: "Works without internet.*"
+- assertVisible: "Why there is no internet permission"
+- assertVisible: "This is a design choice, not a fault.*"
+- takeScreenshot: 07c-offline

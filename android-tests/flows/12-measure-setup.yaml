@@ -1,0 +1,12 @@
+appId: app.devilwalkx.scamcircle
+name: Leaves the app on a result screen so scrolling and memory can be measured
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123."
+- hideKeyboard
+- tapOn: "Check this message"
+- assertVisible: "What we found"

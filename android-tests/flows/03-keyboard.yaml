@@ -1,0 +1,13 @@
+appId: app.devilwalkx.scamcircle
+name: With the keyboard open the field and the Check button stay reachable
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Your parcel could not be delivered. Pay a fee now to reschedule."
+- assertVisible: "Check this message"
+- takeScreenshot: 03-keyboard-open
+- tapOn: "Check this message"
+- assertVisible: "What we found"

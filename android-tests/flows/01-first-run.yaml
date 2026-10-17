@@ -1,0 +1,10 @@
+appId: app.devilwalkx.scamcircle
+name: First run shows one clear action and no demonstration controls
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Check a message"
+- assertVisible: "Works without internet.*"
+- assertNotVisible: "Demonstration tools.*"
+- assertNotVisible: "Demo helper.*"
+- takeScreenshot: 01-first-run

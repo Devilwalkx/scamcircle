@@ -1,0 +1,29 @@
+appId: app.devilwalkx.scamcircle
+name: System Back unwinds one step at a time and then leaves the app
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- assertVisible: "Check this message"
+- pressKey: back
+- assertVisible: "Check a message"
+- tapOn: "Check a message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Hi Dad new number can you send 200 pounds today please"
+- hideKeyboard
+- tapOn: "Check this message"
+- assertVisible: "What we found"
+- scrollUntilVisible:
+    element: "I checked it another way"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "I checked it another way"
+- assertVisible: "How did you check\\?"
+- pressKey: back
+- assertVisible: "What we found"
+- pressKey: back
+- assertVisible: "Not sure about a message\\?"
+- pressKey: back
+- assertNotVisible: "Not sure about a message\\?"

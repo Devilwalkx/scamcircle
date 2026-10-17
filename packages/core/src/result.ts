@@ -62,3 +62,21 @@ export function describeResult(c: Pick<CaseRecord, "assessment" | "steps" | "gra
     inconclusive
   };
 }
+
+/**
+ * The plain text a person can send through their own messaging app (the simple, voluntary way to ask someone).
+ * It holds only what the person chose to include: the text with hidden parts already replaced, an optional note,
+ * and optionally the NAMES of the warning signs. It is not encrypted by this app and says so to the reader.
+ */
+export function composeAskText(input: { shared: string; note?: string; signs?: string[] }): string {
+  const lines = [
+    "Can you look at this message with me? I am not sure about it.",
+    "Please do not reply to it, and do not use any number or link in it.",
+    "",
+    `"${input.shared}"`
+  ];
+  if (input.note && input.note.trim()) lines.push("", `My note: ${input.note.trim()}`);
+  if (input.signs && input.signs.length) lines.push("", `Warning signs ScamCircle noticed: ${input.signs.join("; ")}.`);
+  lines.push("", "Please check it another way (for example by ringing the person on a number you already have) and tell me what you find.");
+  return lines.join("\n");
+}

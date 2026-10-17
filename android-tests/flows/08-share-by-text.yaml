@@ -1,0 +1,56 @@
+appId: app.devilwalkx.scamcircle
+name: Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Hi Mum new number can you send 300 pounds today. Ring 07700 900456"
+- hideKeyboard
+- tapOn: "Check this message"
+- assertVisible: "What we found"
+- scrollUntilVisible:
+    element: "Ask someone I trust to look"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Ask someone I trust to look"
+- assertVisible: "Send the text through my own messaging app.*"
+- tapOn: "Send the text through my own messaging app.*"
+- tapOn: "Next"
+- assertVisible: "What will they see\\?"
+- assertVisible: "They will see exactly this"
+- takeScreenshot: 08a-what-will-they-see
+- scrollUntilVisible:
+    element: "Next"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Next"
+- assertVisible: "What else do you want to include\\?"
+- scrollUntilVisible:
+    element: "Review"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Review"
+- assertVisible: "Not encrypted by ScamCircle"
+- scrollUntilVisible:
+    element: "Continue"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Continue"
+- assertVisible: "Not sent yet"
+- assertVisible: ".*cannot tell whether this arrived.*"
+- takeScreenshot: 08b-not-sent-yet
+- scrollUntilVisible:
+    element: "Share…"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Share…"
+- takeScreenshot: 08c-system-share-sheet
+- pressKey: back
+- assertVisible: ".*share sheet was opened.*"

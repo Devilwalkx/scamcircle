@@ -1,0 +1,6 @@
+appId: app.devilwalkx.scamcircle
+name: A second share while the app is already open replaces the box with the new text
+---
+- assertVisible: "Received from another app"
+- assertVisible: ".*Second-share-test.*"
+- takeScreenshot: 10-second-share

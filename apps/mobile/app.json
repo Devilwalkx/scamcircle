@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "ScamCircle (synthetic demo)",
+    "name": "ScamCircle",
     "slug": "scamcircle",
-    "version": "0.0.0",
+    "version": "0.2.0",
     "orientation": "default",
     "userInterfaceStyle": "automatic",
-    "ios": { "bundleIdentifier": "invalid.placeholder.scamcircle" },
+    "icon": "./public/icon-512.png",
+    "ios": { "bundleIdentifier": "app.devilwalkx.scamcircle" },
     "android": {
-      "package": "invalid.placeholder.scamcircle",
+      "package": "app.devilwalkx.scamcircle",
       "blockedPermissions": [
         "INTERNET",
         "SYSTEM_ALERT_WINDOW",
@@ -19,14 +20,30 @@
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
-      ]
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./public/icon-maskable-512.png",
+        "backgroundColor": "#0B5A60"
+      },
+      "predictiveBackGestureEnabled": true,
+      "allowBackup": false,
+      "softwareKeyboardLayoutMode": "resize"
     },
     "plugins": [
       "expo-secure-store",
       [
+        "expo-sharing",
+        {
+          "android": {
+            "enabled": true,
+            "singleShareMimeTypes": ["text/plain", "image/*"]
+          }
+        }
+      ],
+      [
         "expo-image-picker",
         {
-          "photosPermission": "Choose a screenshot to read and type out. The picture is not stored or shared; its metadata is removed.",
+          "photosPermission": "Choose a picture to crop and share with someone you trust. ScamCircle does not read pictures.",
           "cameraPermission": false,
           "microphonePermission": false
         }
@@ -35,10 +52,10 @@
     "web": {
       "bundler": "metro",
       "output": "single",
-      "name": "ScamCircle (synthetic demo)",
+      "name": "ScamCircle",
       "shortName": "ScamCircle",
-      "backgroundColor": "#ffffff",
-      "themeColor": "#0b3d91",
+      "backgroundColor": "#F2F6F6",
+      "themeColor": "#0B5A60",
       "lang": "en-GB"
     },
     "platforms": ["ios", "android", "web"]

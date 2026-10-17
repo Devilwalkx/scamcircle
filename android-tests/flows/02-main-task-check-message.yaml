@@ -1,0 +1,55 @@
+appId: app.devilwalkx.scamcircle
+name: MAIN TASK - paste a message, read what was found and not checked, record an independent check
+---
+- launchApp:
+    clearState: true
+- tapOn: "Check a message"
+- assertVisible: "Check this message"
+- tapOn:
+    id: "field-the-message"
+- inputText: "Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123."
+- hideKeyboard
+- takeScreenshot: 02a-message-entered
+- tapOn: "Check this message"
+- assertVisible: "What we found"
+- assertVisible: "We found .* warning signs? in the words.*"
+- takeScreenshot: 02b-result-top
+- scrollUntilVisible:
+    element: "What we could not check"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- assertVisible: "What we could not check"
+- scrollUntilVisible:
+    element: "Who sent it"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- assertVisible: "Not verified"
+- takeScreenshot: 02c-result-not-verified
+- scrollUntilVisible:
+    element: "Settle it by checking another way"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- assertVisible: "Do not use the phone number or link in the message."
+- takeScreenshot: 02d-result-next-step
+- tapOn: "I checked it another way"
+- assertVisible: "How did you check\\?"
+- tapOn: "Called a number I already had saved.*"
+- scrollUntilVisible:
+    element: "The real person said they did NOT send or ask for this"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "The real person said they did NOT send or ask for this"
+- scrollUntilVisible:
+    element: "Save"
+    direction: DOWN
+    timeout: 90000
+    speed: 85
+- tapOn: "Save"
+- assertVisible: "Check saved"
+- takeScreenshot: 02e-check-saved
+- tapOn: "Back to the result"
+- assertVisible: "You checked this another way.*"

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="87.293" timestamp="2026-10-17T19:47:05">
+    <testcase id="The main task again with Wi-Fi and mobile data switched off by the test script" name="The main task again with Wi-Fi and mobile data switched off by the test script" classname="The main task again with Wi-Fi and mobile data switched off by the test script" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/13-offline-main-task.yaml" time="87.272" timestamp="2026-10-17T19:47:05" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

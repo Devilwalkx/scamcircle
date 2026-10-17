@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="36.982" timestamp="2026-10-17T19:48:54">
+    <testcase id="Leaves the app on a result screen so scrolling and memory can be measured" name="Leaves the app on a result screen so scrolling and memory can be measured" classname="Leaves the app on a result screen so scrolling and memory can be measured" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/12-measure-setup.yaml" time="36.968" timestamp="2026-10-17T19:48:54" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

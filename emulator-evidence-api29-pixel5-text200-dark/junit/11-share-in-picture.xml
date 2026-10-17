@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="2.096" timestamp="2026-10-17T19:47:15">
+    <testcase id="A picture shared from another app is acknowledged and described as not readable by the app" name="A picture shared from another app is acknowledged and described as not readable by the app" classname="A picture shared from another app is acknowledged and described as not readable by the app" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/11-share-in-picture.yaml" time="2.082" timestamp="2026-10-17T19:47:15" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

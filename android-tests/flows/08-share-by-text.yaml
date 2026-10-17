@@ -50,6 +50,11 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
     timeout: 45000
     speed: 70
 - tapOn: "Review"
+- scrollUntilVisible:
+    element: "Not encrypted by ScamCircle"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - assertVisible: "Not encrypted by ScamCircle"
 - scrollUntilVisible:
     element: "Continue"

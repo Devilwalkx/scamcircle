@@ -1,0 +1,11 @@
+appId: app.devilwalkx.scamcircle
+name: Dark colours chosen inside the app (the emulator's own night mode did not switch, so this is the only dark evidence on Android)
+---
+- launchApp:
+    clearState: true
+- tapOn: "Settings"
+- tapOn: "Dark"
+- assertVisible: "Settings"
+- takeScreenshot: 14-dark-settings
+- tapOn: "Back"
+- takeScreenshot: 14-dark-home

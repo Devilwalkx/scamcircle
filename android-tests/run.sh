@@ -50,8 +50,11 @@ adb shell settings put global animator_duration_scale 0
 run_flow() {
   local f=$1
   log "flow $f"
-  ( cd "$OUT/shots" && maestro test --format junit --output "../junit/$(basename "$f" .yaml).xml" "$GITHUB_WORKSPACE/android-tests/flows/$f" ) 2>&1 | tail -40 | tee -a "$OUT/log.txt"
+  local extra=""
+  maestro test --help 2>&1 | grep -q -- "--test-output-dir" && extra="--test-output-dir $OUT/maestro/$(basename "$f" .yaml)"
+  ( cd "$OUT/shots" && maestro test $extra --format junit --output "../junit/$(basename "$f" .yaml).xml" "$GITHUB_WORKSPACE/android-tests/flows/$f" ) 2>&1 | tail -40 | tee -a "$OUT/log.txt"
   local rc=${PIPESTATUS[0]}
+  adb exec-out screencap -p > "$OUT/shots/end-of-$(basename "$f" .yaml).png" 2>/dev/null
   if [ "$rc" != "0" ]; then FAIL=1; log "FLOW FAILED: $f"; adb exec-out screencap -p > "$OUT/shots/FAILED-$(basename "$f" .yaml).png"; fi
   return $rc
 }
@@ -66,7 +69,7 @@ run_flow 02-main-task-check-message.yaml
 adb shell pkill -2 screenrecord; wait $REC 2>/dev/null; sleep 2
 adb pull /sdcard/main-task.mp4 "$OUT/main-task.mp4" >/dev/null 2>&1 || log "no recording"
 
-for f in 01-first-run.yaml 03-keyboard.yaml 04-back-navigation.yaml 07-settings-and-offline.yaml 08-share-by-text.yaml; do run_flow $f; done
+for f in 01-first-run.yaml 03-keyboard.yaml 04-back-navigation.yaml 07-settings-and-offline.yaml 08-share-by-text.yaml 14-theme-dark.yaml; do run_flow $f; done
 
 # ---- offline: Wi-Fi and mobile data off, then the main task again
 log "offline run"

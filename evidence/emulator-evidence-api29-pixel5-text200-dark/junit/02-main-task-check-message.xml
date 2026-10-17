@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="1" time="146.143" timestamp="2026-10-17T17:51:50">
+    <testcase id="MAIN TASK - paste a message, read what was found and not checked, record an independent check" name="MAIN TASK - paste a message, read what was found and not checked, record an independent check" classname="MAIN TASK - paste a message, read what was found and not checked, record an independent check" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/02-main-task-check-message.yaml" time="146.125" timestamp="2026-10-17T17:51:50" status="ERROR">
+      <failure>Element not found: Text matching regex: I checked it another way</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

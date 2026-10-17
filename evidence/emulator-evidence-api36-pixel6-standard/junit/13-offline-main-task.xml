@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="1" time="62.966" timestamp="2026-10-17T17:56:55">
+    <testcase id="The main task again with Wi-Fi and mobile data switched off by the test script" name="The main task again with Wi-Fi and mobile data switched off by the test script" classname="The main task again with Wi-Fi and mobile data switched off by the test script" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/13-offline-main-task.yaml" time="62.94" timestamp="2026-10-17T17:56:55" status="ERROR">
+      <failure>Assertion is false: "Do not use the phone number or link in the message.*" is visible</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

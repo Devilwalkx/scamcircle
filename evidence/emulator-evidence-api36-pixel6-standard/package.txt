@@ -1,0 +1,5 @@
+    versionCode=26 minSdk=24 targetSdk=36
+    versionName=0.2.0
+    requested permissions:
+      app.devilwalkx.scamcircle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      firstInstallTime=2026-10-17 19:56:52

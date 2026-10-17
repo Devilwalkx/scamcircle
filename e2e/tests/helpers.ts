@@ -58,6 +58,19 @@ export async function layout(page: Page, where: string) {
         if (w > 1 && h > 1) problems.push(`"${rects[i]!.name}" overlaps "${rects[j]!.name}"`);
       }
     }
+    // A single word must fit its box without being broken in the middle (browsers would otherwise split "ScamCircle" as "ScamCircl / e").
+    const broken = new Set<string>();
+    for (const e of document.querySelectorAll<HTMLElement>("body *")) {
+      const own = [...e.childNodes].some((n) => n.nodeType === 3 && (n.textContent ?? "").trim().length > 0);
+      if (!own || e.tagName === "TEXTAREA" || e.tagName === "INPUT") continue;
+      const prev = [e.style.overflowWrap, e.style.wordBreak, e.style.whiteSpace];
+      e.style.overflowWrap = "normal";
+      e.style.wordBreak = "normal";
+      const over = e.scrollWidth > e.clientWidth + 1;
+      [e.style.overflowWrap, e.style.wordBreak, e.style.whiteSpace] = prev;
+      if (over) broken.add((e.innerText || "").slice(0, 30));
+    }
+    for (const t of broken) problems.push(`a word is too long for its box: "${t}"`);
     let wide = 0;
     for (const e of document.querySelectorAll<HTMLElement>("body *")) {
       const b = e.getBoundingClientRect();

@@ -25,7 +25,7 @@ export const VERIFICATION_METHODS: readonly VerificationMethod[] = [
   { id: "call_saved_contact", label: "Called a number I already had saved before this message", independent: true, why: "The number did not come from the message." },
   { id: "in_person", label: "Asked the person face to face", independent: true, why: "No message channel is involved." },
   { id: "official_app_or_card", label: "Used the official app, or the number on the back of my card or on an old bill", independent: true, why: "The route came from a source the message does not control." },
-  { id: "official_site_typed", label: "Typed the organisation's official website address myself", independent: true, why: "Not a link from the message." },
+  { id: "official_site_typed", label: "Typed the official website address myself", independent: true, why: "Not a link from the message." },
   { id: "asked_other_known_person", label: "Asked another person I know who can reach them by their own route", independent: true, why: "A separate channel that the message did not supply." },
   { id: "called_number_in_message", label: "Called the number given in the message", independent: false, why: "The sender chose that number, so it proves nothing about who they are." },
   { id: "replied_in_same_chat", label: "Replied in the same chat or thread", independent: false, why: "The same sender answers, whoever they are." },

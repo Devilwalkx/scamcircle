@@ -47,6 +47,8 @@ export function useFont() {
   const m = useScale();
   return useMemo(() => {
     const f = (n: number) => Math.round(n * m);
-    return { body: f(base.body), small: f(base.small), h1: f(base.h1), h2: f(base.h2), button: f(base.button), chip: f(base.chip), line: (n: number) => Math.round(f(n) * 1.4) };
+    const hm = Math.min(m, 1.5); // headings grow less so long words still fit a narrow phone
+    const fh = (n: number) => Math.round(n * hm);
+    return { body: f(base.body), small: f(base.small), h1: fh(base.h1), h2: fh(base.h2), button: f(base.button), chip: f(base.chip), line: (n: number) => Math.round(f(n) * 1.4) };
   }, [m]);
 }

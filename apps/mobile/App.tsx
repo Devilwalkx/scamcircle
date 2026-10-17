@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { View } from "react-native";
+import { PixelRatio, Platform, View } from "react-native";
 import { SafeAreaInsetsContext, SafeAreaProvider, SafeAreaView, initialWindowMetrics, type EdgeInsets } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import type { Root } from "@scamcircle/core";
@@ -15,6 +15,7 @@ import { Settings } from "./src/screens/Settings";
 import { Btn, Card, T } from "./src/ui";
 import { ScaleProvider, TEXT_SIZES, colors, space, type TextSizeId } from "./src/theme";
 
+const MAX_TOTAL_SCALE = 2;
 let startError: string | null = platformBlocker();
 if (!startError) {
   try {
@@ -45,7 +46,11 @@ export default function App() {
     storage.get("sc.textsize").then((v) => { if (v && TEXT_SIZES.some((t) => t.id === v)) setSize(v as TextSizeId); }).catch(() => undefined);
   }, []);
   const setTextSize = useCallback((t: TextSizeId) => { setSize(t); storage.set("sc.textsize", t).catch(() => undefined); }, []);
-  const mult = (TEXT_SIZES.find((t) => t.id === size)?.mult ?? 1) * testFontScale();
+  // The in-app size and the phone's own font scale multiply. Above about 2x words stop fitting a phone
+  // screen, so the in-app part gives way: total (in-app x system) never exceeds MAX_TOTAL_SCALE.
+  const inApp = TEXT_SIZES.find((t) => t.id === size)?.mult ?? 1;
+  const system = Platform.OS === "web" ? testFontScale() : PixelRatio.getFontScale();
+  const mult = Platform.OS === "web" ? Math.min(inApp * system, MAX_TOTAL_SCALE) : Math.max(1, Math.min(inApp, MAX_TOTAL_SCALE / system));
   const body = <Shell textSize={size} setTextSize={setTextSize} />;
   return (
     <ScaleProvider value={{ mult }}>

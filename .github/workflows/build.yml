@@ -49,7 +49,7 @@ jobs:
       - run: npm ci
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
-      - name: Detect the owner's private signing key (absent: build stays a test build)
+      - name: "Detect the owner's private signing key (if absent the build stays a test build)"
         env:
           KS_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
         run: |

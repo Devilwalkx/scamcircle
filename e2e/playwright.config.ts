@@ -18,7 +18,7 @@ export default defineConfig({
   fullyParallel: true,
   workers: process.env.CI ? 2 : 3,
   reporter: [["list"]],
-  use: { baseURL: `http://127.0.0.1:${PORT}`, trace: "off", launchOptions },
+  use: { baseURL: `http://127.0.0.1:${PORT}`, trace: "off", actionTimeout: 30_000, launchOptions },
   webServer: {
     command: `npx serve ${DIST} -l ${PORT} -s --no-clipboard`,
     url: `http://127.0.0.1:${PORT}`,

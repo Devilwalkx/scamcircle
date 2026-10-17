@@ -20,7 +20,7 @@ export async function open(page: Page, query = "") {
 export async function closeDialogs(page: Page) {
   for (const n of ["No, keep it", "No, keep my data", "Go back", "No"]) {
     const b = page.getByRole("button", { name: n, exact: true });
-    if (await b.isVisible().catch(() => false)) await b.click();
+    if (await b.isVisible().catch(() => false)) await b.click({ timeout: 2000 }).catch(() => undefined);
   }
 }
 

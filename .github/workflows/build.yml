@@ -86,7 +86,8 @@ jobs:
           APK=$(ls apps/mobile/android/app/build/outputs/apk/release/*.apk | head -1)
           "$AAPT" dump permissions "$APK" | tee apk-permissions.txt
           "$AAPT" dump badging "$APK" | grep -E "^package:|sdkVersion|targetSdkVersion" | tee -a apk-permissions.txt
-          if grep -E "uses-permission" apk-permissions.txt; then echo "The built APK requests a permission"; exit 1; fi
+          # the only permission allowed is the app's own signature-level receiver permission that AndroidX adds
+          if grep -E "uses-permission" apk-permissions.txt | grep -v "DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"; then echo "The built APK requests a permission"; exit 1; fi
           grep -q "name='app.devilwalkx.scamcircle'" apk-permissions.txt
       - uses: actions/upload-artifact@v4
         with:

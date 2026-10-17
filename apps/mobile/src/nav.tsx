@@ -40,7 +40,7 @@ export function NavProvider({ children }: { children: React.ReactNode }) {
   const param = useRef<string | null>(null);
   const sub = useRef<(() => boolean) | null>(null);
   const drafts = useRef<Record<string, string>>({});
-  const [, bump] = useState(0);
+  const [dv, bump] = useState(0);
   const [ready, setReady] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [incoming, setIncoming] = useState<Incoming | null>(null);
@@ -85,7 +85,7 @@ export function NavProvider({ children }: { children: React.ReactNode }) {
     draftsReady: ready,
     incoming,
     receive: setIncoming
-  }), [screen, nonce, ready, incoming, flush]);
+  }), [screen, nonce, ready, incoming, flush, dv]);
   return <C.Provider value={value}>{children}</C.Provider>;
 }
 

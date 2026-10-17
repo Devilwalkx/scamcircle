@@ -101,7 +101,6 @@ export function Choice({ label, detail, selected, onPress, role = "radio" }: { l
   return (
     <Pressable
       accessibilityRole={role}
-      accessibilityLabel={detail ? `${label}. ${detail}` : label}
       accessibilityState={{ checked: selected }}
       aria-checked={selected}
       onPress={onPress}
@@ -280,7 +279,7 @@ export function Collapsible({ title, children, open: initial = false }: { title:
 export function LinkRow({ icon, title, detail, onPress, badge }: { icon: IconName; title: string; detail?: string; onPress: () => void; badge?: string }) {
   const c = useTheme();
   return (
-    <Pressable accessibilityRole="button" accessibilityLabel={detail ? `${title}. ${detail}` : title} onPress={onPress} android_ripple={{ color: c.line }}
+    <Pressable accessibilityRole="button" onPress={onPress} android_ripple={{ color: c.line }}
       style={{ minHeight: TOUCH + 8, flexDirection: "row", alignItems: "center", gap: space.s, padding: space.s, borderRadius: radius.m, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, marginBottom: space.xs }}>
       <Icon name={icon} size={24} color={c.primary} />
       <View style={{ flex: 1, minWidth: 0 }}>

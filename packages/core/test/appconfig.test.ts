@@ -15,7 +15,7 @@ describe("mobile app config (checked once for real with `expo prebuild`; CI re-c
     expect(JSON.stringify(cfg)).not.toContain("invalid.placeholder");
   });
   it("blocks internet, location, microphone, camera, storage, overlay and vibration permissions; no permission is added by hand", () => {
-    for (const p of ["INTERNET", "ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "RECORD_AUDIO", "CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "SYSTEM_ALERT_WINDOW", "VIBRATE"]) {
+    for (const p of ["INTERNET", "ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "RECORD_AUDIO", "CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "SYSTEM_ALERT_WINDOW", "VIBRATE", "USE_BIOMETRIC", "USE_FINGERPRINT", "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"]) {
       expect(cfg.android.blockedPermissions).toContain(p);
     }
     expect(cfg.android.permissions ?? []).toEqual([]);

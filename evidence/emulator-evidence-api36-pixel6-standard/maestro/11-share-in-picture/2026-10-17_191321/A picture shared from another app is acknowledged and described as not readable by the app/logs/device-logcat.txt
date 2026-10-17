@@ -1,0 +1,27 @@
+--------- beginning of main
+10-17 19:13:24.820 I/Icing   ( 1496): Indexing com.google.android.gms-apps from com.google.android.gms
+10-17 19:13:24.820 I/Icing   ( 1496): Indexing done com.google.android.gms-apps
+10-17 19:13:24.871 I/Icing   ( 1496): Indexing com.google.android.gms-apps from com.google.android.gms
+10-17 19:13:24.871 I/Icing   ( 1496): Indexing done com.google.android.gms-apps
+10-17 19:13:24.897 I/Icing   ( 1496): Indexing com.google.android.gms-apps from com.google.android.gms
+10-17 19:13:24.897 I/Icing   ( 1496): Indexing done com.google.android.gms-apps
+10-17 19:13:24.921 D/Maestro ( 8908): Requesting view hierarchy
+10-17 19:13:24.922 W/QueryController( 8908): Could not detect idle state.
+10-17 19:13:24.922 W/QueryController( 8908): Could not detect idle state.
+10-17 19:13:24.961 I/Maestro ( 8908): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@b4ea0; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:13:24.962 D/Maestro ( 8908): View hierarchy received in 41 ms
+10-17 19:13:25.032 D/Maestro ( 8908): Requesting view hierarchy
+10-17 19:13:25.033 W/QueryController( 8908): Could not detect idle state.
+10-17 19:13:25.033 W/QueryController( 8908): Could not detect idle state.
+10-17 19:13:25.049 I/Maestro ( 8908): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@b4ea0; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 19:13:25.049 D/Maestro ( 8908): View hierarchy received in 17 ms
+--------- beginning of system
+10-17 19:13:25.144 D/WindowManager(  641): captureDisplay
+--------- beginning of kernel
+10-17 19:13:25.269 I/servicemanager(    0): Caller(pid=8908,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:13:25.272 I/servicemanager(    0): Caller(pid=8908,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 19:13:25.274 I/servicemanager(    0): Caller(pid=8908,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 19:13:25.174 I/DisplayManager( 8908): Choreographer implicitly registered for the refresh rate.
+10-17 19:13:25.187 I/EGL_emulation( 8908): Opening libGLESv1_CM_emulation.so
+10-17 19:13:25.187 I/EGL_emulation( 8908): Opening libGLESv2_emulation.so
+10-17 19:13:25.191 W/HWUI    ( 8908): Failed to initialize 101010-2 format, error = EGL_SUCCESS

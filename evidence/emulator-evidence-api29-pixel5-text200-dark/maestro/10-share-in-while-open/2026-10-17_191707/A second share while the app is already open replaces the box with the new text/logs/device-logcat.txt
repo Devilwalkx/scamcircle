@@ -1,0 +1,344 @@
+--------- beginning of system
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_DOCUMENTS from package com.google.android.youtube (protectionLevel=262146 flags=0x30dbbe45)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_SECURE_SETTINGS from package com.google.android.apps.enterprise.dmagent (protectionLevel=50 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.CONNECTIVITY_INTERNAL from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_USB from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.CHANGE_COMPONENT_ENABLED_STATE from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_CA_CERTIFICATES from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_USERS from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission com.google.android.setupwizard.READ_DEVICE_ORIGIN from package com.google.android.apps.messaging (protectionLevel=18 flags=0x38cbbe45)
+10-17 19:17:12.721 I/PackageManager( 1921): Un-granting permission android.permission.BIND_WALLPAPER from package com.android.camera2 (protectionLevel=18 flags=0x20d8bc45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.gm (protectionLevel=66 flags=0x38cbbe45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.BIND_JOB_SERVICE from package com.google.android.music (protectionLevel=2 flags=0x38cbbe65)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS from package com.google.android.captiveportallogin (protectionLevel=18 flags=0x38c8be45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.NETWORK_BYPASS_PRIVATE_DNS from package com.google.android.captiveportallogin (protectionLevel=2 flags=0x38c8be45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.apps.docs (protectionLevel=66 flags=0x38cbbe45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.INTERACT_ACROSS_USERS from package com.google.android.syncadapters.contacts (protectionLevel=50 flags=0x20883e45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.android.chrome (protectionLevel=66 flags=0xa0cbbe45)
+10-17 19:17:12.722 I/PackageManager( 1921): Un-granting permission com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS from package com.android.chrome (protectionLevel=2 flags=0xa0cbbe45)
+10-17 19:17:12.723 I/PackageManager( 1921): Un-granting permission android.permission.CAPTURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:12.723 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_DEVICE_ADMINS from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:12.723 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_ACTIVITY_STACKS from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:12.723 I/PackageManager( 1921): Un-granting permission android.permission.CAPTURE_SECURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:12.723 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_ROLLBACKS from package com.google.android.gms (protectionLevel=514 flags=0xb0cabe45)
+10-17 19:17:12.732 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.google.android.videos (protectionLevel=2 flags=0x30dbbe45)
+10-17 19:17:12.733 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_MEDIA_STORAGE from package com.google.android.apps.photos (protectionLevel=18 flags=0x38d9be45)
+10-17 19:17:12.737 I/PackageManager( 1921): Un-granting permission android.permission.ACCESS_MOCK_LOCATION from package dev.mobile.maestro (protectionLevel=2 flags=0x2808be46)
+10-17 19:17:12.737 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_SETTINGS from package dev.mobile.maestro (protectionLevel=1218 flags=0x2808be46)
+10-17 19:17:12.737 I/PackageManager( 1921): Un-granting permission android.permission.CHANGE_CONFIGURATION from package dev.mobile.maestro (protectionLevel=50 flags=0x2808be46)
+10-17 19:17:12.753 D/PackageManager( 1921): Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-17 19:17:12.753 D/PackageManager( 1921): Clear ephemeral installer activity
+10-17 19:17:12.755 V/BackupManagerService( 1921): restoreAtInstall pkg=dev.mobile.maestro token=16 restoreSet=0
+10-17 19:17:12.755 V/BackupManagerService( 1921): Finishing install immediately
+10-17 19:17:12.755 W/PackageManager( 1921): Cannot whitelist unknown permission: android.permission.QUERY_ALL_PACKAGES
+--------- beginning of main
+10-17 19:17:12.757 I/netd    ( 1663): trafficSetNetPermForUids(4, [10166]) <0.03ms>
+10-17 19:17:12.763 E/        ( 1746): Couldn't opendir /data/app/vmdl1677389609.tmp: No such file or directory
+10-17 19:17:12.763 E/installd( 1746): Failed to delete /data/app/vmdl1677389609.tmp: No such file or directory
+10-17 19:17:12.777 I/RoleManagerService( 1921): Granting default permissions...
+10-17 19:17:12.782 I/InputReader( 1921): Reconfiguring input devices.  changes=0x00000010
+10-17 19:17:12.798 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+10-17 19:17:12.806 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+10-17 19:17:12.806 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-17 19:17:12.807 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-17 19:17:12.807 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-17 19:17:12.810 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-17 19:17:12.811 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+10-17 19:17:12.815 E/ActivityThread( 2566): Failed to find provider info for com.google.android.apps.wellbeing.api
+10-17 19:17:12.860 W/GCM     ( 2063): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-17 19:17:12.862 W/GCM     ( 2063): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-17 19:17:12.882 D/CarrierSvcBindHelper( 2400): No carrier app for: 0
+10-17 19:17:12.898 I/Auth    ( 2219): [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-17 19:17:12.898 I/Auth    ( 2219): [SupervisedAccountIntentOperation] This operation is disabled
+10-17 19:17:12.898 I/ChromeSync( 2219): [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-17 19:17:12.900 I/Telecom ( 1921): DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@ARg
+10-17 19:17:12.902 V/BackupManagerConstants( 1921): getFullBackupIntervalMilliseconds(...) returns 86400000
+10-17 19:17:12.902 V/BackupManagerConstants( 1921): getFullBackupRequiredNetworkType(...) returns 2
+10-17 19:17:12.902 V/BackupManagerConstants( 1921): getFullBackupRequireCharging(...) returns true
+10-17 19:17:12.915 D/CarrierConfigLoader( 2400): mHandler: 9 phoneId: 0
+10-17 19:17:12.919 I/ProvidersCache( 6631): Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-17 19:17:12.923 I/system_server( 1921): IncrementDisableThreadFlip blocked for 5.429ms
+10-17 19:17:12.924 I/system_server( 1921): IncrementDisableThreadFlip blocked for 6.555ms
+10-17 19:17:12.933 I/Icing   ( 2219): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+10-17 19:17:12.993 I/system_server( 1921): Background concurrent copying GC freed 45552(2824KB) AllocSpace objects, 19(1360KB) LOS objects, 34% free, 11MB/17MB, paused 447us total 236.347ms
+10-17 19:17:13.025 W/Icing   ( 2219): No valid account for uploading user actions
+10-17 19:17:13.063 I/Icing   ( 2219): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-17 19:17:13.109 I/netd    ( 1663): firewallSetUidRule(2, 10166, 2) <0.03ms>
+10-17 19:17:13.110 W/Looper  ( 1921): Slow dispatch took 209ms main h=android.app.ActivityThread$H c=android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA@c869d67 m=0
+10-17 19:17:13.110 W/Looper  ( 1921): Slow delivery took 279ms main h=com.android.server.job.JobSchedulerService$JobHandler c=null m=4
+10-17 19:17:13.111 W/Looper  ( 1921): Drained
+10-17 19:17:13.113 I/Icing   ( 2219): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-17 19:17:13.128 W/Icing   ( 2219): No valid account for uploading user actions
+10-17 19:17:13.133 W/PackageParser( 1921): Unknown element under <manifest>: queries at /data/app/vmdl853528939.tmp/base.apk Binary XML file line #23
+10-17 19:17:13.135 W/PackageParser( 1921): No actions in intent filter at /data/app/vmdl853528939.tmp/base.apk Binary XML file line #42
+10-17 19:17:13.137 W/PackageParser( 1921): No actions in intent filter at /data/app/vmdl853528939.tmp/base.apk Binary XML file line #50
+10-17 19:17:13.137 W/PackageParser( 1921): No actions in intent filter at /data/app/vmdl853528939.tmp/base.apk Binary XML file line #58
+10-17 19:17:13.139 I/Icing   ( 2219): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_DOCUMENTS from package com.google.android.youtube (protectionLevel=262146 flags=0x30dbbe45)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_SECURE_SETTINGS from package com.google.android.apps.enterprise.dmagent (protectionLevel=50 flags=0x30883e05)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.CONNECTIVITY_INTERNAL from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_USB from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.CHANGE_COMPONENT_ENABLED_STATE from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_CA_CERTIFICATES from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:13.165 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_USERS from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30883e05)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission com.google.android.setupwizard.READ_DEVICE_ORIGIN from package com.google.android.apps.messaging (protectionLevel=18 flags=0x38cbbe45)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.ACCESS_MOCK_LOCATION from package dev.mobile.maestro (protectionLevel=2 flags=0x2808be46)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_SETTINGS from package dev.mobile.maestro (protectionLevel=1218 flags=0x2808be46)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.CHANGE_CONFIGURATION from package dev.mobile.maestro (protectionLevel=50 flags=0x2808be46)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.BIND_WALLPAPER from package com.android.camera2 (protectionLevel=18 flags=0x20d8bc45)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.gm (protectionLevel=66 flags=0x38cbbe45)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.BIND_JOB_SERVICE from package com.google.android.music (protectionLevel=2 flags=0x38cbbe65)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS from package com.google.android.captiveportallogin (protectionLevel=18 flags=0x38c8be45)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.NETWORK_BYPASS_PRIVATE_DNS from package com.google.android.captiveportallogin (protectionLevel=2 flags=0x38c8be45)
+10-17 19:17:13.166 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.apps.docs (protectionLevel=66 flags=0x38cbbe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.INTERACT_ACROSS_USERS from package com.google.android.syncadapters.contacts (protectionLevel=50 flags=0x20883e45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.android.chrome (protectionLevel=66 flags=0xa0cbbe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS from package com.android.chrome (protectionLevel=2 flags=0xa0cbbe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.CAPTURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_DEVICE_ADMINS from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_ACTIVITY_STACKS from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.CAPTURE_SECURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xb0cabe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.MANAGE_ROLLBACKS from package com.google.android.gms (protectionLevel=514 flags=0xb0cabe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.google.android.videos (protectionLevel=2 flags=0x30dbbe45)
+10-17 19:17:13.167 I/PackageManager( 1921): Un-granting permission android.permission.WRITE_MEDIA_STORAGE from package com.google.android.apps.photos (protectionLevel=18 flags=0x38d9be45)
+10-17 19:17:13.169 I/PackageManager( 1921): Un-granting permission android.permission.ACCESS_MOCK_LOCATION from package dev.mobile.maestro.test (protectionLevel=2 flags=0x2008be46)
+10-17 19:17:13.198 D/PackageManager( 1921): Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-17 19:17:13.198 D/PackageManager( 1921): Clear ephemeral installer activity
+10-17 19:17:13.199 I/ChromeSync( 2219): [Persistence,AffiliationManager] One of affiliation or grouping data for android://lJCKte9DRl65cN9TUzu6VrwL1iTON4mEOtQBlzBRGT5lehWYze_mevqto7WPTMM3q53vYcvc0h4QdZXbNaKZUw==@dev.mobile.maestro/ was not found. Marking affiliation data as stale...
+10-17 19:17:13.223 V/BackupManagerService( 1921): restoreAtInstall pkg=dev.mobile.maestro.test token=17 restoreSet=0
+10-17 19:17:13.223 V/BackupManagerService( 1921): Finishing install immediately
+10-17 19:17:13.223 W/PackageManager( 1921): Cannot whitelist unknown permission: android.permission.QUERY_ALL_PACKAGES
+10-17 19:17:13.243 I/netd    ( 1663): trafficSetNetPermForUids(0, [10167]) <0.01ms>
+10-17 19:17:13.254 E/        ( 1746): Couldn't opendir /data/app/vmdl853528939.tmp: No such file or directory
+10-17 19:17:13.254 E/installd( 1746): Failed to delete /data/app/vmdl853528939.tmp: No such file or directory
+10-17 19:17:13.267 I/RoleManagerService( 1921): Granting default permissions...
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-17 19:17:13.269 W/BroadcastQueue( 1921): Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+10-17 19:17:13.273 I/InputReader( 1921): Reconfiguring input devices.  changes=0x00000010
+10-17 19:17:13.274 E/ActivityThread( 2566): Failed to find provider info for com.google.android.apps.wellbeing.api
+10-17 19:17:13.309 W/GCM     ( 2063): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-17 19:17:13.310 W/GCM     ( 2063): Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-17 19:17:13.342 I/system_server( 1921): ThreadFlipBegin blocked for 6.131ms
+10-17 19:17:13.342 I/system_server( 1921): IncrementDisableThreadFlip blocked for 6.941ms
+10-17 19:17:13.342 I/system_server( 1921): IncrementDisableThreadFlip blocked for 6.918ms
+10-17 19:17:13.343 I/system_server( 1921): IncrementDisableThreadFlip blocked for 7.110ms
+10-17 19:17:13.347 I/system_server( 1921): IncrementDisableThreadFlip blocked for 10.743ms
+10-17 19:17:13.348 D/CarrierSvcBindHelper( 2400): No carrier app for: 0
+10-17 19:17:13.355 I/system_server( 1921): IncrementDisableThreadFlip blocked for 13.364ms
+10-17 19:17:13.364 D/CarrierConfigLoader( 2400): mHandler: 9 phoneId: 0
+10-17 19:17:13.370 W/Looper  ( 1921): Slow dispatch took 103ms main h=android.app.ActivityThread$H c=android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA@d38fd9f m=0
+10-17 19:17:13.385 I/Telecom ( 1921): DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@ARw
+10-17 19:17:13.386 V/BackupManagerConstants( 1921): getFullBackupIntervalMilliseconds(...) returns 86400000
+10-17 19:17:13.386 V/BackupManagerConstants( 1921): getFullBackupRequiredNetworkType(...) returns 2
+10-17 19:17:13.386 V/BackupManagerConstants( 1921): getFullBackupRequireCharging(...) returns true
+10-17 19:17:13.393 I/system_server( 1921): Background concurrent copying GC freed 52771(3705KB) AllocSpace objects, 27(1648KB) LOS objects, 34% free, 11MB/17MB, paused 617us total 149.659ms
+10-17 19:17:13.395 I/ProvidersCache( 6631): Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-17 19:17:13.415 I/Auth    ( 2219): [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-17 19:17:13.416 I/Auth    ( 2219): [SupervisedAccountIntentOperation] This operation is disabled
+10-17 19:17:13.416 I/ChromeSync( 2219): [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.mobile.maestro.test flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-17 19:17:13.490 W/app_process(12049): type=1400 audit(0.0:395): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-17 19:17:13.490 I/chatty  (12049): uid=2000(shell) main identical 1 line
+10-17 19:17:13.490 W/app_process(12049): type=1400 audit(0.0:397): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-17 19:17:13.501 D/AndroidRuntime(12049): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-17 19:17:13.502 E/libc    (12049): Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-17 19:17:13.502 I/AndroidRuntime(12049): Using default boot image
+10-17 19:17:13.502 E/libc    (12049): Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-17 19:17:13.502 I/AndroidRuntime(12049): Leaving lock profiling enabled
+10-17 19:17:13.502 E/libc    (12049): Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-17 19:17:13.503 I/app_process(12049): Core platform API reporting enabled, enforcing=false
+10-17 19:17:13.553 D/ICU     (12049): Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-17 19:17:13.556 W/app_process(12049): Unexpected CPU variant for X86 using defaults: x86_64
+10-17 19:17:13.557 I/app_process(12049): The ClassLoaderContext is a special shared library.
+10-17 19:17:13.569 W/app_process(12049): JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-17 19:17:13.571 D/AndroidRuntime(12049): Calling main entry com.android.commands.am.Am
+10-17 19:17:13.572 I/ActivityManager( 1921): Force stopping dev.mobile.maestro appid=10166 user=0: start instr
+10-17 19:17:13.580 D/Zygote  ( 1664): Forked child process 12061
+10-17 19:17:13.585 I/ActivityManager( 1921): Start proc 12061:dev.mobile.maestro/u0a166 for added application dev.mobile.maestro
+10-17 19:17:13.587 I/.mobile.maestr(12061): Late-enabling -Xcheck:jni
+10-17 19:17:13.609 E/.mobile.maestr(12061): Unknown bits set in runtime_flags: 0x8000
+10-17 19:17:13.609 W/.mobile.maestr(12061): Unexpected CPU variant for X86 using defaults: x86_64
+10-17 19:17:13.652 I/.mobile.maestr(12061): The ClassLoaderContext is a special shared library.
+10-17 19:17:13.652 I/.mobile.maestr(12061): The ClassLoaderContext is a special shared library.
+10-17 19:17:13.670 I/ChromeSync( 2219): [Persistence,AffiliationManager] One of affiliation or grouping data for android://lJCKte9DRl65cN9TUzu6VrwL1iTON4mEOtQBlzBRGT5lehWYze_mevqto7WPTMM3q53vYcvc0h4QdZXbNaKZUw==@dev.mobile.maestro.test/ was not found. Marking affiliation data as stale...
+10-17 19:17:13.812 I/netd    ( 1663): firewallSetUidRule(2, 10166, 1) <0.01ms>
+10-17 19:17:13.844 I/RoleUserState( 1921): Wrote roles.xml successfully
+10-17 19:17:14.059 I/.mobile.maestr(12061): The ClassLoaderContext is a special shared library.
+10-17 19:17:14.060 I/.mobile.maestr(12061): The ClassLoaderContext is a special shared library.
+10-17 19:17:14.115 I/Icing   ( 2219): Indexing com.google.android.gms-apps from com.google.android.gms
+10-17 19:17:14.117 I/Icing   ( 2219): Indexing done com.google.android.gms-apps
+10-17 19:17:14.397 W/.mobile.maestr(12061): Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-17 19:17:14.397 W/.mobile.maestr(12061): Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-17 19:17:14.402 I/AndroidJUnitRunner(12061): newApplication android.app.Application
+10-17 19:17:14.407 I/AndroidJUnitRunner(12061): onCreate Bundle[mParcelledData.dataSize=204]
+10-17 19:17:14.409 D/AndroidJUnitRunner(12061): Use the raw file system for managing file I/O.
+10-17 19:17:14.420 V/TestEventClient(12061): No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+10-17 19:17:14.420 D/AndroidJUnitRunner(12061): onStart is called.
+10-17 19:17:14.428 I/Icing   ( 2219): Indexing com.google.android.gms-apps from com.google.android.gms
+10-17 19:17:14.429 I/Icing   ( 2219): Indexing done com.google.android.gms-apps
+10-17 19:17:14.458 I/TestRunner(12061): run started: 1 tests
+10-17 19:17:14.460 I/TestRunner(12061): started: grpcServer(dev.mobile.maestro.MaestroDriverService)
+10-17 19:17:14.466 E/adbd    ( 1734): failed to connect to socket 'tcp:45747': Connection refused
+10-17 19:17:14.470 I/UiDevice(12061): Creating a new instance, old instance exists: false
+10-17 19:17:14.128 I/RoleUserState( 1921): Wrote roles.xml successfully
+10-17 19:17:14.474 V/SettingsProvider( 1921): Notifying for 0: content://settings/secure/accessibility_enabled
+10-17 19:17:14.479 D/UiDevice(12061): Setting accessibility service flags: 65618
+10-17 19:17:14.494 I/System.out(12061): Server running on port [ 45747 ]
+10-17 19:17:14.534 W/System.err(12061): SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+10-17 19:17:14.534 W/System.err(12061): SLF4J: Defaulting to no-operation (NOP) logger implementation
+10-17 19:17:14.534 W/System.err(12061): SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+10-17 19:17:14.553 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+10-17 19:17:14.553 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->allocateMemory(J)J (greylist, linking, allowed)
+10-17 19:17:14.553 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->freeMemory(J)V (greylist, linking, allowed)
+10-17 19:17:14.553 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->addressSize()I (greylist, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->copyMemory(JJJ)V (greylist, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getChar(Ljava/lang/Object;J)C (greylist, linking, allowed)
+10-17 19:17:14.554 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getByte(J)B (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(J)I (greylist, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(J)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getShort(J)S (greylist, linking, allowed)
+10-17 19:17:14.555 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getShort(Ljava/lang/Object;J)S (greylist, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putByte(JB)V (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V (greylist,core-platform-api, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(JI)V (greylist, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:14.556 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(JJ)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putShort(JS)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putShort(Ljava/lang/Object;JS)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->storeFence()V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putIntVolatile(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:14.557 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->setMemory(JJB)V (greylist, linking, allowed)
+10-17 19:17:14.558 W/.mobile.maestr(12061): Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+10-17 19:17:14.558 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/VM;->maxDirectMemory()J (greylist, reflection, allowed)
+10-17 19:17:14.559 I/PlatformDependent(12061): Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+10-17 19:17:14.568 E/adbd    ( 1734): failed to connect to socket 'tcp:45747': Connection refused
+10-17 19:17:14.587 E/.mobile.maestr(12061): No implementation found for int io.grpc.netty.shaded.io.netty.channel.epoll.Native.offsetofEpollData() (tried Java_io_grpc_netty_shaded_io_netty_channel_epoll_Native_offsetofEpollData and Java_io_grpc_netty_shaded_io_netty_channel_epoll_Native_offsetofEpollData__)
+10-17 19:17:14.607 W/.mobile.maestr(12061): Accessing hidden method Landroid/view/accessibility/AccessibilityNodeInfo;-><init>()V (greylist-max-o, linking, denied)
+10-17 19:17:14.607 D/Maestro (12061): Started listening to accessibility events
+10-17 19:17:14.671 E/adbd    ( 1734): failed to connect to socket 'tcp:45747': Connection refused
+10-17 19:17:14.684 W/.mobile.maestr(12061): Accessing hidden field Lsun/nio/ch/SelectorImpl;->selectedKeys:Ljava/util/Set; (greylist, reflection, allowed)
+10-17 19:17:14.684 W/.mobile.maestr(12061): Accessing hidden field Lsun/nio/ch/SelectorImpl;->publicSelectedKeys:Ljava/util/Set; (greylist, reflection, allowed)
+10-17 19:17:14.730 W/grpc-nio-boss-E(12061): type=1400 audit(0.0:398): avc: denied { read } for name="somaxconn" dev="proc" ino=83236 scontext=u:r:untrusted_app:s0:c166,c256,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=dev.mobile.maestro
+10-17 19:17:14.774 E/adbd    ( 1734): failed to connect to socket 'tcp:45747': Connection refused
+10-17 19:17:15.017 E/memtrack( 1921): Couldn't load memtrack module
+10-17 19:17:15.017 W/android.os.Debug( 1921): failed to get memory consumption info: -1
+10-17 19:17:15.094 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+10-17 19:17:15.095 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.100 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+10-17 19:17:15.100 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.122 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.123 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.123 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:15.123 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:15.124 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.125 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.126 I/chatty  (12061): uid=10166(dev.mobile.maestro) grpc-default-ex identical 1 line
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+10-17 19:17:15.126 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.127 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.127 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.128 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+10-17 19:17:15.129 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+10-17 19:17:15.132 W/.mobile.maestr(12061): Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+10-17 19:17:15.133 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+10-17 19:17:15.133 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+10-17 19:17:15.134 W/.mobile.maestr(12061): Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+10-17 19:17:15.141 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.152 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.301 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+10-17 19:17:15.316 D/Maestro (12061): Requesting view hierarchy
+10-17 19:17:15.320 W/QueryController(12061): Could not detect idle state.
+10-17 19:17:15.321 W/QueryController(12061): Could not detect idle state.
+10-17 19:17:15.451 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cf6af; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/red; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.451 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cfa70; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/blue; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.451 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cfe31; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/green; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.451 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@d01f2; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/yellow; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.460 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@da71f; boundsInParent: Rect(0, 0 - 0, 66); boundsInScreen: Rect(540, 0 - 540, 66); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/centered_icon_area; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.464 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2be3a; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2096 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Check this message; tooltipText: null; viewIdResName: check-submit; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.464 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2d0ff; boundsInParent: Rect(0, 0 - 992, 319); boundsInScreen: Rect(44, 2305 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Paste from clipboard; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.464 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2e3c4; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2646 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: It is in a picture; tooltipText: Choose a picture. ScamCircle cannot read it; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.464 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2f689; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2855 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Clear everything here; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.470 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8ee5; boundsInParent: Rect(0, 0 - 1080, 132); boundsInScreen: Rect(0, 2208 - 1080, 2340); packageName: app.devilwalkx.scamcircle; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: android:id/navigationBarBackground; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.470 D/Maestro (12061): View hierarchy received in 154 ms
+10-17 19:17:15.480 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.603 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+10-17 19:17:15.615 D/Maestro (12061): Requesting view hierarchy
+10-17 19:17:15.616 W/QueryController(12061): Could not detect idle state.
+10-17 19:17:15.617 W/QueryController(12061): Could not detect idle state.
+10-17 19:17:15.649 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cf6af; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/red; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.649 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cfa70; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/blue; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.649 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@cfe31; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/green; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.649 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@d01f2; boundsInParent: Rect(0, 0 - 28, 28); boundsInScreen: Rect(526, 2260 - 554, 2288); packageName: com.android.systemui; className: android.widget.ImageView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/yellow; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.655 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@da71f; boundsInParent: Rect(0, 0 - 0, 66); boundsInScreen: Rect(540, 0 - 540, 66); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.systemui:id/centered_icon_area; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.658 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2be3a; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2096 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Check this message; tooltipText: null; viewIdResName: check-submit; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.658 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2d0ff; boundsInParent: Rect(0, 0 - 992, 319); boundsInScreen: Rect(44, 2305 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Paste from clipboard; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.658 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2e3c4; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2646 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: It is in a picture; tooltipText: Choose a picture. ScamCircle cannot read it; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.659 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2f689; boundsInParent: Rect(0, 0 - 992, 187); boundsInScreen: Rect(44, 2855 - 1036, 2005); packageName: app.devilwalkx.scamcircle; className: android.widget.Button; text: null; error: null; maxTextLength: -1; contentDescription: Clear everything here; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: true; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: true; visible: false; actions: [AccessibilityAction: ACTION_FOCUS - null, AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.664 I/Maestro (12061): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8ee5; boundsInParent: Rect(0, 0 - 1080, 132); boundsInScreen: Rect(0, 2208 - 1080, 2340); packageName: app.devilwalkx.scamcircle; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: android:id/navigationBarBackground; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-17 19:17:15.664 D/Maestro (12061): View hierarchy received in 49 ms
+10-17 19:17:15.755 D/gralloc_ranchu( 1697): gralloc_alloc: Creating ashmem region of size 10108928
+10-17 19:17:15.762 I/hwservicemanager( 1567): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+10-17 19:17:15.762 W/Gralloc3(12049): mapper 3.x is not supported
+10-17 19:17:15.767 D/HostConnection(12049): createUnique: call
+10-17 19:17:15.768 D/HostConnection(12049): HostConnection::get() New Host Connection established 0x7b190cbc81c0, tid 12060
+10-17 19:17:15.769 D/HostConnection(12049): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-17 19:17:15.769 D/eglCodecCommon(12049): allocate: Ask for block of size 0x1000
+10-17 19:17:15.769 D/eglCodecCommon(12049): allocate: ioctl allocate returned offset 0x3ffff6000 size 0x2000
+10-17 19:17:15.775 E/SurfaceFlinger( 1717): ro.sf.lcd_density must be defined as a build property
+10-17 19:17:15.775 E/SurfaceFlinger( 1717): ro.sf.lcd_density must be defined as a build property
+10-17 19:17:15.776 D/libEGL  (12049): Emulator has host GPU support, qemu.gles is set to 1.
+10-17 19:17:15.785 W/libc    (12049): Unable to set property "qemu.gles" to "1": error code: 0x18
+10-17 19:17:15.786 D/libEGL  (12049): loaded /vendor/lib64/egl/libEGL_emulation.so
+10-17 19:17:15.786 D/libEGL  (12049): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-17 19:17:15.787 D/libEGL  (12049): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-17 19:17:15.793 D/HostConnection(12049): HostConnection::get() New Host Connection established 0x7b187b072280, tid 12091
+10-17 19:17:15.795 D/HostConnection(12049): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-17 19:17:15.797 D/EGL_emulation(12049): eglCreateContext: 0x7b187b0723c0: maj 3 min 0 rcv 3
+10-17 19:17:15.797 D/EGL_emulation(12049): eglMakeCurrent: 0x7b187b0723c0: ver 3 0 (tinfo 0x7b187b0183e0)
+10-17 19:17:15.988 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+10-17 19:17:15.988 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+10-17 19:17:15.988 W/.mobile.maestr(12061): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)

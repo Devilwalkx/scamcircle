@@ -1,0 +1,21 @@
+19:08:20.076 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+19:08:20.078 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+19:08:20.079 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+19:08:20.079 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+19:08:20.079 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+19:08:20.080 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+19:08:21.183 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+19:08:21.183 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+19:08:21.272 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+19:08:21.281 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Check a message" is visible RUNNING
+19:08:22.690 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Check a message" is visible COMPLETED
+19:08:22.691 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Works without internet.*" is visible RUNNING
+19:08:23.169 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Works without internet.*" is visible COMPLETED
+19:08:23.170 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Demonstration tools.*" is not visible RUNNING
+19:08:23.825 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Demonstration tools.*" is not visible COMPLETED
+19:08:23.825 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Demo helper.*" is not visible RUNNING
+19:08:24.492 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Demo helper.*" is not visible COMPLETED
+19:08:24.492 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 01-first-run RUNNING
+19:08:24.494 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+19:08:24.496 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+19:08:24.727 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 01-first-run COMPLETED

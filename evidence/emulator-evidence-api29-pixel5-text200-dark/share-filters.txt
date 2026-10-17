@@ -1,0 +1,40 @@
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      image/*:
+        fa74336 app.devilwalkx.scamcircle/.MainActivity filter 834514f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Base MIME Types:
+      text:
+        fa74336 app.devilwalkx.scamcircle/.MainActivity filter 834514f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Wild MIME Types:
+      image:
+        fa74336 app.devilwalkx.scamcircle/.MainActivity filter 834514f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text/plain"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        fa74336 app.devilwalkx.scamcircle/.MainActivity filter 3d63fae
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SEND_MULTIPLE:
+        fa74336 app.devilwalkx.scamcircle/.MainActivity filter 126e0dc
+--
+          Action: "android.intent.action.SEND"

@@ -1,0 +1,6 @@
+    versionCode=29 minSdk=24 targetSdk=36
+    versionName=0.2.0
+    firstInstallTime=2026-10-17 20:58:08
+    requested permissions:
+      app.devilwalkx.scamcircle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    seq=3, package=com.google.android.permissioncontroller

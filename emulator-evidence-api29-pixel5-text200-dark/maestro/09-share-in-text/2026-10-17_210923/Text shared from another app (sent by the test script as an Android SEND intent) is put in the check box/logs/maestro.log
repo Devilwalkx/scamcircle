@@ -1,0 +1,33 @@
+21:09:30.897 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:09:30.900 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:09:30.901 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:09:30.901 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:09:30.902 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Received from another app" is visible RUNNING
+21:09:31.233 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Received from another app" is visible COMPLETED
+21:09:31.234 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that ".*Share-in-test.*" is visible RUNNING
+21:09:31.366 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that ".*Share-in-test.*" is visible COMPLETED
+21:09:31.367 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 09a-shared-in RUNNING
+21:09:31.370 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:09:31.373 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:09:31.747 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 09a-shared-in COMPLETED
+21:09:31.748 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Check this message" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:09:32.522 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Check this message
+21:09:32.535 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:09:34.022 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:09:34.025 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=184, y=1692, width=799, height=121)
+21:09:34.026 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:09:34.043 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Check this message, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:09:34.044 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:09:34.044 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Check this message" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:09:34.045 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check this message" RUNNING
+21:09:34.174 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check this message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[184,1692][983,1813], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=184, y=1692, width=799, height=121))
+21:09:35.458 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:09:35.461 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (583, 1752) using hierarchy based logic for wait
+21:09:37.109 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:09:37.109 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check this message" COMPLETED
+21:09:37.110 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we found" is visible RUNNING
+21:09:37.210 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we found" is visible COMPLETED
+21:09:37.211 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 09b-shared-in-result RUNNING
+21:09:37.212 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:09:37.212 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:09:37.459 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 09b-shared-in-result COMPLETED

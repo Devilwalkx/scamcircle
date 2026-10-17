@@ -1,0 +1,35 @@
+21:12:07.450 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:12:07.453 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:12:07.454 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:12:07.454 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:12:07.455 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+21:12:07.456 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+21:12:08.668 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+21:12:08.668 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+21:12:08.872 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+21:12:08.876 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check a message" RUNNING
+21:12:10.819 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check a message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[187,1431][992,1717], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=187, y=1431, width=805, height=286))
+21:12:12.323 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:12:12.328 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (589, 1574) using hierarchy based logic for wait
+21:12:13.568 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:12:13.569 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check a message" COMPLETED
+21:12:13.569 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on id: field-the-message RUNNING
+21:12:13.706 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=The message, hintText=Paste the message here, or type it, ignoreBoundsFiltering=false, resource-id=field-the-message, clickable=true, bounds=[44,600][1036,985], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=44, y=600, width=992, height=385))
+21:12:14.981 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:12:14.982 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 792) using hierarchy based logic for wait
+21:12:16.788 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:12:16.789 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on id: field-the-message COMPLETED
+21:12:16.789 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Input text Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123. RUNNING
+21:12:16.790 [ INFO] maestro.Maestro.inputText: Inputting text: Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123.
+21:12:39.566 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Input text Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123. COMPLETED
+21:12:39.566 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Hide Keyboard RUNNING
+21:12:39.567 [ INFO] maestro.Maestro.hideKeyboard$lambda$12: Hiding Keyboard
+21:12:40.920 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Hide Keyboard COMPLETED
+21:12:40.920 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check this message" RUNNING
+21:12:41.052 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check this message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[184,1541][983,1662], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=184, y=1541, width=799, height=121))
+21:12:42.314 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:12:42.315 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (583, 1601) using hierarchy based logic for wait
+21:12:43.848 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:12:43.849 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check this message" COMPLETED
+21:12:43.850 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we found" is visible RUNNING
+21:12:43.991 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we found" is visible COMPLETED

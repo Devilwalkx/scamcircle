@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="1.791" timestamp="2026-10-17T21:07:52">
+    <testcase id="A second share while the app is already open replaces the box with the new text" name="A second share while the app is already open replaces the box with the new text" classname="A second share while the app is already open replaces the box with the new text" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/10-share-in-while-open.yaml" time="1.779" timestamp="2026-10-17T21:07:52" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

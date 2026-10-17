@@ -1,0 +1,96 @@
+21:01:48.786 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:01:48.790 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:01:48.790 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:01:48.791 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:01:48.791 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+21:01:48.792 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+21:01:50.048 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+21:01:50.049 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+21:01:50.158 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+21:01:50.160 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check a message" RUNNING
+21:01:52.738 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check a message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[187,1431][992,1717], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=187, y=1431, width=805, height=286))
+21:01:53.949 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:01:53.953 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (589, 1574) using hierarchy based logic for wait
+21:01:55.177 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:01:55.177 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check a message" COMPLETED
+21:01:55.178 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Check this message" is visible RUNNING
+21:01:55.306 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Check this message" is visible COMPLETED
+21:01:55.306 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Press Back key RUNNING
+21:01:55.307 [ INFO] maestro.Maestro.pressKey: Pressing key BACK
+21:01:56.373 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Press Back key COMPLETED
+21:01:56.373 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Check a message" is visible RUNNING
+21:01:56.474 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Check a message" is visible COMPLETED
+21:01:56.475 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check a message" RUNNING
+21:01:56.539 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check a message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[187,1431][992,1717], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=187, y=1431, width=805, height=286))
+21:01:57.851 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:01:57.852 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (589, 1574) using hierarchy based logic for wait
+21:01:58.973 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:01:58.974 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check a message" COMPLETED
+21:01:58.974 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on id: field-the-message RUNNING
+21:01:59.114 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=The message, hintText=Paste the message here, or type it, ignoreBoundsFiltering=false, resource-id=field-the-message, clickable=true, bounds=[44,600][1036,985], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=44, y=600, width=992, height=385))
+21:02:00.371 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:02:00.373 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 792) using hierarchy based logic for wait
+21:02:02.297 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:02:02.297 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on id: field-the-message COMPLETED
+21:02:02.298 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Input text Hi Dad new number can you send 200 pounds today please RUNNING
+21:02:02.299 [ INFO] maestro.Maestro.inputText: Inputting text: Hi Dad new number can you send 200 pounds today please
+21:02:13.648 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Input text Hi Dad new number can you send 200 pounds today please COMPLETED
+21:02:13.649 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Hide Keyboard RUNNING
+21:02:13.650 [ INFO] maestro.Maestro.hideKeyboard$lambda$12: Hiding Keyboard
+21:02:14.996 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Hide Keyboard COMPLETED
+21:02:14.996 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check this message" RUNNING
+21:02:15.047 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check this message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[184,1145][983,1266], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=184, y=1145, width=799, height=121))
+21:02:16.318 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:02:16.319 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (583, 1205) using hierarchy based logic for wait
+21:02:17.858 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:02:17.858 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check this message" COMPLETED
+21:02:17.858 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we found" is visible RUNNING
+21:02:18.024 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we found" is visible COMPLETED
+21:02:18.024 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "I checked it another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:02:18.728 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:18.776 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:20.958 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:21.005 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:23.774 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:23.783 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:26.508 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:26.552 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:28.588 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:28.596 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:31.367 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:31.377 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:34.077 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:34.125 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:36.230 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:36.273 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:38.977 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:02:39.025 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:02:41.148 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:02:41.149 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=135, y=1078, width=810, height=242)
+21:02:41.150 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:02:41.163 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=I checked it another way, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:02:41.164 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:02:41.164 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "I checked it another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:02:41.164 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "I checked it another way" RUNNING
+21:02:41.278 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=I checked it another way, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[135,1078][945,1320], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=135, y=1078, width=810, height=242))
+21:02:42.548 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:02:42.551 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 1199) using hierarchy based logic for wait
+21:02:43.789 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:02:43.789 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "I checked it another way" COMPLETED
+21:02:43.789 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "How did you check\?" is visible RUNNING
+21:02:43.909 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "How did you check\?" is visible COMPLETED
+21:02:43.909 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Press Back key RUNNING
+21:02:43.909 [ INFO] maestro.Maestro.pressKey: Pressing key BACK
+21:02:44.987 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Press Back key COMPLETED
+21:02:44.988 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we found" is visible RUNNING
+21:02:45.128 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we found" is visible COMPLETED
+21:02:45.128 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Press Back key RUNNING
+21:02:45.128 [ INFO] maestro.Maestro.pressKey: Pressing key BACK
+21:02:46.148 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Press Back key COMPLETED
+21:02:46.148 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Not sure about a message\?" is visible RUNNING
+21:02:46.318 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Not sure about a message\?" is visible COMPLETED
+21:02:46.319 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Press Back key RUNNING
+21:02:46.319 [ INFO] maestro.Maestro.pressKey: Pressing key BACK
+21:02:47.737 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Press Back key COMPLETED
+21:02:47.737 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Not sure about a message\?" is not visible RUNNING
+21:02:48.347 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Not sure about a message\?" is not visible COMPLETED

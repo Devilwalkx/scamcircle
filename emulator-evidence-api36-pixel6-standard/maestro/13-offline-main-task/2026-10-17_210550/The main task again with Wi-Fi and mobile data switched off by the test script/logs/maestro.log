@@ -1,0 +1,196 @@
+21:05:57.780 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:05:57.784 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:05:57.785 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:05:57.785 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:05:57.786 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Run 02-main-task-check-message.yaml RUNNING
+21:05:57.787 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:05:57.787 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:05:57.788 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+21:05:57.789 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+21:05:59.113 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+21:05:59.113 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+21:05:59.214 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+21:05:59.216 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check a message" RUNNING
+21:06:01.589 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check a message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[388,753][785,822], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=388, y=753, width=397, height=69))
+21:06:02.820 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:02.825 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (586, 787) using hierarchy based logic for wait
+21:06:04.013 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:06:04.013 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check a message" COMPLETED
+21:06:04.014 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Check this message" is visible RUNNING
+21:06:04.091 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Check this message" is visible COMPLETED
+21:06:04.092 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on id: field-the-message RUNNING
+21:06:04.209 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=The message, hintText=Paste the message here, or type it, ignoreBoundsFiltering=false, resource-id=field-the-message, clickable=true, bounds=[42,504][1038,872], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=42, y=504, width=996, height=368))
+21:06:05.445 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:05.447 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 688) using hierarchy based logic for wait
+21:06:07.310 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:06:07.310 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on id: field-the-message COMPLETED
+21:06:07.311 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Input text Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123. RUNNING
+21:06:07.312 [ INFO] maestro.Maestro.inputText: Inputting text: Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123.
+21:06:34.623 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Input text Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123. COMPLETED
+21:06:34.624 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Hide Keyboard RUNNING
+21:06:34.625 [ INFO] maestro.Maestro.hideKeyboard$lambda$12: Hiding Keyboard
+21:06:35.710 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Hide Keyboard COMPLETED
+21:06:35.711 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 02a-message-entered RUNNING
+21:06:35.712 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:06:35.714 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:06:36.018 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 02a-message-entered COMPLETED
+21:06:36.019 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Check this message" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:36.138 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:36.138 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=391, y=953, width=381, height=58)
+21:06:36.139 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:36.159 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Check this message, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:36.160 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:36.160 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Check this message" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:36.160 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Check this message" RUNNING
+21:06:36.250 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Check this message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[391,953][772,1011], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=391, y=953, width=381, height=58))
+21:06:37.483 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:37.484 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (581, 982) using hierarchy based logic for wait
+21:06:38.814 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:06:38.814 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Check this message" COMPLETED
+21:06:38.814 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we found" is visible RUNNING
+21:06:38.950 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we found" is visible COMPLETED
+21:06:38.951 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "We found .* warning signs? in the words.*" is visible RUNNING
+21:06:39.154 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "We found .* warning signs? in the words.*" is visible COMPLETED
+21:06:39.154 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 02b-result-top RUNNING
+21:06:39.155 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:06:39.156 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:06:39.333 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 02b-result-top COMPLETED
+21:06:39.333 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "What we could not check" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:39.441 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:39.441 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=86, y=1975, width=908, height=69)
+21:06:39.442 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:39.442 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=What we could not check, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:39.442 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:39.442 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "What we could not check" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:39.442 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "What we could not check" is visible RUNNING
+21:06:39.556 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "What we could not check" is visible COMPLETED
+21:06:39.557 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Who sent it" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:40.208 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Who sent it
+21:06:40.216 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:42.259 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Who sent it
+21:06:42.302 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:43.716 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:43.716 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=86, y=1659, width=908, height=69)
+21:06:43.716 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:43.716 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Who sent it, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:43.716 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:43.716 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Who sent it" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:43.717 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Not verified" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:43.863 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:43.864 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=187, y=1753, width=193, height=53)
+21:06:43.864 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:43.864 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Not verified, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:43.864 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:43.864 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Not verified" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:43.864 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Not verified" is visible RUNNING
+21:06:43.955 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Not verified" is visible COMPLETED
+21:06:43.956 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 02c-result-not-verified RUNNING
+21:06:43.957 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:06:43.957 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:06:44.160 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 02c-result-not-verified COMPLETED
+21:06:44.160 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Settle it by checking another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:44.303 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:44.304 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=86, y=2085, width=908, height=69)
+21:06:44.304 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:44.304 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Settle it by checking another way, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:44.304 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:44.304 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Settle it by checking another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:44.304 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Do not use the phone number or link in the message.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:44.413 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:44.413 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=86, y=2154, width=908, height=3)
+21:06:44.413 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:44.413 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Do not use the phone number or link in the message.*, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:44.413 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:44.413 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Do not use the phone number or link in the message.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:44.413 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Do not use the phone number or link in the message.*" is visible RUNNING
+21:06:44.507 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Do not use the phone number or link in the message.*" is visible COMPLETED
+21:06:44.507 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 02d-result-next-step RUNNING
+21:06:44.508 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:06:44.508 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:06:44.709 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 02d-result-next-step COMPLETED
+21:06:44.709 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "I checked it another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:45.390 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:06:45.434 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:47.295 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: I checked it another way
+21:06:47.300 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:48.763 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:48.764 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=311, y=1427, width=458, height=58)
+21:06:48.764 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:48.764 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=I checked it another way, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:48.764 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:48.764 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "I checked it another way" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:48.765 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "I checked it another way" RUNNING
+21:06:48.900 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=I checked it another way, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[311,1427][769,1485], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=311, y=1427, width=458, height=58))
+21:06:50.159 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:50.160 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 1456) using hierarchy based logic for wait
+21:06:51.311 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:06:51.312 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "I checked it another way" COMPLETED
+21:06:51.312 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "How did you check\?" is visible RUNNING
+21:06:51.436 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "How did you check\?" is visible COMPLETED
+21:06:51.436 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Called a number I already had saved.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:51.514 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:51.514 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=168, y=684, width=834, height=126)
+21:06:51.514 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:51.515 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Called a number I already had saved.*, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:51.515 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:51.515 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Called a number I already had saved.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:51.515 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Called a number I already had saved.*" RUNNING
+21:06:51.596 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Called a number I already had saved before this message, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[168,684][1002,810], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=684, width=834, height=126))
+21:06:52.883 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:52.884 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (585, 747) using hierarchy based logic for wait
+21:06:53.859 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:06:53.859 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Called a number I already had saved.*" COMPLETED
+21:06:53.859 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "The real person said they did NOT send or ask for this" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:06:54.518 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: The real person said they did NOT send or ask for this
+21:06:54.524 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:56.458 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: The real person said they did NOT send or ask for this
+21:06:56.500 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:06:57.920 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:06:57.920 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=168, y=1766, width=834, height=126)
+21:06:57.920 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:06:57.920 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=The real person said they did NOT send or ask for this, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:06:57.920 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:06:57.920 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "The real person said they did NOT send or ask for this" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:06:57.921 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "The real person said they did NOT send or ask for this" RUNNING
+21:06:58.048 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=The real person said they did NOT send or ask for this, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[168,1766][1002,1892], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=1766, width=834, height=126))
+21:06:59.323 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:06:59.324 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (585, 1829) using hierarchy based logic for wait
+21:07:01.311 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:07:01.311 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "The real person said they did NOT send or ask for this" COMPLETED
+21:07:01.312 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Save" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:07:02.037 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Save
+21:07:02.081 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:07:03.424 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:07:03.424 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=494, y=1955, width=92, height=58)
+21:07:03.424 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:07:03.424 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Save, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:07:03.424 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:07:03.424 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Save" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:07:03.424 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Save" RUNNING
+21:07:03.544 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Save, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[494,1955][586,2013], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=494, y=1955, width=92, height=58))
+21:07:04.795 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:07:04.796 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 1984) using hierarchy based logic for wait
+21:07:06.115 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:07:06.116 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Save" COMPLETED
+21:07:06.116 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Check saved" is visible RUNNING
+21:07:06.154 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Check saved" is visible COMPLETED
+21:07:06.154 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 02e-check-saved RUNNING
+21:07:06.155 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:07:06.155 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:07:06.387 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 02e-check-saved COMPLETED
+21:07:06.387 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Back to the result" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:07:06.495 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2400
+21:07:06.495 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=374, y=800, width=331, height=58)
+21:07:06.495 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:07:06.495 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Back to the result, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:07:06.495 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:07:06.495 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Back to the result" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:07:06.496 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Back to the result" RUNNING
+21:07:06.607 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Back to the result, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[374,800][705,858], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=374, y=800, width=331, height=58))
+21:07:07.788 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:07:07.789 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (539, 829) using hierarchy based logic for wait
+21:07:09.107 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:07:09.107 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Back to the result" COMPLETED
+21:07:09.107 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "You checked this another way.*" is visible RUNNING
+21:07:09.235 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "You checked this another way.*" is visible COMPLETED
+21:07:09.236 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Run 02-main-task-check-message.yaml COMPLETED

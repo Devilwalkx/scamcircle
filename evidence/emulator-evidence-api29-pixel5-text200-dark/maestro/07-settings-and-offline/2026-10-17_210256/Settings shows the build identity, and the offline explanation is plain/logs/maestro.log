@@ -1,0 +1,101 @@
+21:03:04.108 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:03:04.111 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:03:04.112 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:03:04.112 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:03:04.112 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+21:03:04.113 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+21:03:04.721 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+21:03:04.722 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+21:03:04.906 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+21:03:04.908 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Settings" RUNNING
+21:03:07.001 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=Settings, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=true, bounds=[926,76][1058,208], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[959,109][1025,175], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=com.horcrux.svg.SvgView, important-for-accessibility=false, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[966,115][1018,168], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=com.horcrux.svg.g, important-for-accessibility=false, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[966,115][1018,168], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=o22, important-for-accessibility=false, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=926, y=76, width=132, height=132))
+21:03:08.552 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:03:08.557 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (992, 142) using hierarchy based logic for wait
+21:03:09.728 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:03:09.729 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Settings" COMPLETED
+21:03:09.729 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Settings" is visible RUNNING
+21:03:09.870 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Settings" is visible COMPLETED
+21:03:09.871 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 07a-settings RUNNING
+21:03:09.873 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:03:09.874 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:03:10.241 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 07a-settings COMPLETED
+21:03:10.242 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "App ID app.devilwalkx.scamcircle" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:03:10.961 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: App ID app.devilwalkx.scamcircle
+21:03:10.981 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:13.778 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: App ID app.devilwalkx.scamcircle
+21:03:13.786 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:15.949 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: App ID app.devilwalkx.scamcircle
+21:03:16.035 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:18.767 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: App ID app.devilwalkx.scamcircle
+21:03:18.813 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:21.358 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: App ID app.devilwalkx.scamcircle
+21:03:21.445 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:23.520 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:03:23.520 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=90, y=920, width=900, height=220)
+21:03:23.521 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:03:23.536 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=App ID app.devilwalkx.scamcircle, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:03:23.536 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:03:23.536 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "App ID app.devilwalkx.scamcircle" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:03:23.536 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Version 0.2.0.*" is visible RUNNING
+21:03:23.649 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Version 0.2.0.*" is visible COMPLETED
+21:03:23.649 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "App ID app.devilwalkx.scamcircle" is visible RUNNING
+21:03:23.778 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "App ID app.devilwalkx.scamcircle" is visible COMPLETED
+21:03:23.779 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Commit [0-9a-f]{7}.*" is visible RUNNING
+21:03:23.909 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Commit [0-9a-f]{7}.*" is visible COMPLETED
+21:03:23.909 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 07b-about-build RUNNING
+21:03:23.910 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:03:23.910 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:03:24.155 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 07b-about-build COMPLETED
+21:03:24.156 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling UP until "Works without internet" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:03:24.958 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Works without internet
+21:03:25.003 [ INFO] maestro.Maestro.swipeFromCenter: Swiping DOWN from center
+21:03:27.267 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Works without internet
+21:03:27.355 [ INFO] maestro.Maestro.swipeFromCenter: Swiping DOWN from center
+21:03:29.307 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Works without internet
+21:03:29.351 [ INFO] maestro.Maestro.swipeFromCenter: Swiping DOWN from center
+21:03:31.918 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Works without internet
+21:03:32.006 [ INFO] maestro.Maestro.swipeFromCenter: Swiping DOWN from center
+21:03:34.109 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:03:34.109 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=179, y=337, width=728, height=264)
+21:03:34.110 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:03:34.110 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Works without internet, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=UP, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:03:34.110 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:03:34.110 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling UP until "Works without internet" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:03:34.110 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Works without internet.*" RUNNING
+21:03:34.239 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Works without internet, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[179,337][907,601], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=179, y=337, width=728, height=264))
+21:03:35.488 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:03:35.490 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (543, 469) using hierarchy based logic for wait
+21:03:36.913 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:03:36.913 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Works without internet.*" COMPLETED
+21:03:36.913 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "Why there is no internet permission" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:03:37.698 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Why there is no internet permission
+21:03:37.743 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:39.987 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: Why there is no internet permission
+21:03:40.075 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:42.238 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:03:42.239 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=90, y=1972, width=900, height=33)
+21:03:42.239 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:03:42.239 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=Why there is no internet permission, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:03:42.239 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:03:42.239 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "Why there is no internet permission" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:03:42.240 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Why there is no internet permission" is visible RUNNING
+21:03:42.399 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Why there is no internet permission" is visible COMPLETED
+21:03:42.399 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Scrolling DOWN until "This is a design choice, not a fault.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled RUNNING
+21:03:43.197 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: This is a design choice, not a fault.*
+21:03:43.285 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:45.447 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: This is a design choice, not a fault.*
+21:03:45.535 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:48.297 [ WARN] maestro.orchestra.Orchestra.scrollUntilVisible: Error: maestro.MaestroException$ElementNotFound: Element not found: Text matching regex: This is a design choice, not a fault.*
+21:03:48.385 [ INFO] maestro.Maestro.swipeFromCenter: Swiping UP from center
+21:03:50.488 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Scrolling try count: 0, DeviceWidth: 1080, DeviceWidth: 2340
+21:03:50.488 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Element bounds: Bounds(x=90, y=756, width=900, height=924)
+21:03:50.488 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Visibility Percent: 1.0
+21:03:50.488 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: Command centerElement: ScrollUntilVisibleCommand(selector=ElementSelector(textRegex=This is a design choice, not a fault.*, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), direction=DOWN, scrollDuration=301, visibilityPercentage=100, timeout=45000, waitToSettleTimeoutMs=null, centerElement=false, originalSpeedValue=70, label=null, optional=false).centerElement
+21:03:50.489 [ INFO] maestro.orchestra.Orchestra.scrollUntilVisible: visibilityPercentageNormalized: 1.0
+21:03:50.489 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Scrolling DOWN until "This is a design choice, not a fault.*" is visible with speed 70, visibility percentage 100%, timeout 45000 ms, with centering disabled COMPLETED
+21:03:50.489 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "This is a design choice, not a fault.*" is visible RUNNING
+21:03:50.658 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "This is a design choice, not a fault.*" is visible COMPLETED
+21:03:50.659 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 07c-offline RUNNING
+21:03:50.659 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:03:50.660 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:03:50.892 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 07c-offline COMPLETED

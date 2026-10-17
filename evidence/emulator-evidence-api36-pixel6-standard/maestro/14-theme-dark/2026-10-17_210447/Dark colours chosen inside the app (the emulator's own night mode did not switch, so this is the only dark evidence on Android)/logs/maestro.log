@@ -1,0 +1,37 @@
+21:04:53.948 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:04:53.952 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:04:53.953 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:04:53.954 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:04:53.954 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "app.devilwalkx.scamcircle" with clear state RUNNING
+21:04:53.955 [ INFO] maestro.Maestro.clearAppState$lambda$8: Clearing app state app.devilwalkx.scamcircle
+21:04:55.237 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app app.devilwalkx.scamcircle
+21:04:55.237 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping app.devilwalkx.scamcircle app during launch
+21:04:55.461 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "app.devilwalkx.scamcircle" with clear state COMPLETED
+21:04:55.463 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Settings" RUNNING
+21:04:57.100 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=Settings, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=true, bounds=[933,9][1059,135], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=933, y=9, width=126, height=126))
+21:04:59.094 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:04:59.099 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (996, 200) using hierarchy based logic for wait
+21:05:00.291 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:05:00.293 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Settings" COMPLETED
+21:05:00.293 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Dark" RUNNING
+21:05:00.938 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Dark, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[496,917][584,975], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=496, y=917, width=88, height=58))
+21:05:02.158 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:05:02.160 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 946) using hierarchy based logic for wait
+21:05:03.152 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:05:03.152 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Dark" COMPLETED
+21:05:03.153 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Settings" is visible RUNNING
+21:05:03.293 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Settings" is visible COMPLETED
+21:05:03.293 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 14-dark-settings RUNNING
+21:05:03.295 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:05:03.297 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:05:03.595 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 14-dark-settings COMPLETED
+21:05:03.596 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Tap on "Back" RUNNING
+21:05:03.729 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=Back, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=true, bounds=[21,137][147,263], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[53,169][116,232], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=com.horcrux.svg.SvgView, important-for-accessibility=false, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[63,179][105,221], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=com.horcrux.svg.g, important-for-accessibility=false, error=}, children=[TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[63,179][105,221], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=o22, important-for-accessibility=false, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=false, enabled=true, focused=false, checked=false, selected=false)], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=21, y=137, width=126, height=126))
+21:05:05.028 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tap aimed via settled hierarchy
+21:05:05.029 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (84, 200) using hierarchy based logic for wait
+21:05:06.059 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+21:05:06.059 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Tap on "Back" COMPLETED
+21:05:06.060 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 14-dark-home RUNNING
+21:05:06.060 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:05:06.061 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:05:06.260 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 14-dark-home COMPLETED

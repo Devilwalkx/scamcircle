@@ -1,0 +1,76 @@
+--------- beginning of main
+10-17 21:08:20.198 D/Maestro ( 9528): Requesting view hierarchy
+10-17 21:08:20.202 W/QueryController( 9528): Could not detect idle state.
+10-17 21:08:20.202 W/QueryController( 9528): Could not detect idle state.
+10-17 21:08:20.220 D/SatelliteController( 1195): iisInCarrierRoamingNbIotNtn: satellite is disabled
+10-17 21:08:20.297 I/Maestro ( 9528): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@a0c41; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:08:20.298 D/Maestro ( 9528): View hierarchy received in 100 ms
+10-17 21:08:20.525 I/WifiService(  634): getWifiEnabledState uid=10146 state=3
+10-17 21:08:20.526 D/ConnectivityService(  634): requestNetwork for uid/pid:10146/5148 activeRequest: null callbackRequest: 211 [NetworkRequest [ REQUEST id=211, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10146 RequestorUid: 10146 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOSING|LOST|NC|LP
+10-17 21:08:20.528 I/netd    (  443): networkSetPermissionForNetwork(102, 0) <1.19ms>
+10-17 21:08:20.530 W/IPCThreadState(  634): Sending oneway calls to frozen process.
+10-17 21:08:20.531 D/ConnectivityService(  634): NetReassign [211 : null → 102] [c 0] [a 4] [i 0]
+10-17 21:08:20.531 D/ConnectivityService(  634): reportNetworkConnectivity(103, false) by 10146
+10-17 21:08:20.532 D/NetworkMonitor/103( 1107): Forcing reevaluation for UID 10146. Dns signal count: 0
+10-17 21:08:20.534 I/resolv  (  443): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:08:20.534 I/resolv  (  443): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:08:20.536 I/resolv  (  443): res_nsend: used send_dg 75 terrno: 0
+10-17 21:08:20.536 I/resolv  (  443): res_nsend: used send_dg 256 terrno: 0
+10-17 21:08:20.537 I/resolv  (  443): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:08:20.537 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c1e612f3410
+10-17 21:08:20.537 I/resolv  (  443): ResNSendHandler::run: 0 / {103 983143 103 983143 1073 1}
+10-17 21:08:20.537 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c1f912e8af0
+10-17 21:08:20.543 D/NetworkMonitor/103( 1107): PROBE_DNS www.google.com 10ms OK 142.251.157.119,142.251.155.119,142.251.153.119,142.251.152.119,142.251.156.119,142.251.154.119,142.251.151.119,142.251.150.119,2001:4860:4828:7700::,2001:4860:4829:7700::,2001:4860:482c:7700::,2001:4860:482a:7700::,2001:4860:482b:7700::,2001:4860:482d:7700::,2001:4860:4826:7700::,2001:4860:4827:7700::
+10-17 21:08:20.544 I/resolv  (  443): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 21:08:20.544 I/resolv  (  443): res_nmkquery: (QUERY, IN, A)
+10-17 21:08:20.544 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c1e612f3410
+10-17 21:08:20.544 I/resolv  (  443): doQuery: rcode=0, ancount=8, return value=160
+10-17 21:08:20.544 I/resolv  (  443): res_nmkquery: (QUERY, IN, AAAA)
+10-17 21:08:20.544 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c20412e6f90
+10-17 21:08:20.544 I/resolv  (  443): doQuery: rcode=0, ancount=8, return value=256
+10-17 21:08:20.546 D/NetworkMonitor/103( 1107): PROBE_DNS connectivitycheck.gstatic.com 12ms OK 142.251.150.120,2001:4860:4826:7800::
+10-17 21:08:20.547 I/resolv  (  443): GetAddrInfoHandler::run: {103 983143 103 983143 1073 1}
+10-17 21:08:20.547 I/resolv  (  443): res_nmkquery: (QUERY, IN, A)
+10-17 21:08:20.547 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c1f912e8af0
+10-17 21:08:20.547 I/resolv  (  443): doQuery: rcode=0, ancount=1, return value=63
+10-17 21:08:20.547 I/resolv  (  443): res_nmkquery: (QUERY, IN, AAAA)
+10-17 21:08:20.547 I/resolv  (  443): resolv_cache_lookup: FOUND IN CACHE entry=0x7c1f912e8070
+10-17 21:08:20.547 I/resolv  (  443): doQuery: rcode=0, ancount=1, return value=75
+10-17 21:08:20.569 D/NetworkMonitor/103( 1107): PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=22ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 21:08:20 GMT], X-Android-Received-Millis=[1792271300568], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792271300550]}
+10-17 21:08:20.573 D/NetworkMonitor/103( 1107): PROBE_HTTPS https://www.google.com/generate_204 time=29ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sat, 17 Oct 2026 21:08:20 GMT], X-Android-Received-Millis=[1792271300573], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792271300570]}
+10-17 21:08:20.574 D/NetworkMonitor/103( 1107): isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=41ms
+10-17 21:08:20.574 D/ConnectivityService(  634): [103 WIFI] validation passed
+10-17 21:08:20.576 I/WifiService(  634): getVerboseLoggingLevel uid=1000
+10-17 21:08:20.722 D/Maestro ( 9528): Requesting view hierarchy
+10-17 21:08:20.722 W/QueryController( 9528): Could not detect idle state.
+10-17 21:08:20.722 W/QueryController( 9528): Could not detect idle state.
+10-17 21:08:20.751 I/Maestro ( 9528): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@a0c41; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:08:20.753 D/Maestro ( 9528): View hierarchy received in 31 ms
+10-17 21:08:20.838 D/ControlsListingControllerImpl( 1019): Subscribing callback, service count: 0
+10-17 21:08:20.841 D/ControlsListingControllerImpl( 1019): Unsubscribing callback
+--------- beginning of system
+10-17 21:08:20.856 D/WindowManager(  634): captureDisplay
+--------- beginning of kernel
+10-17 21:08:21.036 I/servicemanager(    0): Caller(pid=9528,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:08:21.041 I/servicemanager(    0): Caller(pid=9528,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:08:21.044 I/servicemanager(    0): Caller(pid=9528,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 21:08:20.896 I/DisplayManager( 9528): Choreographer implicitly registered for the refresh rate.
+10-17 21:08:20.916 I/EGL_emulation( 9528): Opening libGLESv1_CM_emulation.so
+10-17 21:08:20.916 I/EGL_emulation( 9528): Opening libGLESv2_emulation.so
+10-17 21:08:20.920 W/HWUI    ( 9528): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 21:08:21.066 D/WifiClientModeImpl[631136:wlan0](  634): updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=6 freq=2437 RxLinkSpeed=2
+10-17 21:08:21.066 D/WifiDataStall(  634): tx tput in kbps: 37000
+10-17 21:08:21.066 D/WifiDataStall(  634): rx tput in kbps: 37000
+10-17 21:08:21.066 V/WifiConfigManager(  634): Updating scan detail cache freq=2437 BSSID=02:15:b2:00:00:01 RSSI=-50 for "AndroidWifi"NONE
+10-17 21:08:21.066 D/WifiThroughputPredictor(  634):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:08:21.066 D/WifiThroughputPredictor(  634):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:08:21.066 D/WifiThroughputPredictor(  634):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:08:21.067 D/WifiThroughputPredictor(  634):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:08:21.067 D/WifiThroughputPredictor(  634):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:08:21.067 D/WifiThroughputPredictor(  634):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:08:21.067 D/WifiThroughputPredictor(  634):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:08:21.067 D/WifiThroughputPredictor(  634):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:08:21.068 D/WifiScoreCard(  634): BSSID update SIGNAL_POLL ID: 317529948 SSID: "AndroidWifi", BSSID: 02:15:b2:00:00:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 6Mbps, Tx Link speed: 6Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+10-17 21:08:21.068 D/WifiScoreCard(  634): txRate: 10 txSpeed: 6
+10-17 21:08:21.068 D/WifiScoreCard(  634): network update SIGNAL_POLL "AndroidWifi" ID: 410366613 RSSI -50 txSpeed 6
+10-17 21:08:21.068 D/WifiClientModeImpl[631136:wlan0](  634):  ClientModeImpl$L2ConnectedState screen=on 1 0 "AndroidWifi" 02:15:b2:00:00:01 rssi=-50 f=2437 sc=60 link=6 tx=9.4, 0.0, 0.0 rx=8.8 bcn=0 [on:0 tx:0 rx:0 period:3003] from screen [on:0 period:67422] score=60

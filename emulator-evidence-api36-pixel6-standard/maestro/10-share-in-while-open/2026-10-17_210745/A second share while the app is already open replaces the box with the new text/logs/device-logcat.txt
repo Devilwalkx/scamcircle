@@ -1,0 +1,33 @@
+--------- beginning of main
+10-17 21:07:52.326 D/WifiConfigStore(  634): Writing to stores completed in 4 ms.
+10-17 21:07:52.440 D/Maestro ( 9273): Requesting view hierarchy
+10-17 21:07:52.442 W/QueryController( 9273): Could not detect idle state.
+10-17 21:07:52.443 W/QueryController( 9273): Could not detect idle state.
+10-17 21:07:52.478 I/Maestro ( 9273): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@a0c2d; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:07:52.492 D/Maestro ( 9273): View hierarchy received in 52 ms
+10-17 21:07:52.618 D/Maestro ( 9273): Requesting view hierarchy
+10-17 21:07:52.618 W/QueryController( 9273): Could not detect idle state.
+10-17 21:07:52.619 W/QueryController( 9273): Could not detect idle state.
+10-17 21:07:52.638 I/Maestro ( 9273): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@a0c2d; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:07:52.654 D/Maestro ( 9273): View hierarchy received in 36 ms
+--------- beginning of system
+10-17 21:07:52.756 D/WindowManager(  634): captureDisplay
+--------- beginning of kernel
+10-17 21:07:52.933 I/servicemanager(    0): Caller(pid=9273,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:07:52.941 I/servicemanager(    0): Caller(pid=9273,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:07:52.944 I/servicemanager(    0): Caller(pid=9273,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 21:07:52.791 I/DisplayManager( 9273): Choreographer implicitly registered for the refresh rate.
+10-17 21:07:52.812 I/EGL_emulation( 9273): Opening libGLESv1_CM_emulation.so
+10-17 21:07:52.813 I/EGL_emulation( 9273): Opening libGLESv2_emulation.so
+10-17 21:07:52.816 W/HWUI    ( 9273): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 21:07:53.083 I/AidlLazyServiceRegistrar( 9151): Process has 0 (of 2 available) client(s) in use after notification android.system.virtualizationmaintenance has clients: 0
+10-17 21:07:53.083 I/AidlLazyServiceRegistrar( 9151): Trying to shut down the service. No clients in use for any service in process.
+10-17 21:07:53.246 I/servicemanager(    0): Notifying android.system.virtualizationmaintenance they don't (previously: do) have clients when we now have no record of a client
+10-17 21:07:53.251 I/servicemanager(    0): Caller(pid=9151,uid=1000,sid=u:r:virtualizationservice:s0) Unregistering android.system.virtualizationmaintenance
+10-17 21:07:53.254 I/BpBinder(    0): onLastStrongRef automatically unlinking death recipients:
+10-17 21:07:53.098 I/AidlLazyServiceRegistrar( 9151): Unregistered all clients and exiting
+10-17 21:07:53.260 I/servicemanager(    0): Caller(pid=9151,uid=1000,sid=u:r:virtualizationservice:s0) Unregistering android.system.virtualizationservice
+10-17 21:07:53.263 I/BpBinder(    0): onLastStrongRef automatically unlinking death recipients:
+10-17 21:07:53.268 I/init    (    0): Service 'virtualizationservice' (pid 9151) exited with status 0 oneshot service took 17.997999 seconds in background
+10-17 21:07:53.272 I/init    (    0): Sending signal 9 to service 'virtualizationservice' (pid 9151) process group...
+10-17 21:07:53.276 I/libprocessgroup(    0): Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_9151

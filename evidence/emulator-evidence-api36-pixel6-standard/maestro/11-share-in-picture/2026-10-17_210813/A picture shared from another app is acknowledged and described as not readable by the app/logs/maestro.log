@@ -1,0 +1,12 @@
+21:08:20.399 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:08:20.402 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:08:20.403 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:08:20.404 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:08:20.404 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that "Picture received" is visible RUNNING
+21:08:20.622 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that "Picture received" is visible COMPLETED
+21:08:20.622 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that ".*cannot read pictures.*" is visible RUNNING
+21:08:21.057 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that ".*cannot read pictures.*" is visible COMPLETED
+21:08:21.058 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Take screenshot 11-picture-received RUNNING
+21:08:21.060 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+21:08:21.064 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+21:08:21.353 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Take screenshot 11-picture-received COMPLETED

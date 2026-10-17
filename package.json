@@ -1,0 +1,12 @@
+{
+  "name": "scamcircle",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": ["packages/*", "apps/*", "e2e"],
+  "scripts": {
+    "test": "npm test -w @scamcircle/core",
+    "typecheck": "npm run typecheck -w @scamcircle/core && npm run typecheck -w @scamcircle/mobile",
+    "eval": "npm run eval -w @scamcircle/core",
+    "e2e": "npm run build:web -w @scamcircle/mobile && npm test -w @scamcircle/e2e"
+  }
+}

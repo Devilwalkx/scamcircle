@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "ScamCircle (synthetic demo)",
+    "slug": "scamcircle",
+    "version": "0.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "ios": { "bundleIdentifier": "invalid.placeholder.scamcircle" },
+    "android": {
+      "package": "invalid.placeholder.scamcircle",
+      "blockedPermissions": [
+        "INTERNET",
+        "SYSTEM_ALERT_WINDOW",
+        "VIBRATE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECORD_AUDIO",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a screenshot to read and type out. The picture is not stored or shared; its metadata is removed.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "ScamCircle (synthetic demo)",
+      "shortName": "ScamCircle",
+      "backgroundColor": "#ffffff",
+      "themeColor": "#0b3d91",
+      "lang": "en-GB"
+    },
+    "platforms": ["ios", "android", "web"]
+  }
+}

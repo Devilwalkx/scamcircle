@@ -12,3 +12,4 @@ export * from "./device.js";
 export * from "./dataset.js"; export * from "./evaluation.js";
 export * from "./service.js"; export * from "./demo.js";
 export * from "./holdout2.js";
+export * from "./result.js";

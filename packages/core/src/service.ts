@@ -26,6 +26,7 @@ export class VaultUnreadable extends Error {
 const KEY_NAME = "content";
 const VAULT = "sc.vault";
 const RECOVERY = "sc.recovery";
+const DRAFTS = "sc.drafts";
 export const BACKUP_PREFIX = "SCB1.";
 
 interface Envelope { v: 1; accountId: string; version: number; sealed: SealedItem }
@@ -127,7 +128,36 @@ export class VaultService {
     return merged;
   }
 
+  /**
+   * Unfinished text (a pasted message, a note, a reply) is sealed with the same device key, under its own item id,
+   * so it survives the app being closed by the system but is never stored as plain text. Drafts are not part of
+   * backups. A draft that cannot be opened is dropped: drafts are a convenience and must never block the app.
+   */
+  async saveDrafts(accountId: string, drafts: Record<string, string>): Promise<void> {
+    const entries = Object.entries(drafts).filter(([, v]) => v.length > 0);
+    if (entries.length === 0) { await this.kv.delete(DRAFTS); return; }
+    const key = await this.keys.get(KEY_NAME);
+    if (!key) throw new VaultKeyMissing();
+    const version = Date.now();
+    const sealed = sealItem(key, JSON.stringify(Object.fromEntries(entries)), { accountId, itemId: "drafts", version });
+    await this.kv.set(DRAFTS, JSON.stringify({ v: 1, accountId, version, sealed } satisfies Envelope));
+  }
+
+  async loadDrafts(accountId: string): Promise<Record<string, string>> {
+    try {
+      const raw = await this.kv.get(DRAFTS);
+      const key = await this.keys.get(KEY_NAME);
+      if (!raw || !key) return {};
+      const env = JSON.parse(raw) as Envelope;
+      if (env.accountId !== accountId) return {};
+      const parsed = JSON.parse(openItem(key, env.sealed, { accountId, itemId: "drafts", version: env.version })) as unknown;
+      if (!parsed || typeof parsed !== "object") return {};
+      return Object.fromEntries(Object.entries(parsed as Record<string, unknown>).filter(([, v]) => typeof v === "string")) as Record<string, string>;
+    } catch { return {}; }
+  }
+
   async erase(): Promise<void> {
+    await this.kv.delete(DRAFTS);
     await this.kv.delete(VAULT);
     await this.kv.delete(RECOVERY);
     await this.keys.delete(KEY_NAME);

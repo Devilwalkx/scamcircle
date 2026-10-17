@@ -137,3 +137,25 @@ describe("packaged source hygiene", () => {
     for (const f of ["vault.ts", "service.ts", "device.ts"]) expect(readFileSync(new URL(`../src/${f}`, import.meta.url), "utf8")).not.toMatch(/console\.(log|info|warn|error|debug)/);
   });
 });
+
+describe("drafts (unfinished text) are sealed at rest", () => {
+  it("round trip; the stored value holds no plaintext; erase and a lost key remove them; a damaged draft is dropped", async () => {
+    const kv = new MemKV(), keys = new MemKeys();
+    const svc = new VaultService(keys, kv);
+    const root = await svc.create("Me", NOW);
+    await svc.saveDrafts(root.me.accountId, { "check.text": MARK, empty: "" });
+    expect(kv.m.get("sc.drafts")!).not.toContain(MARK);
+    expect(await svc.loadDrafts(root.me.accountId)).toEqual({ "check.text": MARK });
+    expect(await svc.loadDrafts("another-account")).toEqual({});
+    const env = JSON.parse(kv.m.get("sc.drafts")!);
+    env.sealed.ct = (env.sealed.ct[0] === "0" ? "1" : "0") + env.sealed.ct.slice(1);
+    kv.m.set("sc.drafts", JSON.stringify(env));
+    expect(await svc.loadDrafts(root.me.accountId)).toEqual({});
+    await svc.saveDrafts(root.me.accountId, { a: "b" });
+    await svc.saveDrafts(root.me.accountId, {});
+    expect(kv.m.has("sc.drafts")).toBe(false);
+    await svc.saveDrafts(root.me.accountId, { a: "b" });
+    await svc.erase();
+    expect(kv.m.has("sc.drafts")).toBe(false);
+  });
+});

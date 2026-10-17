@@ -121,7 +121,7 @@ const RULES: Rule[] = [
     patterns: [R("\\b(?:bitcoin|btc|crypto(?:currency)?|ethereum|usdt|tether|wallet address|binance|coinbase|bitcoin atm)\\b")] },
   { id: "hard_transfer", category: "payment_method", strength: "moderate", label: "Asks for a hard-to-reverse way of paying", explanation: "Wire services and cash-pick-up cannot easily be reversed.",
     patterns: [R("\\b(?:western union|moneygram|wire transfer|cash app|zelle|cash in an envelope|courier will (?:collect|pick up))\\b")] },
-  { id: "credentials", category: "credential_request", strength: "strong", label: "Asks for a code, PIN or password", explanation: "Nobody genuine will ask you to read out or send a code, PIN or password.",
+  { id: "credentials", category: "credential_request", strength: "strong", label: "Asks for a code, PIN or password", explanation: "A real bank or company will not ask you to read out or send a code, PIN or password.",
     negatable: true,
     patterns: [R("\\b(?:share|send|tell|read(?: out)?|give|provide|reply with|forward|confirm|enter|text|type)\\b.{0,40}\\b(?:otp|one[- ]time (?:pass(?:code|word)|code)|verification code|security code|passcode|6[- ]digit code|pin(?: number)?|password|cvv|card number|card details|login details|recovery phrase|seed phrase)\\b"), R("\\b(?:otp|one[- ]time (?:pass(?:code|word)|code)|verification code|security code|passcode|pin(?: number)?|password|cvv|card number|login details|recovery phrase)\\b.{0,30}\\b(?:to me|to us|back|to verify|to confirm)\\b")] },
   { id: "remote_access", category: "remote_access", strength: "strong", label: "Asks you to install an app or give remote access", explanation: "Remote-access tools let a stranger control your phone or computer.",

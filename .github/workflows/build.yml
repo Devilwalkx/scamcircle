@@ -49,12 +49,28 @@ jobs:
       - run: npm ci
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+      - name: Detect the owner's private signing key (absent: build stays a test build)
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$KS_B64" ]; then
+            echo "RELEASE_SIGNING=1" >> "$GITHUB_ENV"
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            echo "Private signing key present: this build will be signed with it."
+          else
+            echo "No signing secrets: this build is signed with the public Android debug key (test build)."
+          fi
       - name: Generate native Android project
         working-directory: apps/mobile
         env:
           BUILD_COMMIT: ${{ github.sha }}
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
         run: npx expo prebuild --platform android --no-install
+      - name: Point Gradle's release build at the private key (only when present)
+        if: ${{ env.RELEASE_SIGNING == '1' }}
+        working-directory: apps/mobile
+        run: node ../../scripts/configure-release-signing.mjs android/app/build.gradle
       - name: Check requested permissions in the generated manifest
         working-directory: apps/mobile
         run: |
@@ -79,6 +95,10 @@ jobs:
           grep -q 'enableOnBackInvokedCallback="true"' android/app/src/main/AndroidManifest.xml
       - name: "Build release APK (signed with the public Android debug key: test signing only)"
         working-directory: apps/mobile/android
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: ./gradlew assembleRelease --no-daemon
       - name: Check the permissions of the built APK (after all libraries are merged)
         run: |
@@ -89,6 +109,8 @@ jobs:
           # the only permission allowed is the app's own signature-level receiver permission that AndroidX adds
           if grep -E "uses-permission" apk-permissions.txt | grep -v "DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"; then echo "The built APK requests a permission"; exit 1; fi
           grep -q "name='app.devilwalkx.scamcircle'" apk-permissions.txt
+      - name: Record what identifies this APK
+        run: BUILD_COMMIT=${{ github.sha }} bash scripts/apk-identity.sh apps/mobile/android/app/build/outputs/apk/release/*.apk | tee build-identity.txt
       - uses: actions/upload-artifact@v4
         with:
           name: scamcircle-android-test-apk

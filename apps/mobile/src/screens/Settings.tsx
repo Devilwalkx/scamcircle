@@ -132,7 +132,7 @@ export function Settings({ prefs }: { prefs: Prefs }) {
         <Txt v="small">{`Version ${info.version} (build ${info.code})`}</Txt>
         <Txt v="small">{`App ID ${info.id}`}</Txt>
         <Txt v="small">{`Commit ${info.commit}${info.builtAt ? ` · built ${info.builtAt}` : ""}`}</Txt>
-        <Txt v="small" color={th.textMuted}>Test build, signed with the public Android test key. Not reviewed by anyone independent. Not tested on a physical phone by its builders.</Txt>
+        <Txt v="small" color={th.textMuted}>{info.channel === "release" ? "Release build, signed with the owner\u2019s private key. Not reviewed by anyone independent. Not tested on a physical phone by its builders." : "Test build, signed with the public Android test key. Not reviewed by anyone independent. Not tested on a physical phone by its builders."}</Txt>
       </Card>
       <Btn kind="secondary" label="Check encryption on this phone" onPress={async () => { setCheck("running"); setCheck(await encryptionSelfCheck(expoKeyStore)); }} />
       {check === "running" ? <Notice tone="wait" text="Checking…" /> : check ? (

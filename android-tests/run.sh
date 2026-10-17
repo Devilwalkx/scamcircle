@@ -112,6 +112,19 @@ sleep 2
 adb shell am kill $PKG
 sleep 1
 adb shell pidof $PKG > "$OUT/pid-after-kill.txt" || echo "process gone" > "$OUT/pid-after-kill.txt"
+# ---- signing consequence: an APK with the same package id but a DIFFERENT signing key must be refused by Android and must not touch the installed app's data.
+# The key here is a throw-away created for this check only; it is deleted straight away and is not a release key.
+log "signing consequence check (throw-away key)"
+BT=$(ls -d "${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"/build-tools/* 2>/dev/null | sort -V | tail -1)
+if [ -n "$BT" ] && command -v keytool >/dev/null; then
+  keytool -genkeypair -keystore "$OUT/throwaway.jks" -storepass throwaway -keypass throwaway -alias t -keyalg RSA -keysize 2048 -validity 2 -dname "CN=throwaway" >/dev/null 2>&1
+  "$BT/apksigner" sign --ks "$OUT/throwaway.jks" --ks-pass pass:throwaway --out "$OUT/resigned.apk" "$APK" >/dev/null 2>&1
+  adb install -r "$OUT/resigned.apk" > "$OUT/foreign-signature-install.txt" 2>&1 || true
+  rm -f "$OUT/throwaway.jks" "$OUT/resigned.apk" "$OUT/resigned.apk.idsig"
+  if grep -q "INSTALL_FAILED_UPDATE_INCOMPATIBLE" "$OUT/foreign-signature-install.txt"; then echo "PASS: Android refused to install a differently signed APK over the installed app (INSTALL_FAILED_UPDATE_INCOMPATIBLE). The next flow checks the app's data is intact." | tee "$OUT/signing-consequence.txt"; else echo "FAIL: unexpected result: $(cat "$OUT/foreign-signature-install.txt")" | tee "$OUT/signing-consequence.txt"; FAIL=1; fi
+else
+  echo "NOT TESTED: apksigner or keytool not found on this runner" | tee "$OUT/signing-consequence.txt"
+fi
 run_flow 06-draft-restore.yaml
 
 # ---- rotation and relaunch

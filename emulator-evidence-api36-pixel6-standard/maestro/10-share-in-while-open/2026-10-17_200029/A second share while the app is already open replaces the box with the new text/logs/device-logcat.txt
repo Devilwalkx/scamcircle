@@ -1,0 +1,37 @@
+--------- beginning of main
+10-17 20:00:36.320 D/Maestro ( 9203): Requesting view hierarchy
+10-17 20:00:36.322 W/QueryController( 9203): Could not detect idle state.
+10-17 20:00:36.322 W/QueryController( 9203): Could not detect idle state.
+10-17 20:00:36.365 I/Maestro ( 9203): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b62c; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:00:36.369 D/Maestro ( 9203): View hierarchy received in 49 ms
+10-17 20:00:36.493 D/Maestro ( 9203): Requesting view hierarchy
+10-17 20:00:36.493 W/QueryController( 9203): Could not detect idle state.
+10-17 20:00:36.494 W/QueryController( 9203): Could not detect idle state.
+10-17 20:00:36.516 I/Maestro ( 9203): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@8b62c; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:00:36.517 D/Maestro ( 9203): View hierarchy received in 24 ms
+--------- beginning of system
+10-17 20:00:36.621 D/WindowManager(  630): captureDisplay
+--------- beginning of kernel
+10-17 20:00:36.799 I/servicemanager(    0): Caller(pid=9203,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:00:36.802 I/servicemanager(    0): Caller(pid=9203,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:00:36.806 I/servicemanager(    0): Caller(pid=9203,uid=10238,sid=u:r:untrusted_app:s0:c238,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 20:00:36.652 I/DisplayManager( 9203): Choreographer implicitly registered for the refresh rate.
+10-17 20:00:36.670 I/EGL_emulation( 9203): Opening libGLESv1_CM_emulation.so
+10-17 20:00:36.670 I/EGL_emulation( 9203): Opening libGLESv2_emulation.so
+10-17 20:00:36.674 W/HWUI    ( 9203): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 20:00:36.677 D/ConnectivityService(  630): handleLingerComplete for [102 CELLULAR]
+10-17 20:00:36.677 I/ConnectivityService(  630): Update capabilities for net 102 : -FOREGROUND
+10-17 20:00:36.679 I/netd    (  451): networkSetPermissionForNetwork(102, 1) <2.03ms>
+10-17 20:00:36.681 W/IPCThreadState(  630): Sending oneway calls to frozen process.
+10-17 20:00:36.683 D/NetworkStatsObservers(  630): Unregistering RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=13, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3441675 ] accessLevel:3
+10-17 20:00:36.683 D/NetworkStatsObservers(  630): Registering observer for RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=14, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3425183 ] accessLevel:3
+10-17 20:00:36.701 I/netd    (  451): tetherGetStats() -> {[]} <0.36ms>
+10-17 20:00:36.704 I/netd    (  451): bandwidthRemoveInterfaceQuota(eth0) <0.39ms>
+10-17 20:00:36.705 I/netd    (  451): bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.35ms>
+10-17 20:00:36.707 I/netd    (  451): bandwidthRemoveInterfaceQuota(eth0) <0.37ms>
+10-17 20:00:36.708 I/netd    (  451): bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.68ms>
+10-17 20:00:36.709 D/NetworkStatsObservers(  630): Registering observer for RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=15, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3421641 ] accessLevel:3
+10-17 20:00:36.709 D/NetworkStatsObservers(  630): Unregistering RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=14, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3425183 ] accessLevel:3
+10-17 20:00:36.725 I/netd    (  451): tetherGetStats() -> {[]} <0.30ms>
+10-17 20:00:36.833 D/BoundBrokerSvc( 1467): onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-17 20:00:36.933 D/OomAdjuster(  630): Not killing cached processes

@@ -1,0 +1,127 @@
+== upgrade test: installing previous release then the new build over it
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+== PASS: installed previous release (same package id), upgraded in place, app launched
+== install
+Performing Streamed Install
+Success
+== flow 02-main-task-check-message.yaml
+
+Waiting for flows to complete...
+[Passed] MAIN TASK - paste a message, read what was found and not checked, record an independent check (1m 40s)
+
+1/1 Flow Passed in 1m 40s
+
+== flow 01-first-run.yaml
+
+Waiting for flows to complete...
+[Passed] First run shows one clear action and no demonstration controls (7s)
+
+1/1 Flow Passed in 7s
+
+== flow 03-keyboard.yaml
+
+Waiting for flows to complete...
+[Passed] With the keyboard open the field and the Check button stay reachable (30s)
+
+1/1 Flow Passed in 30s
+
+== flow 04-back-navigation.yaml
+
+Waiting for flows to complete...
+[Passed] System Back unwinds one step at a time and then leaves the app (43s)
+
+1/1 Flow Passed in 43s
+
+== flow 07-settings-and-offline.yaml
+
+Waiting for flows to complete...
+[Passed] Settings shows the build identity, and the offline explanation is plain (19s)
+
+1/1 Flow Passed in 19s
+
+== flow 08-share-by-text.yaml
+
+Waiting for flows to complete...
+[Passed] Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet (58s)
+
+1/1 Flow Passed in 58s
+
+== flow 14-theme-dark.yaml
+
+Waiting for flows to complete...
+[Passed] Dark colours chosen inside the app (the emulator's own night mode did not switch, so this is the only dark evidence on Android) (13s)
+
+1/1 Flow Passed in 13s
+
+== flow 15-encryption-check.yaml
+
+Waiting for flows to complete...
+[Passed] The on-phone encryption check runs the real encryption code and passes (including refusing a tampered copy) (18s)
+
+1/1 Flow Passed in 18s
+
+== offline run
+== flow 13-offline-main-task.yaml
+
+Waiting for flows to complete...
+[Passed] The main task again with Wi-Fi and mobile data switched off by the test script (1m 7s)
+
+1/1 Flow Passed in 1m 7s
+
+== share-in text (cold start)
+Starting: Intent { act=android.intent.action.SEND typ=text/plain cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+== flow 09-share-in-text.yaml
+
+Waiting for flows to complete...
+[Passed] Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box (5s)
+
+1/1 Flow Passed in 5s
+
+== share-in text (app already open)
+Starting: Intent { act=android.intent.action.SEND typ=text/plain cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+== flow 10-share-in-while-open.yaml
+
+Waiting for flows to complete...
+[Passed] A second share while the app is already open replaces the box with the new text (2s)
+
+1/1 Flow Passed in 2s
+
+== share-in picture (environment-dependent, recorded but not gating)
+image id: 19
+Starting: Intent { act=android.intent.action.SEND typ=image/png flg=0x1 cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+== flow 11-share-in-picture.yaml
+
+Waiting for flows to complete...
+[Passed] A picture shared from another app is acknowledged and described as not readable by the app (2s)
+
+1/1 Flow Passed in 2s
+
+== flow 05-draft-write.yaml
+
+Waiting for flows to complete...
+[Passed] Start a message, then leave the app (the script ends the process) (20s)
+
+1/1 Flow Passed in 20s
+
+== flow 06-draft-restore.yaml
+
+Waiting for flows to complete...
+[Passed] After the process was ended the unfinished message is still there (10s)
+
+1/1 Flow Passed in 10s
+
+== rotation
+== startup
+== memory and scroll
+== flow 12-measure-setup.yaml
+
+Waiting for flows to complete...
+[Passed] Leaves the app on a result screen so scrolling and memory can be measured (41s)
+
+1/1 Flow Passed in 41s
+
+== done fail=0

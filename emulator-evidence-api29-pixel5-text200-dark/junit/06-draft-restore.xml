@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="1" time="23.765" timestamp="2026-10-17T17:24:46">
+    <testcase id="After the process was ended the unfinished message is still there" name="After the process was ended the unfinished message is still there" classname="After the process was ended the unfinished message is still there" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/06-draft-restore.yaml" time="23.747" timestamp="2026-10-17T17:24:46" status="ERROR">
+      <failure>Element not found: Text matching regex: Clear everything here</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

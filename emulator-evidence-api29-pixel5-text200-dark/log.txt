@@ -1,0 +1,122 @@
+== NOT APPLICABLE: the previous release has package id 'invalid.placeholder.scamcircle', not app.devilwalkx.scamcircle, so Android treats it as a different app (clean install only)
+== install
+Performing Streamed Install
+Success
+== flow 02-main-task-check-message.yaml
+Anonymous analytics enabled. To opt out, set MAESTRO_CLI_NO_ANALYTICS environment variable to any value before running Maestro.
+
+
+Waiting for flows to complete...
+[Failed] MAIN TASK - paste a message, read what was found and not checked, record an independent check (1m 4s) (Assertion is false: "What we found" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 02-main-task-check-message.yaml
+== flow 01-first-run.yaml
+
+Waiting for flows to complete...
+[Passed] First run shows one clear action and no demonstration controls (7s)
+
+1/1 Flow Passed in 7s
+
+== flow 03-keyboard.yaml
+
+Waiting for flows to complete...
+[Failed] With the keyboard open the field and the Check button stay reachable (40s) (Assertion is false: "Check this message" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 03-keyboard.yaml
+== flow 04-back-navigation.yaml
+
+Waiting for flows to complete...
+[Failed] System Back unwinds one step at a time and then leaves the app (1m 2s) (Assertion is false: "How did you check\?" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 04-back-navigation.yaml
+== flow 07-settings-and-offline.yaml
+
+Waiting for flows to complete...
+[Failed] Settings shows the build identity, and the offline explanation is plain (42s) (Assertion is false: "Why there is no internet permission" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 07-settings-and-offline.yaml
+== flow 08-share-by-text.yaml
+
+Waiting for flows to complete...
+[Failed] Ask someone by text - choose what is shared, see what is incomplete, open the system share sheet (1m 6s) (Assertion is false: "What will they see\?" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 08-share-by-text.yaml
+== offline run
+== flow 13-offline-main-task.yaml
+
+Waiting for flows to complete...
+[Failed] The main task again with Wi-Fi and mobile data switched off by the test script (53s) (Assertion is false: "What we found" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 13-offline-main-task.yaml
+== share-in text (cold start)
+Starting: Intent { act=android.intent.action.SEND typ=text/plain cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+== flow 09-share-in-text.yaml
+
+Waiting for flows to complete...
+[Failed] Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box (19s) (Assertion is false: "Check this message" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 09-share-in-text.yaml
+== share-in text (app already open)
+Starting: Intent { act=android.intent.action.SEND typ=text/plain cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+== flow 10-share-in-while-open.yaml
+
+Waiting for flows to complete...
+[Failed] A second share while the app is already open replaces the box with the new text (19s) (Assertion is false: ".*Second-share-test.*" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 10-share-in-while-open.yaml
+== share-in picture (environment-dependent, recorded but not gating)
+image id: 13
+Starting: Intent { act=android.intent.action.SEND typ=image/png flg=0x1 cmp=app.devilwalkx.scamcircle/.MainActivity (has extras) }
+== flow 11-share-in-picture.yaml
+
+Waiting for flows to complete...
+[Failed] A picture shared from another app is shown as not analysed, with crop offered (19s) (Assertion is false: "This picture was not analysed" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 11-share-in-picture.yaml
+== SOFT FAIL (recorded, not gating): 11-share-in-picture.yaml
+== flow 05-draft-write.yaml
+
+Waiting for flows to complete...
+[Passed] Start a message, then leave the app (the script ends the process) (18s)
+
+1/1 Flow Passed in 18s
+
+== flow 06-draft-restore.yaml
+
+Waiting for flows to complete...
+[Failed] After the process was ended the unfinished message is still there (24s) (Element not found: Text matching regex: Clear everything here)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 06-draft-restore.yaml
+== rotation
+== startup
+== memory and scroll
+== flow 12-measure-setup.yaml
+
+Waiting for flows to complete...
+[Failed] Leaves the app on a result screen so scrolling and memory can be measured (52s) (Assertion is false: "What we found" is visible)
+
+1/1 Flow Failed
+
+== FLOW FAILED: 12-measure-setup.yaml
+== done fail=1

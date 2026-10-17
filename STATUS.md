@@ -10,7 +10,7 @@ Synthetic demonstration build. Last updated by the build agent. Sections: implem
 
 ## Tested
 - Unit: 85 vitest tests in 8 files (`npm test`).
-- E2E: Playwright at Pixel 7, 390 px and 320 px widths (see CI results below for the run that counts).
+- E2E: 24 Playwright tests x 3 viewports (Pixel 7, 390 px, 320 px) = 72 runs, all passing locally on the final code. CI results are recorded at the end of this file.
 - Mutation checks done by hand this build (safeguard removed, tests failed, then restored):
   1. allow sharing with an unchecked contact -> `unverified contacts cannot receive cases` failed
   2. drop replay protection -> 2 tests failed

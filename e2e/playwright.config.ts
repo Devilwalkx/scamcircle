@@ -19,8 +19,8 @@ export default defineConfig({
     timeout: 60_000
   },
   projects: [
-    { name: "android-phone", use: { ...devices["Pixel 7"], launchOptions } },
-    { name: "iphone-size", use: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, userAgent: devices["iPhone 14"].userAgent, launchOptions } },
-    { name: "small-phone", use: { viewport: { width: 320, height: 568 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, launchOptions } }
+    { name: "pixel-7", use: { ...devices["Pixel 7"], launchOptions } },
+    { name: "phone-390", use: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, userAgent: devices["iPhone 14"].userAgent, launchOptions } },
+    { name: "phone-320", use: { viewport: { width: 320, height: 568 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, launchOptions } }
   ]
 });

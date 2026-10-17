@@ -58,3 +58,14 @@ export function randomHex(bytes: number): string {
   globalThis.crypto.getRandomValues(b);
   return bytesToHex(b);
 }
+
+const STD = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+/** Standard base64 with padding (for data: URIs). */
+export function b64Encode(bytes: Uint8Array): string {
+  let out = "";
+  for (let i = 0; i < bytes.length; i += 3) {
+    const a = bytes[i]!, b = bytes[i + 1], c = bytes[i + 2];
+    out += STD[a >> 2]! + STD[((a & 3) << 4) | ((b ?? 0) >> 4)]! + (b === undefined ? "=" : STD[((b & 15) << 2) | ((c ?? 0) >> 6)]!) + (c === undefined ? "=" : STD[c & 63]!);
+  }
+  return out;
+}

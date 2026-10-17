@@ -164,7 +164,7 @@ function Frame({ prefs }: { prefs: Prefs }) {
           <Text accessibilityRole="header" numberOfLines={2} style={{ flex: 1, color: c.text, fontSize: 20 * Math.min(factor, 1.4), lineHeight: 26 * Math.min(factor, 1.4), fontWeight: "700", paddingHorizontal: 4 }}>{SECTIONS[S]}</Text>
           {S !== "settings" ? <IconBtn icon="settings" label="Settings" onPress={() => nav.go("settings")} /> : null}
         </View>
-        <ScrollView ref={scroller} contentContainerStyle={{ padding: space.m, paddingBottom: space.xl, flexGrow: 1 }} keyboardShouldPersistTaps="handled" keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}>
+        <ScrollView ref={scroller} {...(Platform.OS === "web" ? ({ tabIndex: 0 } as object) : {})} contentContainerStyle={{ padding: space.m, paddingBottom: space.xl, flexGrow: 1 }} keyboardShouldPersistTaps="handled" keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}>
           {!nav.draftsReady ? <Loading text="Opening…" /> : (
             <Transition key={`${S}-${nav.navNonce}`} id={`${S}-${nav.navNonce}`} style={{ flexGrow: 1 }}>
               {S === "home" ? <Home /> : S === "check" ? <Check /> : S === "people" ? <People /> : S === "waiting" ? <Waiting /> : <Settings prefs={prefs} />}

@@ -82,10 +82,15 @@ const CONFUSABLES: Record<string, string> = {
 function hasNonAscii(s: string): boolean {
   return /[^\x00-\x7f]/.test(s);
 }
-export function skeletonOf(host: string): string {
+/** Confusable-letter mapping only (no accent folding). Used to decide whether lookalike letters are present. */
+function confusableSkeleton(host: string): string {
   let out = "";
   for (const ch of host.normalize("NFKC").toLowerCase()) out += CONFUSABLES[ch] ?? ch;
   return out;
+}
+/** Accents are also folded ("é" to "e"), so "santandér" is compared with "santander". */
+export function skeletonOf(host: string): string {
+  return confusableSkeleton(host.normalize("NFD").replace(/\p{M}/gu, ""));
 }
 function scriptsIn(label: string): Set<string> {
   const s = new Set<string>();
@@ -236,7 +241,7 @@ export function analyseHost(host: string, kind: "url" | "email", authority?: str
     const mixed = unicodeHost.split(".").some((l) => scriptsIn(l).size > 1);
     findings.push({
       id: hasPuny ? "punycode" : "non_ascii_host",
-      severity: mixed || skeleton !== unicodeHost.toLowerCase() ? "strong" : "moderate",
+      severity: mixed || confusableSkeleton(unicodeHost) !== unicodeHost.toLowerCase() ? "strong" : "moderate",
       label: mixed ? "Address mixes alphabets" : "Address uses non-English letters",
       detail: `Some letters in this address come from other alphabets and can look identical to English letters. Read as plain letters it becomes "${skeleton}".`
     });

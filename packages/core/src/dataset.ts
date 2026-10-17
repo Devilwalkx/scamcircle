@@ -1,12 +1,17 @@
 /**
- * SYNTHETIC labelled evaluation set. Every message below was written by the developers (an AI model and
- * its operator) for this project. None is a real message and none is real personal data. The labels are
- * the authors' judgement. The "held-out" part was written before the held-out results were looked at and
- * the rules were tuned only against the "tuning" part, but the same author wrote both, so it is NOT an
- * independent test. Do not read any figure from here as general accuracy.
+ * SYNTHETIC labelled sets. Every message below was written by the developers (an AI model and its operator)
+ * for this project. None is a real message and none is real personal data. The labels are the authors' judgement.
+ *
+ * Set A, "tuning" (T*, TL*): used to write the rules.
+ * Set B, "dev/regression" (H*, HL*; the `heldOut: true` flag is historical): written before its results were
+ * looked at, and for that reason once called "held-out". Its 6 false reassurances and 2 false alarms WERE then
+ * analysed and the rules were changed to fix 6 of the 8 (see docs/EVALUATION.md). It is therefore tuned-on and
+ * is now a regression set, NOT an unbiased test. It must never be quoted as accuracy.
+ * Set C, "holdout-2" (N*, NL*, NX*) is in holdout2.ts: written after those rule changes and not tuned on.
+ * All sets are by one author, so none is independent. Do not read any figure as general accuracy.
  */
 export type Label = "scam" | "legit";
-export interface Sample { id: string; text: string; label: Label; scenario: string; language: "en" | "es" | "fr" | "de" | "hi" | "mixed"; heldOut: boolean }
+export interface Sample { id: string; text: string; label: Label; scenario: string; language: "en" | "es" | "fr" | "de" | "hi" | "it" | "pt" | "mixed"; heldOut: boolean }
 
 const s = (id: string, label: Label, scenario: string, text: string, language: Sample["language"] = "en", heldOut = false): Sample => ({ id, text, label, scenario, language, heldOut });
 const h = (id: string, label: Label, scenario: string, text: string, language: Sample["language"] = "en") => s(id, label, scenario, text, language, true);

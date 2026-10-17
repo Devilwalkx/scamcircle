@@ -15,13 +15,14 @@ describe("synthetic evaluation set (NOT an accuracy figure)", () => {
     expect(r.misses).toEqual([]);
     expect(r.alarms).toEqual([]);
   });
-  it("held-out set: results are recorded exactly, so any change is noticed and the docs must be updated", () => {
+  it("dev/regression set B (it was the held-out set until its results were read; the rules were then changed, so it is no longer held out): results recorded exactly", () => {
     const r = evaluate(heldOutSet());
-    // Known limits, listed on purpose. A vague opener with no ask, a bank message that only says 'call us',
-    // a threat without the word pattern we match, switched-bank wording, a diacritic lookalike domain, a job fee.
-    expect(r.misses).toEqual(["H03", "H04", "H05", "H07", "H11", "H21"]);
-    // Known false alarms: a printer manual that says 'ignore previous instructions', and a real family 'urgent loan' request.
-    expect(r.alarms).toEqual(["HL08", "HL13"]);
+    // Before the rules were changed this set had 6 false reassurances (H03, H04, H05, H07, H11, H21) and 2 false alarms (HL08, HL13).
+    // Root causes and fixes are in docs/EVALUATION.md. Those six scams and HL08 are now flagged; the original expectation listed them as misses.
+    expect(r.misses).toEqual([]);
+    // HL13 ("Can you lend me £50 urgently? I'll pay you back tomorrow") stays a false alarm on purpose: as text it is identical to the
+    // opening of a family scam, and suppressing it would create false reassurance for H02/T01-style messages.
+    expect(r.alarms).toEqual(["HL13"]);
     expect(r.overall.n).toBe(heldOutSet().length);
   });
   it("non-English and unreadable scams are 'cannot assess', never 'no warning signs'", () => {

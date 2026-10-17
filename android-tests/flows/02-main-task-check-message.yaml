@@ -10,6 +10,11 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
 - inputText: "Hi Mum my phone broke so this is my new number. Can you send 480 pounds today? Do not tell Dad. Call 07700 900123."
 - hideKeyboard
 - takeScreenshot: 02a-message-entered
+- scrollUntilVisible:
+    element: "Check this message"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Check this message"
 - assertVisible: "What we found"
 - assertVisible: "We found .* warning signs? in the words.*"
@@ -25,6 +30,11 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
     direction: DOWN
     timeout: 45000
     speed: 70
+- scrollUntilVisible:
+    element: "Not verified"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - assertVisible: "Not verified"
 - takeScreenshot: 02c-result-not-verified
 - scrollUntilVisible:
@@ -32,10 +42,25 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
     direction: DOWN
     timeout: 45000
     speed: 70
+- scrollUntilVisible:
+    element: "Do not use the phone number or link in the message.*"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - assertVisible: "Do not use the phone number or link in the message.*"
 - takeScreenshot: 02d-result-next-step
+- scrollUntilVisible:
+    element: "I checked it another way"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "I checked it another way"
 - assertVisible: "How did you check\\?"
+- scrollUntilVisible:
+    element: "Called a number I already had saved.*"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Called a number I already had saved.*"
 - scrollUntilVisible:
     element: "The real person said they did NOT send or ask for this"
@@ -51,5 +76,10 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
 - tapOn: "Save"
 - assertVisible: "Check saved"
 - takeScreenshot: 02e-check-saved
+- scrollUntilVisible:
+    element: "Back to the result"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Back to the result"
 - assertVisible: "You checked this another way.*"

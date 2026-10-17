@@ -42,7 +42,7 @@ adb shell dumpsys package $PKG | grep -E "versionName|versionCode|requested perm
 if adb shell dumpsys package $PKG | grep -q "android.permission.INTERNET"; then log "INTERNET permission is present: FAIL"; echo "INTERNET present" > "$OUT/internet-permission.txt"; FAIL=1; else echo "no INTERNET permission requested (dumpsys package)" > "$OUT/internet-permission.txt"; fi
 adb shell dumpsys package $PKG | grep -A12 "intent-filter\|Action: \"android.intent.action.SEND\"" | tr -d '\r' | head -40 > "$OUT/share-filters.txt" || true
 adb shell settings put system font_scale "$FONT"
-adb shell cmd uimode night "$NIGHT"; { echo -n "uimode night state after setting: "; adb shell cmd uimode night; } | tr -d "\r" >> "$OUT/device.txt"
+adb shell cmd uimode night "$NIGHT"; if [ "$NIGHT" = "yes" ]; then adb shell settings put secure ui_night_mode 2; sleep 3; fi; { echo -n "settings ui_night_mode: "; adb shell settings get secure ui_night_mode; } | tr -d "\r" >> "$OUT/device.txt"; { echo -n "uimode night state after setting: "; adb shell cmd uimode night; } | tr -d "\r" >> "$OUT/device.txt"
 adb shell settings put global window_animation_scale 0
 adb shell settings put global transition_animation_scale 0
 adb shell settings put global animator_duration_scale 0

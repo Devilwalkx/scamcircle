@@ -26,5 +26,10 @@ name: Settings shows the build identity, and the offline explanation is plain
     timeout: 45000
     speed: 70
 - assertVisible: "Why there is no internet permission"
+- scrollUntilVisible:
+    element: "This is a design choice, not a fault.*"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - assertVisible: "This is a design choice, not a fault.*"
 - takeScreenshot: 07c-offline

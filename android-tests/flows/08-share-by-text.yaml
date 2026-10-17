@@ -8,6 +8,11 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
     id: "field-the-message"
 - inputText: "Hi Mum new number can you send 300 pounds today. Ring 07700 900456"
 - hideKeyboard
+- scrollUntilVisible:
+    element: "Check this message"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Check this message"
 - assertVisible: "What we found"
 - scrollUntilVisible:
@@ -17,7 +22,17 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
     speed: 70
 - tapOn: "Ask someone I trust to look"
 - assertVisible: "Send the text through my own messaging app.*"
+- scrollUntilVisible:
+    element: "Send the text through my own messaging app.*"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Send the text through my own messaging app.*"
+- scrollUntilVisible:
+    element: "Next"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Next"
 - assertVisible: "What will they see\\?"
 - assertVisible: "They will see exactly this"

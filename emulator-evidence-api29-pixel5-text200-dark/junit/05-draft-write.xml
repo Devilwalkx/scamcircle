@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="20.286" timestamp="2026-10-17T21:50:35">
+    <testcase id="Start a message, then leave the app (the script ends the process)" name="Start a message, then leave the app (the script ends the process)" classname="Start a message, then leave the app (the script ends the process)" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/05-draft-write.yaml" time="20.274" timestamp="2026-10-17T21:50:35" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

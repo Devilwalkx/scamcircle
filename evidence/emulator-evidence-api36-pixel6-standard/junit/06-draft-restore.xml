@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="8.502" timestamp="2026-10-17T21:45:54">
+    <testcase id="After the process was ended the unfinished message is still there" name="After the process was ended the unfinished message is still there" classname="After the process was ended the unfinished message is still there" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/06-draft-restore.yaml" time="8.492" timestamp="2026-10-17T21:45:54" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

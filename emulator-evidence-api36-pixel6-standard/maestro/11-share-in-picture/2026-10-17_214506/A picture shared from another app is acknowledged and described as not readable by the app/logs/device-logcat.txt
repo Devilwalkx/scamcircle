@@ -1,0 +1,37 @@
+--------- beginning of main
+10-17 21:45:11.324 D/WifiClientModeImpl[479596:wlan0](  639): updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=11 freq=2437 RxLinkSpeed=2
+10-17 21:45:11.324 D/WifiDataStall(  639): tx tput in kbps: 37000
+10-17 21:45:11.324 D/WifiDataStall(  639): rx tput in kbps: 37000
+10-17 21:45:11.324 V/WifiConfigManager(  639): Updating scan detail cache freq=2437 BSSID=02:15:b2:00:00:01 RSSI=-50 for "AndroidWifi"NONE
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+10-17 21:45:11.324 D/WifiThroughputPredictor(  639):  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 37
+10-17 21:45:11.324 D/WifiScoreCard(  639): BSSID update SIGNAL_POLL ID: 1900022988 SSID: "AndroidWifi", BSSID: 02:15:b2:00:00:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 11Mbps, Tx Link speed: 11Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+10-17 21:45:11.324 D/WifiScoreCard(  639): txRate: 1 txSpeed: 11
+10-17 21:45:11.324 D/WifiScoreCard(  639): network update SIGNAL_POLL "AndroidWifi" ID: 510437459 RSSI -50 txSpeed -1
+10-17 21:45:11.325 D/WifiClientModeImpl[479596:wlan0](  639):  ClientModeImpl$L2ConnectedState screen=on 1 0 "AndroidWifi" 02:15:b2:00:00:01 rssi=-50 f=2437 sc=60 link=11 tx=0.0, 0.0, 0.0 rx=0.0 bcn=0 [on:0 tx:0 rx:0 period:3002] from screen [on:0 period:52069] score=60
+10-17 21:45:11.407 D/Maestro ( 9306): Requesting view hierarchy
+10-17 21:45:11.409 W/QueryController( 9306): Could not detect idle state.
+10-17 21:45:11.409 W/QueryController( 9306): Could not detect idle state.
+10-17 21:45:11.446 I/Maestro ( 9306): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@85c89; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:45:11.446 D/Maestro ( 9306): View hierarchy received in 39 ms
+10-17 21:45:11.510 D/Maestro ( 9306): Requesting view hierarchy
+10-17 21:45:11.511 W/QueryController( 9306): Could not detect idle state.
+10-17 21:45:11.511 W/QueryController( 9306): Could not detect idle state.
+10-17 21:45:11.525 I/Maestro ( 9306): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@85c89; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 21:45:11.526 D/Maestro ( 9306): View hierarchy received in 16 ms
+--------- beginning of system
+10-17 21:45:11.620 D/WindowManager(  639): captureDisplay
+--------- beginning of kernel
+10-17 21:45:11.743 I/servicemanager(    0): Caller(pid=9306,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:45:11.746 I/servicemanager(    0): Caller(pid=9306,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 21:45:11.749 I/servicemanager(    0): Caller(pid=9306,uid=10240,sid=u:r:untrusted_app:s0:c240,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 21:45:11.648 I/DisplayManager( 9306): Choreographer implicitly registered for the refresh rate.
+10-17 21:45:11.662 I/EGL_emulation( 9306): Opening libGLESv1_CM_emulation.so
+10-17 21:45:11.662 I/EGL_emulation( 9306): Opening libGLESv2_emulation.so
+10-17 21:45:11.666 W/HWUI    ( 9306): Failed to initialize 101010-2 format, error = EGL_SUCCESS

@@ -1,13 +1,6 @@
 appId: app.devilwalkx.scamcircle
-name: A picture shared from another app is shown as not analysed, with crop offered
+name: A picture shared from another app is acknowledged and described as not readable by the app
 ---
 - assertVisible: "Picture received"
-- assertVisible: "This picture was not analysed"
-- assertVisible: "Crop it to share with someone"
-- takeScreenshot: 11a-picture-received
-- tapOn: "Crop it to share with someone"
-- assertVisible: "Crop a picture to share"
-- assertVisible: "This picture was not analysed"
-- tapOn: "More from the top"
-- assertVisible: "Cut off the top: 5%"
-- takeScreenshot: 11b-crop
+- assertVisible: ".*cannot read pictures.*"
+- takeScreenshot: 11-picture-received

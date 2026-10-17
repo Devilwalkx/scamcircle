@@ -22,6 +22,9 @@ interface Ctx {
   clearDraft(key: string): void;
   clearDrafts(prefix: string): void;
   draftsReady: boolean;
+  /** Counts up whenever a screen asks to be scrolled back to the top (after a sub-screen change). */
+  top: number;
+  scrollTop(): void;
   incoming: Incoming | null;
   receive(i: Incoming | null): void;
 }
@@ -42,6 +45,8 @@ export function NavProvider({ children }: { children: React.ReactNode }) {
   const drafts = useRef<Record<string, string>>({});
   const [dv, bump] = useState(0);
   const [ready, setReady] = useState(false);
+  const [top, setTop] = useState(0);
+  const scrollTop = useCallback(() => setTop((n) => n + 1), []);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [incoming, setIncoming] = useState<Incoming | null>(null);
 
@@ -83,9 +88,11 @@ export function NavProvider({ children }: { children: React.ReactNode }) {
     clearDraft: (k) => { const { [k]: _gone, ...rest } = drafts.current; void _gone; drafts.current = rest; bump((n) => n + 1); flush(); },
     clearDrafts: (prefix) => { drafts.current = Object.fromEntries(Object.entries(drafts.current).filter(([k]) => !k.startsWith(prefix))); bump((n) => n + 1); flush(); },
     draftsReady: ready,
+    top,
+    scrollTop,
     incoming,
     receive: setIncoming
-  }), [screen, nonce, ready, incoming, flush, dv]);
+  }), [screen, nonce, ready, incoming, flush, dv, top, scrollTop]);
   return <C.Provider value={value}>{children}</C.Provider>;
 }
 
@@ -96,6 +103,8 @@ export function NavProvider({ children }: { children: React.ReactNode }) {
 export function useView<V extends { k: string }>(root: V, initial?: V): [V, (v: V) => void] {
   const nav = useNav();
   const [view, setView] = useState<V>(initial ?? root);
+  const { scrollTop } = nav;
+  useEffect(() => { scrollTop(); }, [view.k, scrollTop]);
   useEffect(() => {
     nav.registerBack(() => {
       if (view.k !== root.k) { setView(root); return true; }

@@ -30,3 +30,14 @@ See STATUS.md for the results recorded this build.
 
 ## Not covered
 Real-device behaviour of secure storage, secure random, image picker and clipboard; screen-reader use on a phone; dependency vulnerability review (`npm audit` has not been triaged); fuzzing; side channels; independent cryptographic review; backend tests (no backend).
+
+## Added in the Android pass (0.2.0)
+| Check | Where | What it does and does not show |
+|---|---|---|
+| Built APK requests no permission | CI `android-apk`, `aapt dump permissions` | Fails the build on any `uses-permission` except AndroidX's own signature-level receiver permission. Shows the manifest after library merging. |
+| No INTERNET on the installed app | emulator `run.sh` (`dumpsys package`) | Emulator only. |
+| Drafts sealed at rest, gone on submit/erase | `packages/core/test/vault.test.ts`, e2e "unfinished message" | Plain text of a draft never appears in storage (browser storage and vault tests). Not a Keystore test on Android. |
+| Result text never says safe/genuine/fine to pay | `packages/core/test/result.test.ts` (every sample in sets A, B, C) and e2e regex on result pages | Wording only. |
+| Plain-text ask contains only chosen parts, and tells the reader not to use the message's number or link | `result.test.ts`, e2e "text route" | Not encrypted by design; the UI says so. |
+| Share-in handling | e2e stand-in `?sharedtext=` (browser) and emulator `adb shell am start -a android.intent.action.SEND` flows 09 to 11 | The browser stand-in does NOT test Android. The emulator flows send an intent from adb, not from a real app. |
+| App identity cannot be confused with another app on the same port | `appconfig.test.ts`, e2e `meta application-id` | Dedicated port 4411, `reuseExistingServer: false`. |

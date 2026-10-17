@@ -24,7 +24,12 @@ function b64ToBytes(b64: string): Uint8Array {
 }
 
 async function reencode(uri: string, actions: ImageManipulator.Action[]): Promise<Picture> {
-  const r = await ImageManipulator.manipulateAsync(uri, actions, { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG, base64: true });
+  let r: Awaited<ReturnType<typeof ImageManipulator.manipulateAsync>>;
+  try {
+    r = await ImageManipulator.manipulateAsync(uri, actions, { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG, base64: true });
+  } catch {
+    throw new Error("That picture could not be opened here. You can still type what it says into the box.");
+  }
   if (!r.base64) throw new Error("The picture could not be prepared.");
   if (hasJpegMetadata(b64ToBytes(r.base64))) throw new Error("Could not remove hidden picture details, so the picture was not used.");
   return { uri: r.uri, width: r.width, height: r.height };

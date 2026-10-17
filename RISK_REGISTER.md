@@ -19,3 +19,14 @@ Likelihood/impact are the builder's rough judgement, not measured. Status: Mitig
 | R13 | App never run on a real phone | H | M | Build is tested on web and Android build only | **Open: user test needed** |
 | R14 | Manual transport confusion (code not sent, wrong person) | H | M | Honest delivery states, confirmation card naming the person and content | Partly |
 | R15 | Clipboard/screenshot leakage | M | M | Disclosed | Open |
+
+## Added in the Android pass (0.2.0)
+| Risk | Severity | Note |
+|---|---|---|
+| Users read "no warning signs" or the made-up test results as protection | High | Result wording, "not a check", evaluation page and docs all say otherwise; fresh-user comprehension NOT RUN |
+| Detection misses (12 of 36 scams in the unseen set C) and false alarms (3 of 26) | High | docs/EVALUATION.md. Word-pattern engine, English only |
+| Cropped picture or plain-text ask leaves the phone unencrypted through the chosen app | Medium | By design and labelled; person chooses the app and recipient |
+| Another app could send text to ScamCircle through the share sheet | Low | Only on user action; nothing analysed or stored until Check; web addresses never opened |
+| Temporary re-encoded pictures stay in the app cache | Low | Left to the phone to clear (open item) |
+| Same-phone demo helper mistaken for real collaboration | Medium | Moved to Demonstration tools, loud label, hand-over text says simulation |
+| Android `allowBackup` is off, so a new phone starts empty unless a backup text and recovery secret exist | Medium | Stated in Settings |

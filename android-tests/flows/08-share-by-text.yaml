@@ -13,8 +13,8 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
 - scrollUntilVisible:
     element: "Ask someone I trust to look"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Ask someone I trust to look"
 - assertVisible: "Send the text through my own messaging app.*"
 - tapOn: "Send the text through my own messaging app.*"
@@ -25,22 +25,22 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
 - scrollUntilVisible:
     element: "Next"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Next"
 - assertVisible: "What else do you want to include\\?"
 - scrollUntilVisible:
     element: "Review"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Review"
 - assertVisible: "Not encrypted by ScamCircle"
 - scrollUntilVisible:
     element: "Continue"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Continue"
 - assertVisible: "Not sent yet"
 - assertVisible: ".*cannot tell whether this arrived.*"
@@ -48,8 +48,8 @@ name: Ask someone by text - choose what is shared, see what is incomplete, open 
 - scrollUntilVisible:
     element: "Share…"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Share…"
 - takeScreenshot: 08c-system-share-sheet
 - pressKey: back

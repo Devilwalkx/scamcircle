@@ -5,5 +5,10 @@ name: After the process was ended the unfinished message is still there
 - tapOn: "Check a message"
 - assertVisible: "Unfinished draft zebra quokka"
 - takeScreenshot: 06-draft-restored
+- scrollUntilVisible:
+    element: "Clear everything here"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Clear everything here"
 - assertNotVisible: "Unfinished draft zebra quokka"

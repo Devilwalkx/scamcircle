@@ -17,22 +17,22 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
 - scrollUntilVisible:
     element: "What we could not check"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - assertVisible: "What we could not check"
 - scrollUntilVisible:
     element: "Who sent it"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - assertVisible: "Not verified"
 - takeScreenshot: 02c-result-not-verified
 - scrollUntilVisible:
     element: "Settle it by checking another way"
     direction: DOWN
-    timeout: 90000
-    speed: 85
-- assertVisible: "Do not use the phone number or link in the message."
+    timeout: 45000
+    speed: 70
+- assertVisible: "Do not use the phone number or link in the message.*"
 - takeScreenshot: 02d-result-next-step
 - tapOn: "I checked it another way"
 - assertVisible: "How did you check\\?"
@@ -40,14 +40,14 @@ name: MAIN TASK - paste a message, read what was found and not checked, record a
 - scrollUntilVisible:
     element: "The real person said they did NOT send or ask for this"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "The real person said they did NOT send or ask for this"
 - scrollUntilVisible:
     element: "Save"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "Save"
 - assertVisible: "Check saved"
 - takeScreenshot: 02e-check-saved

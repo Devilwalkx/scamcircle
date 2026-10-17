@@ -20,7 +20,7 @@ export function Page({ title, intro, children }: { title: string; intro?: string
   }, [title]);
   return (
     <View style={{ flexGrow: 1 }}>
-      <Text ref={ref} accessibilityRole="header" {...(Platform.OS === "web" ? ({ "aria-level": 1 } as object) : { accessible: true })} style={{ color: c.text, fontSize: type.title.size * f, lineHeight: type.title.line * f, fontWeight: "700", marginBottom: intro ? space.xxs : space.m }}>{title}</Text>
+      <Text ref={ref} maxFontSizeMultiplier={1.5} accessibilityRole="header" {...(Platform.OS === "web" ? ({ "aria-level": 1 } as object) : { accessible: true })} style={{ color: c.text, fontSize: type.title.size * f, lineHeight: type.title.line * f, fontWeight: "700", marginBottom: intro ? space.xxs : space.m }}>{title}</Text>
       {intro ? <View style={{ marginBottom: space.m }}><Txt color={c.textMuted}>{intro}</Txt></View> : null}
       {children}
     </View>

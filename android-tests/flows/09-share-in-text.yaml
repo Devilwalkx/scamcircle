@@ -2,9 +2,13 @@ appId: app.devilwalkx.scamcircle
 name: Text shared from another app (sent by the test script as an Android SEND intent) is put in the check box
 ---
 - assertVisible: "Received from another app"
-- assertVisible: "Check this message"
 - assertVisible: ".*Share-in-test.*"
 - takeScreenshot: 09a-shared-in
+- scrollUntilVisible:
+    element: "Check this message"
+    direction: DOWN
+    timeout: 45000
+    speed: 70
 - tapOn: "Check this message"
 - assertVisible: "What we found"
 - takeScreenshot: 09b-shared-in-result

@@ -17,8 +17,8 @@ name: System Back unwinds one step at a time and then leaves the app
 - scrollUntilVisible:
     element: "I checked it another way"
     direction: DOWN
-    timeout: 90000
-    speed: 85
+    timeout: 45000
+    speed: 70
 - tapOn: "I checked it another way"
 - assertVisible: "How did you check\\?"
 - pressKey: back

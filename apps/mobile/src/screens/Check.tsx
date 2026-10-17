@@ -18,7 +18,8 @@ import { pasteText } from "../transport";
 export function Check() {
   const nav = useNav();
   const initial = useRef(nav.takeParam()).current;
-  const [caseId, setCaseId] = useState<string | undefined>(initial ?? undefined);
+  const [caseId, setCaseIdState] = useState<string | undefined>(initial ?? undefined);
+  const setCaseId = (id: string) => { setCaseIdState(id); nav.scrollTop(); };
   if (!caseId) return <Paste onDone={setCaseId} />;
   return <CaseFlow id={caseId} />;
 }
@@ -63,7 +64,7 @@ function Paste({ onDone }: { onDone: (id: string) => void }) {
   };
 
   return (
-    <Page title="Check a message" intro="Put the message in the box. Everything stays on this phone.">
+    <Page title="Check a message">
       {inc?.text ? <Notice tone="info" title="Received from another app" text={inc.simulated ? "Test stand-in: text arrived as if shared from another app. Read it, change it if you like, then check it." : "Text was shared to ScamCircle from another app and put in the box. Read it, change it if you like, then check it."} /> : null}
       {inc?.imageUri && !inc.text ? <Notice tone="info" title="Picture received" text="A picture was shared to ScamCircle. ScamCircle cannot read pictures, so type what it says into the box." /> : null}
       <Field label="The message" value={text} onChange={(t) => { setText(t); setErr(""); }} multiline placeholder="Paste the message here, or type it" error={err || null} />
@@ -141,6 +142,8 @@ function CaseFlow({ id }: { id: string }) {
   const [note, setNote] = useDraft(`share.note.${id}`);
   const [out, setOut] = useState<{ message: string; grantId?: string; contact?: Contact; text?: string } | null>(null);
   const viewRef = useRef(view); viewRef.current = view;
+  const stepKey = view.k === "share" ? `share-${view.step}` : view.k;
+  useEffect(() => { nav.scrollTop(); }, [stepKey]);  // eslint-disable-line react-hooks/exhaustive-deps
   const shareRef = useRef(share); shareRef.current = share;
 
   // System Back: unwind one step inside this flow, then leave to the first screen.

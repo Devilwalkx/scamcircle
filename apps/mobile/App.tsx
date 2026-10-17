@@ -149,7 +149,7 @@ function Frame({ prefs }: { prefs: Prefs }) {
     return () => { show.remove(); hide.remove(); };
   }, [insets.bottom]);
 
-  useEffect(() => { scroller.current?.scrollTo({ y: 0, animated: false }); }, [nav.screen, nav.navNonce]);
+  useEffect(() => { scroller.current?.scrollTo({ y: 0, animated: false }); }, [nav.screen, nav.navNonce, nav.top]);
 
   const S = nav.screen;
   const waiting = dev.inbox.filter((i) => i.status === "open" && i.replies.length === 0 && now() <= i.expiresAt).length;
@@ -161,7 +161,7 @@ function Frame({ prefs }: { prefs: Prefs }) {
       <SafeAreaView style={{ flex: 1 }} edges={["top", "left", "right"]}>
         <View style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: space.xs, minHeight: 56, borderBottomWidth: 1, borderBottomColor: c.line, backgroundColor: c.bg }}>
           {S !== "home" ? <IconBtn icon="back" label="Back" onPress={() => nav.back()} /> : <View style={{ width: TOUCH, height: TOUCH, alignItems: "center", justifyContent: "center" }}><Icon name="lock" size={24} color={c.primary} /></View>}
-          <Text accessibilityRole="header" numberOfLines={2} style={{ flex: 1, color: c.text, fontSize: 20 * Math.min(factor, 1.4), lineHeight: 26 * Math.min(factor, 1.4), fontWeight: "700", paddingHorizontal: 4 }}>{SECTIONS[S]}</Text>
+          <Text accessibilityRole="header" numberOfLines={2} maxFontSizeMultiplier={1.3} style={{ flex: 1, color: c.text, fontSize: 20 * Math.min(factor, 1.4), lineHeight: 26 * Math.min(factor, 1.4), fontWeight: "700", paddingHorizontal: 4 }}>{SECTIONS[S]}</Text>
           {S !== "settings" ? <IconBtn icon="settings" label="Settings" onPress={() => nav.go("settings")} /> : null}
         </View>
         <ScrollView ref={scroller} {...(Platform.OS === "web" ? ({ tabIndex: 0 } as object) : {})} contentContainerStyle={{ padding: space.m, paddingBottom: space.xl, flexGrow: 1 }} keyboardShouldPersistTaps="handled" keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}>

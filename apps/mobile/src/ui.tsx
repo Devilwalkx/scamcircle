@@ -33,6 +33,7 @@ export function Txt(p: { v?: Variant | Legacy; children: React.ReactNode; color?
       accessibilityLabel={p.label}
       accessibilityLiveRegion={p.live ? "polite" : undefined}
       selectable={p.selectable}
+      maxFontSizeMultiplier={v === "display" || v === "title" ? 1.5 : undefined}
       style={[{ color: p.color ?? c.text, fontSize: t.size * f, lineHeight: t.line * f, fontWeight: t.weight, textAlign: p.align }, p.style]}
     >{p.children}</Text>
   );

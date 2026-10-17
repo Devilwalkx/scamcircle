@@ -10,7 +10,7 @@ Synthetic demonstration build. Last updated by the build agent. Sections: implem
 
 ## Tested
 - Unit: 85 vitest tests in 8 files (`npm test`).
-- E2E: 24 Playwright tests x 3 viewports (Pixel 7, 390 px, 320 px) = 72 runs, all passing locally on the final code. CI results are recorded at the end of this file.
+- E2E: 24 Playwright tests x 3 viewports (Pixel 7, 390 px, 320 px) = 72 runs, all passing locally on the final code. CI results are in the next section.
 - Mutation checks done by hand this build (safeguard removed, tests failed, then restored):
   1. allow sharing with an unchecked contact -> `unverified contacts cannot receive cases` failed
   2. drop replay protection -> 2 tests failed
@@ -20,6 +20,12 @@ Synthetic demonstration build. Last updated by the build agent. Sections: implem
   6. (UI) remove safe-area edges -> simulated-insets test failed (`Received 16`, needs >= 44)
 - **CI flake found and fixed (again):** CI run 3 on `main` failed one e2e test because it asserted that the short digit string `07700` is absent from random ciphertext hex, which can occur by chance. Same class of mistake as in the sibling app. Short digit-only needles were replaced with long or non-hex ones in e2e and unit tests.
 - Bugs found by tests and fixed: erase-everything left the old state on screen (no remount); radio buttons lacked `aria-checked`; text-size buttons overflowed at 2x text; "ScamCircle" broke mid-word at 2x on 320 px (found by the new word-fit check; heading growth now capped); one long word ("organisation's") in a choice label overflowed at 2x on 320 px; a wrong e2e expectation. Chromium in the sandbox was killing runs by contacting blocked hosts; the e2e config now launches it with `--no-proxy-server` and background networking off.
+
+## CI (GitHub Actions, workflow `build`)
+- Run 39041034753 (commit 3edcdd9, branch): success.
+- Run 39041112367 (commit d247fbe, main): **failed**, test-and-web only, one flaky e2e assertion (see above); android-apk passed.
+- Run 39041879058 (commit bee45f6, main): **success** for test-and-web, android-apk and publish-release. Release `latest-test-build` held `ScamCircle-test.apk` (70,111,571 bytes) and `ScamCircle-web.zip` (324,946 bytes).
+- Later documentation-only commits republish the release from the newer commit.
 
 ## Synthetic evaluation (NOT an accuracy figure)
 Written by the builder; rules were tuned only on the "tuning" part, but one author wrote both parts so the held-out part is **not independent**. Samples are tiny. Nothing here supports a general accuracy claim.

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="17.211" timestamp="2026-10-17T20:00:20">
+    <testcase id="Settings shows the build identity, and the offline explanation is plain" name="Settings shows the build identity, and the offline explanation is plain" classname="Settings shows the build identity, and the offline explanation is plain" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/07-settings-and-offline.yaml" time="17.197" timestamp="2026-10-17T20:00:20" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

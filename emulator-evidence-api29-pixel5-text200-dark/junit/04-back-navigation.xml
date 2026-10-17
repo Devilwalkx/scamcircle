@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="59.525" timestamp="2026-10-17T19:58:49">
+    <testcase id="System Back unwinds one step at a time and then leaves the app" name="System Back unwinds one step at a time and then leaves the app" classname="System Back unwinds one step at a time and then leaves the app" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/04-back-navigation.yaml" time="59.507" timestamp="2026-10-17T19:58:49" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

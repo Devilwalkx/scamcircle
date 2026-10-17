@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="test" tests="1" failures="0" time="7.21" timestamp="2026-10-17T19:57:42">
+    <testcase id="First run shows one clear action and no demonstration controls" name="First run shows one clear action and no demonstration controls" classname="First run shows one clear action and no demonstration controls" file="/home/runner/work/scamcircle/scamcircle/android-tests/flows/01-first-run.yaml" time="7.197" timestamp="2026-10-17T19:57:42" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

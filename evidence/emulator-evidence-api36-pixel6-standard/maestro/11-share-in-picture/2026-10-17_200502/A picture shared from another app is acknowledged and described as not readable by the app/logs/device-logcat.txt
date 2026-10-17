@@ -1,0 +1,24 @@
+--------- beginning of main
+10-17 20:05:07.797 D/Maestro ( 9241): Requesting view hierarchy
+10-17 20:05:07.800 W/QueryController( 9241): Could not detect idle state.
+10-17 20:05:07.800 W/QueryController( 9241): Could not detect idle state.
+10-17 20:05:07.830 I/Maestro ( 9241): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@acf67; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:05:07.849 D/Maestro ( 9241): View hierarchy received in 52 ms
+10-17 20:05:07.943 D/Maestro ( 9241): Requesting view hierarchy
+10-17 20:05:07.943 W/QueryController( 9241): Could not detect idle state.
+10-17 20:05:07.943 W/QueryController( 9241): Could not detect idle state.
+10-17 20:05:07.951 I/Maestro ( 9241): Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@acf67; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(884, 64 - 884, 64); boundsInWindow: Rect(884, 64 - 884, 64); packageName: com.android.systemui; className: android.widget.FrameLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+10-17 20:05:07.963 D/Maestro ( 9241): View hierarchy received in 20 ms
+--------- beginning of system
+10-17 20:05:08.019 D/WindowManager(  614): captureDisplay
+--------- beginning of kernel
+10-17 20:05:08.157 I/servicemanager(    0): Caller(pid=9241,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:05:08.160 I/servicemanager(    0): Caller(pid=9241,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+10-17 20:05:08.163 I/servicemanager(    0): Caller(pid=9241,uid=10239,sid=u:r:untrusted_app:s0:c239,c256,c512,c768) Found mapper/ranchu in device VINTF manifest.
+10-17 20:05:08.054 I/DisplayManager( 9241): Choreographer implicitly registered for the refresh rate.
+10-17 20:05:08.073 I/EGL_emulation( 9241): Opening libGLESv1_CM_emulation.so
+10-17 20:05:08.073 I/EGL_emulation( 9241): Opening libGLESv2_emulation.so
+10-17 20:05:08.077 W/HWUI    ( 9241): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 20:05:08.339 I/WifiService(  614): isFeatureSupported uid=1000 returns [WIFI_FEATURE_INFRA, WIFI_FEATURE_P2P, WIFI_FEATURE_MOBILE_HOTSPOT, WIFI_FEATURE_WPA3_SAE, WIFI_FEATURE_WPA3_SUITE_B, WIFI_FEATURE_OWE, WIFI_FEATURE_DPP, WIFI_FEATURE_AP_RAND_MAC, WIFI_FEATURE_MBO, WIFI_FEATURE_FILS_SHA256, WIFI_FEATURE_FILS_SHA384, WIFI_FEATURE_SAE_PK, WIFI_FEATURE_DPP_ENROLLEE_RESPONDER, WIFI_FEATURE_PASSPOINT_TERMS_AND_CONDITIONS, WIFI_FEATURE_SAE_H2E, WIFI_FEATURE_WFD_R2, WIFI_FEATURE_DECORATED_IDENTITY, WIFI_FEATURE_TRUST_ON_FIRST_USE, WIFI_FEATURE_SET_TLS_MINIMUM_VERSION, WIFI_FEATURE_TLS_V1_3, WIFI_FEATURE_WEP, WIFI_FEATURE_WPA_PERSONAL]
+10-17 20:05:08.339 D/KernelCpuUidUserSysTimeReader(  614): Removing uids 10221-10221
+10-17 20:05:08.339 D/KernelCpuUidUserSysTimeReader(  614): Removing uids 10222-10222
